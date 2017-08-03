@@ -1,0 +1,28 @@
+{
+  "name": "homingleopards-home-static",
+  "version": "1.0.0",
+  "description": "CFCA Homing Leopards Homepage Static Files",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./scripts/help.js",
+    "help": "node ./scripts/help.js",
+    "dev": "gulp dev",
+    "build": "gulp prod",
+    "server": "gulp server"
+  },
+  "author": "Konru",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-core": "^6.25.0",
+    "babel-loader": "^7.1.1",
+    "babel-preset-env": "^1.6.0",
+    "chalk": "^2.0.1",
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^3.4.2",
+    "gulp-stylus": "^2.6.0",
+    "gulp-util": "^3.0.8",
+    "gulp-watch": "^4.3.11",
+    "run-sequence": "^1.2.2",
+    "webpack": "^3.4.1"
+  }
+}
