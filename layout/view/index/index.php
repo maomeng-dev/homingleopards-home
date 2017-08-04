@@ -10,13 +10,16 @@
     <? include VIEW_PATH . '/layout/tdk.php' ?>
 
     <? include VIEW_PATH . '/layout/head-res.php' ?>
+
+    <link rel="stylesheet" href="<? fe('/css/index/index.css') ?>">
 </head>
 
 <body>
 
 <? include VIEW_PATH . '/layout/header.php' ?>
 
-<h1>hello page</h1>
+
+<img src="<? fe('/img/soon.png') ?>" alt="coming soon" width="481px" style="display: block;margin: 0 auto;">
 
 <? include VIEW_PATH . '/layout/footer.php' ?>
 
