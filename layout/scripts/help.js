@@ -39,7 +39,7 @@ logBlock(
 );
 
 logBlock(
-    'build',
+    'prod',
     'Build minify static files to dist directory.'
 );
 
@@ -49,8 +49,18 @@ logBlock(
 );
 
 logBlock(
+    'clean',
+    'Remove js/ & css/ in dist directory.'
+);
+
+logBlock(
+    'build',
+    'Use yarn to install all dependencies, and run `clean` & `prod` scripts.'
+);
+
+logBlock(
     'deploy',
-    'Pull the source code from remote, makefile and ship it online.'
+    'CD to online directory, pull the source code from remote, then makefile and ship it online.'
 );
 
 /* Log configs */
