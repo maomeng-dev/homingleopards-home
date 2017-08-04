@@ -10,16 +10,12 @@ let cleanCSS = require('gulp-clean-css');
 let runSequence = require('run-sequence');
 let webpack = require('webpack');
 
-let _config = require('./config/_config'),
-    _common = require('./config/webpack.common');
-
-let jsSrcRoot  = path.resolve(_config.srcRoot, 'js'),
-    jsDistRoot = path.resolve(_config.distRoot, 'js');
+let _config = require('./_config');
 
 let currentModifiedJs = null;
 gulp.task('dev:build-js', () => {
-    delete require.cache[require.resolve('./config/webpack.config.js')];
-    let webpackDevConfig = require('./config/webpack.config.js');
+    delete require.cache[require.resolve('./webpack.config.js')];
+    let webpackDevConfig = require('./webpack.config.js');
     webpack(webpackDevConfig).run((err, stats) => {
         if (err) throw new gutil.PluginError('dev:build-js', err);
         gutil.log('[dev:build-js]', stats.toString({
@@ -29,8 +25,8 @@ gulp.task('dev:build-js', () => {
 });
 
 gulp.task('prod:build-js', () => {
-    delete require.cache[require.resolve('./config/webpack.config.js')];
-    let webpackProdConfig = require('./config/webpack.config.js');
+    delete require.cache[require.resolve('./webpack.config.js')];
+    let webpackProdConfig = require('./webpack.config.js');
     webpackProdConfig.map((item) => (Object.assign(item, {
         plugins: [
             new webpack.optimize.UglifyJsPlugin()
