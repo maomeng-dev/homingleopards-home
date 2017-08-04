@@ -19,7 +19,7 @@
 <? include VIEW_PATH . '/layout/header.php' ?>
 
 
-<img src="<? fe('/img/soon.png') ?>" alt="coming soon" width="481px" style="display: block;margin: 0 auto;">
+<div class="index-coverpic"></div>
 
 <? include VIEW_PATH . '/layout/footer.php' ?>
 
