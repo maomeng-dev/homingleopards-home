@@ -23,3 +23,15 @@ footer
   background-repeat: no-repeat
   background-position: 50% 25%
   background-size: cover
+  animation: 10s 2s;
+  animation-name: pic-scale;
+  transform: scale(1.05)
+
+@keyframes pic-scale {
+  from {
+    transform: scale(1.05)
+  }
+  to {
+    transform: scale(1)
+  }
+}
