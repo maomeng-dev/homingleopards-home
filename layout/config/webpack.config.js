@@ -48,7 +48,9 @@ pageList.forEach((pageName) => {
                     (() => {
                         let result = {};
                         pageScript.forEach((scriptName) => {
-                            result[scriptName.replace(/^(.+?)\..*$/g, '$1')] = scriptName;
+                            if (_config.buildAll || (scriptName.match(/\.module\.js$/gi) === null)) {
+                                result[scriptName.replace(/^(.+?)\..*$/g, '$1')] = scriptName;
+                            }
                         });
                         return result;
                     })()

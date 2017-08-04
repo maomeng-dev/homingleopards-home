@@ -1,8 +1,8 @@
 import Demodule from './demodule.module';
 
 let pageModule = Object.assign({
-    name: 'index1',
+    name: 'index2',
     module: Demodule
-}, {'test': 'meow'});
+}, {'test': 'meow2'});
 
 console.log(pageModule);

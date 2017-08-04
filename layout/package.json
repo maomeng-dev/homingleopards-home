@@ -8,7 +8,8 @@
     "help": "node ./scripts/help.js",
     "dev": "gulp dev",
     "build": "gulp prod",
-    "server": "gulp server"
+    "server": "gulp server",
+    "clean": "node ./scripts/clean.js"
   },
   "author": "Konru",
   "license": "MIT",

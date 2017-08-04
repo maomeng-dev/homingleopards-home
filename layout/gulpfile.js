@@ -18,28 +18,8 @@ let jsSrcRoot  = path.resolve(_config.srcRoot, 'js'),
 
 let currentModifiedJs = null;
 gulp.task('dev:build-js', () => {
-    let webpackDevConfig;
-    if (!_config.buildAll && currentModifiedJs) {
-        webpackDevConfig = Object.assign({
-            entry: (() => {
-                let result = {};
-                let pageReg = new RegExp(jsSrcRoot + '.*\/(.*?)\.js$', 'g');
-                result[currentModifiedJs.path.replace(pageReg, '$1')] = currentModifiedJs.path;
-                return result;
-            })(),
-            output: {
-                path: (() => {
-                    let pageReg = new RegExp(jsSrcRoot + '/(.*?)/.*$', 'g');
-                    return path.resolve(jsDistRoot, currentModifiedJs.path.replace(pageReg, '$1'));
-                })(),
-                filename: '[name].js'
-            }
-        }, _common);
-        currentModifiedJs = null;
-    } else {
-        delete require.cache[require.resolve('./config/webpack.config.js')];
-        webpackDevConfig = require('./config/webpack.config.js');
-    }
+    delete require.cache[require.resolve('./config/webpack.config.js')];
+    let webpackDevConfig = require('./config/webpack.config.js');
     webpack(webpackDevConfig).run((err, stats) => {
         if (err) throw new gutil.PluginError('dev:build-js', err);
         gutil.log('[dev:build-js]', stats.toString({

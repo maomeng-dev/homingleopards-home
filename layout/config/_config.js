@@ -7,5 +7,5 @@ module.exports = {
     devRoot: path.resolve(__dirname, '..', 'dist'),
     devPort: 9090,
 
-    buildAll: true
+    buildAll: false
 };
