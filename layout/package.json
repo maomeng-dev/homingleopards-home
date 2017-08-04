@@ -22,6 +22,7 @@
     "gulp-stylus": "^2.6.0",
     "gulp-util": "^3.0.8",
     "gulp-watch": "^4.3.11",
+    "rimraf": "^2.6.1",
     "run-sequence": "^1.2.2",
     "webpack": "^3.4.1"
   }
