@@ -19,7 +19,7 @@
 <? include VIEW_PATH . '/layout/header.php' ?>
 
 
-<div class="index-coverpic"></div>
+<a class="index-coverpic" href="https://weibo.com/ttarticle/p/show?id=2309404098266164782974" target="_blank" title="带豹回家网站即将上线">带豹回家网站即将上线</a>
 
 <? include VIEW_PATH . '/layout/footer.php' ?>
 
