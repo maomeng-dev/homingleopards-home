@@ -6,6 +6,7 @@ let gulp = require('gulp');
 let gutil = require('gulp-util');
 let watch = require('gulp-watch');
 let stylus = require('gulp-stylus');
+let less = require('gulp-less');
 let cleanCSS = require('gulp-clean-css');
 let runSequence = require('run-sequence');
 let webpack = require('webpack');
@@ -41,6 +42,10 @@ gulp.task('prod:build-js', () => {
 });
 
 gulp.task('dev:build-css', () => {
+    gulp.src(path.join(_config.srcRoot, 'css', '**', '*.less'))
+        .pipe(less())
+        .pipe(gulp.dest(path.join(_config.distRoot, 'css')));
+
     gulp.src(path.join(_config.srcRoot, 'css', '**', '*.styl'))
         .pipe(stylus())
         .pipe(gulp.dest(path.join(_config.distRoot, 'css')));
@@ -50,10 +55,15 @@ gulp.task('dev:build-css', () => {
 });
 
 gulp.task('prod:build-css', () => {
+
+    gulp.src(path.join(_config.srcRoot, 'css', '**', '*.less'))
+        .pipe(less())
+        .pipe(cleanCSS())
+        .pipe(gulp.dest(path.join(_config.distRoot, 'css')));
+
     gulp.src(path.join(_config.srcRoot, 'css', '**', '*.styl'))
-        .pipe(stylus({
-            compress: true
-        }))
+        .pipe(stylus())
+        .pipe(cleanCSS())
         .pipe(gulp.dest(path.join(_config.distRoot, 'css')));
 
     gulp.src(path.join(_config.srcRoot, 'css', '**', '*.css'))
@@ -65,6 +75,9 @@ gulp.task('watch', ['dev:build-js', 'dev:build-css'], () => {
     watch(path.join(_config.srcRoot, 'js', '**', '*.js'), (modifiedJs) => {
         currentModifiedJs = modifiedJs;
         runSequence(['dev:build-js']);
+    });
+    watch(path.join(_config.srcRoot, 'css', '**', '*.less'), () => {
+        runSequence(['dev:build-css']);
     });
     watch(path.join(_config.srcRoot, 'css', '**', '*.styl'), () => {
         runSequence(['dev:build-css']);
@@ -116,7 +129,7 @@ gulp.task('server', () => {
         });
     }).listen(_config.devPort);
 
-    setTimeout(()=>{
+    setTimeout(() => {
         console.log('\n[LOG]', 'Start serving file "' + _config.devRoot + '" => "http://localhost:' + _config.devPort + '/"', '\n');
     }, 0)
 });
