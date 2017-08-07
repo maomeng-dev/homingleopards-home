@@ -25,7 +25,7 @@
 
 <? include VIEW_PATH . '/layout/foot-res.php' ?>
 
-<script src="<? fe('/js/index/index.js') ?>"></script>
+<!--<script src="<?/* fe('/js/index/index.js') */?>"></script>-->
 
 </body>
 </html>
