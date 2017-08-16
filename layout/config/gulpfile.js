@@ -93,7 +93,7 @@ gulp.task('prod', ['prod:build-js', 'prod:build-css']);
 
 gulp.task('server', () => {
     http.createServer((request, response) => {
-        let filePath = _config.devRoot + request.url;
+        let filePath = _config.devRoot + url.parse(request.url).pathname;
 
         let extname = String(path.extname(filePath)).toLowerCase();
         let contentType = 'text/html';
