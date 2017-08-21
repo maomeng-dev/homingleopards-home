@@ -16,7 +16,7 @@ Flight::route('/', function(){
 });
 
 Flight::route('/pages/@page', function($page){
-	Flight::render("index/{$page}");
+	Flight::render("page/{$page}");
 });
 
 Flight::map('notFound', function(){
