@@ -145,10 +145,20 @@ class Engine {
      * @throws \ErrorException
      */
     public function handleError($errno, $errstr, $errfile, $errline) {
-        if ($errno & error_reporting()) {
-            throw new \ErrorException($errstr, $errno, 0, $errfile, $errline);
-        }
-    }
+    	if ($errno == 1) {
+			if ($errno & error_reporting()) {
+				throw new \ErrorException($errstr, $errno, 0, $errfile, $errline);
+			}
+		}
+		$msg = sprintf('<h1>异常报警</h1>' .
+			'<h3>%s (%s)</h3>' .
+			'<pre>%s</pre>',
+			$errstr,
+			$errno,
+			"错误位置:{$errfile},{$errline}行"
+		);
+		echo $msg;
+	}
 
     /**
      * Custom exception handler. Logs exceptions.
