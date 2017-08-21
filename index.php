@@ -15,6 +15,10 @@ Flight::route('/', function(){
     Flight::render("index/index");
 });
 
+Flight::route('/pages/@page', function($page){
+	Flight::render("index/{$page}");
+});
+
 Flight::map('notFound', function(){
 	// 显示自定义的404页面
 	echo "喵，你也穿越失败了?";
