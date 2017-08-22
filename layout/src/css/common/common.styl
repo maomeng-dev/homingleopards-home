@@ -49,6 +49,7 @@
   }
 }
 
+/* links */
 a
   color: #888
   text-decoration: none
@@ -59,6 +60,7 @@ a:hover,
 a:active
   color: #fff
 
+/* footer */
 footer
   padding: 40px 0
   color: #888
@@ -70,8 +72,8 @@ footer
     line-height: 1.5
 
   .footer-link
-    height: 48px
-    line-height: 48px
+    height: 54px
+    line-height: 54px
 
     li
       float: left
@@ -80,6 +82,32 @@ footer
       .fa
         font-size: 20px
 
+  .footer-copyright
+    color: #444
+    font-size: 12px
+
+@media (max-width: 768px)
+  footer
+    padding: 20px 0 10px 0
+
+    .footer-link
+      float: none !important
+      height: 24px
+      margin-bottom: 10px
+      font-size: 14px
+      line-height: 24px
+
+      li
+        margin: 0 5px
+
+        .fa
+          font-size: 16px
+
+    .footer-copyright
+      float: none !important
+      text-align: right
+
+/* wrap */
 .wrap
   position: relative
   max-width: 1280px

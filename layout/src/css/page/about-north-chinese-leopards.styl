@@ -75,7 +75,7 @@ body
     top: 50%
     color: #fff
 
-  i
+  .banner-scrollbtn
     position: absolute
     bottom: 12%
     left: 50%
@@ -179,8 +179,8 @@ body
       top: 50%
       left: 50%
       display: flex
-      width: 100%
-      height: 200%
+      width: 1000%
+      height: 1000%
       transform: translate(-50%, -50%) rotate(20deg)
       z-index: 1
       transition: left .5s
@@ -337,12 +337,12 @@ body
 /* responsive styles */
 @media (max-width: 768px)
   .page-text
-    font-size: 12px
+    font-size: 14px
 
   .content
     h2
       margin: 35px 0
-      font-size: 22px
+      font-size: 24px
 
   .banner
     h1
@@ -359,3 +359,81 @@ body
             width: 6px
             height: 6px
             margin: 0 6px
+
+  .value
+    .value-wrap
+      .wrap
+        display: block
+
+      .value-wrap-block
+        width: 100%
+        padding: 10px !important
+
+        &:first-child
+          background-color: #ffc52d
+
+        &:last-child
+          background-color: #ffae00
+
+        h3
+          font-size: 20px
+
+        p
+          font-size: 12px
+
+      .value-wrap-bg:after,
+      .value-wrap-bg:before,
+      .value-wrap-border:before,
+      .value-wrap-border:after
+          background: none
+
+  .problem
+    li
+      float: none !important
+      width: auto
+      margin: 20px 0 0 0  !important
+      padding: 0 0 20px 0
+      border-bottom: 1px dashed #666
+      opacity: 1
+
+      h3
+        font-size: 20px
+
+      p
+        height: auto
+        margin-bottom: 10px
+        font-size: 14px
+
+  .goal
+    background-position: 50% 0 !important
+
+    h3
+      span
+        font-size: 20px
+
+  .project
+    h2
+      span
+        height: 40px
+        padding: 0 16px
+        font-size: 24px
+        line-height: 40px
+
+  .project
+    dt
+      font-size: 18px
+
+   dd
+    p
+      margin-bottom: 20px
+
+  .measures
+    padding: 20px 0 20px 0
+    margin-top: 50px
+
+    h2
+      margin-top: 0
+
+    .measures-text
+      width: 318.5px
+      height: 128.5px

@@ -8,9 +8,8 @@ let jsSrcRoot  = path.resolve(_config.srcRoot, 'js'),
     jsDistRoot = path.resolve(_config.distRoot, 'js');
 
 function makeCompiler(name, entryConfig) {
-    if (!entryConfig) {
-        entryConfig = {};
-        entryConfig[name] = (name + '.js');
+    if ((typeof entryConfig === 'undefined') || (Object.keys(entryConfig).length === 0)) {
+        return;
     }
 
     return Object.assign({
@@ -42,20 +41,22 @@ pageList.forEach((pageName) => {
         let pageScript = fs.readdirSync(pageRoot);
 
         if (pageScript.length) {
-            compilerList.push(
-                makeCompiler(
-                    pageName,
-                    (() => {
-                        let result = {};
-                        pageScript.forEach((scriptName) => {
-                            if (_config.buildAll || (scriptName.match(/\.module\.js$/gi) === null)) {
-                                result[scriptName.replace(/^(.+?)\..*$/g, '$1')] = scriptName;
-                            }
-                        });
-                        return result;
-                    })()
-                )
+            let compiler = makeCompiler(
+                pageName,
+                (() => {
+                    let result = {};
+                    pageScript.forEach((scriptName) => {
+                        if (_config.buildAll || (scriptName.match(/\.module\.js$/gi) === null)) {
+                            result[scriptName.replace(/^(.+?)\..*$/g, '$1')] = scriptName;
+                        }
+                    });
+                    return result;
+                })()
             );
+
+            if (compiler) {
+                compilerList.push(compiler);
+            }
         }
     }
 });

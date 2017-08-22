@@ -1,6 +1,7 @@
 'use strict';
 
 $(() => {
+    let $body = $('body');
     let $doc = $(document);
 
     let page = {
@@ -19,7 +20,45 @@ $(() => {
         },
 
         initBanner: function() {
-            $doc.on('scroll', function(e) {
+            let whellLock = false;
+
+            // click event
+            $body.on('click', '.banner-scrollbtn', ()=> {
+                whellLock = true;
+                $body.stop().animate({
+                    scrollTop: window.innerHeight
+                }, 500, () => {
+                    whellLock = false;
+                });
+            });
+
+            // mouse wheel scroll
+            $body.on('mousewheel', function(e) {
+                if (whellLock) {
+                    e.preventDefault();
+                    return false;
+                }
+
+                if ($body.scrollTop() < window.innerHeight) {
+                    // at banner
+
+                    whellLock = true;
+                    if (e.originalEvent.deltaY > 0) {
+                        // wheel scroll down
+                        $body.stop().animate({
+                            scrollTop: window.innerHeight
+                        }, 500, () => {
+                            whellLock = false;
+                        });
+                    } else {
+                        // wheel scroll up
+                        $body.stop().animate({
+                            scrollTop: 0
+                        }, 500, () => {
+                            whellLock = false;
+                        });
+                    }
+                }
             });
         },
 
@@ -29,7 +68,8 @@ $(() => {
                 autoplaySpeed: 5000,
                 arrows: false,
                 dots: true,
-                infinite: true
+                infinite: true,
+                lazyLoad: 'ondemand'
             });
         },
 
@@ -56,7 +96,7 @@ $(() => {
         },
 
         initGoal: function() {
-            $doc.on('scroll', (e) => {
+            $doc.on('scroll', () => {
                 this.eles.goalBlock.css({
                     'background-position': '0 ' + (this.eles.goalBlock[0].getBoundingClientRect().top / 20).toString() + 'px'
                 });

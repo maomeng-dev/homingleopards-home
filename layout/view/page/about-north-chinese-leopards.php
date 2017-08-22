@@ -30,7 +30,7 @@
         <div class="wrap">
             <h1>华北豹是什么？</h1>
             <p class="page-text">豹，民间俗称金钱豹，在中国，有四个亚种，分别是华北亚种（Panthera pardus japonensis）、印度亚种（Panthera pardus fusca）、印支亚种（Panthera pardus delacouri）和东北亚种（Panthera pardus orientalis）。其中，华北亚种与华南虎一样，是仅生活于中国的特有亚种，国际上又称中国豹。</p>
-            <i class="fa fa-angle-down fa-4x" aria-hidden="true"></i>
+            <i class="banner-scrollbtn fa fa-angle-down fa-4x" aria-hidden="true"></i>
         </div>
         <div class="mask"></div>
     </div>
@@ -40,24 +40,25 @@
     <div class="block distribution">
         <div class="wrap">
             <h2>华北豹的分布</h2>
+
             <ul class="distribution-slide">
                 <li class="distribution-slide-item">
-                    <img src="https://unsplash.it/1280/720/?random&_v=0" alt="img">
+                    <img src="<? fe('/img/page/about-north-chinese-leopards/loading.gif') ?>" data-lazy="https://unsplash.it/1280/720/?random&_v=0" alt="image">
                 </li>
                 <li class="distribution-slide-item">
-                    <img src="https://unsplash.it/1280/720/?random&_v=1" alt="img">
+                    <img src="<? fe('/img/page/about-north-chinese-leopards/loading.gif') ?>" data-lazy="https://unsplash.it/1280/720/?random&_v=1" alt="image">
                 </li>
                 <li class="distribution-slide-item">
-                    <img src="https://unsplash.it/1280/720/?random&_v=2" alt="img">
+                    <img src="<? fe('/img/page/about-north-chinese-leopards/loading.gif') ?>" data-lazy="https://unsplash.it/1280/720/?random&_v=2" alt="image">
                 </li>
                 <li class="distribution-slide-item">
-                    <img src="https://unsplash.it/1280/720/?random&_v=3" alt="img">
+                    <img src="<? fe('/img/page/about-north-chinese-leopards/loading.gif') ?>" data-lazy="https://unsplash.it/1280/720/?random&_v=3" alt="image">
                 </li>
                 <li class="distribution-slide-item">
-                    <img src="https://unsplash.it/1280/720/?random&_v=4" alt="img">
+                    <img src="<? fe('/img/page/about-north-chinese-leopards/loading.gif') ?>" data-lazy="https://unsplash.it/1280/720/?random&_v=4" alt="image">
                 </li>
                 <li class="distribution-slide-item">
-                    <img src="https://unsplash.it/1280/720/?random&_v=5" alt="img">
+                    <img src="<? fe('/img/page/about-north-chinese-leopards/loading.gif') ?>" data-lazy="https://unsplash.it/1280/720/?random&_v=5" alt="image">
                 </li>
             </ul>
 
@@ -97,17 +98,17 @@
             <li class="pull-left">
                 <h3>过度开发</h3>
                 <p class="page-text">对华北豹现存或潜在栖息地进行的不当开发，以及迅速扩张的公路使华北豹的栖息地剧烈缩减，相互隔绝，是华北豹种群“孤岛化”的最大威胁。</p>
-                <img src="<? fe('/img/page/about-north-chinese-leopards/problem-1.jpg') ?>" alt="过度开发">
+                <img src="<? fe('/img/page/about-north-chinese-leopards/loading.gif') ?>" data-lazysrc="<? fe('/img/page/about-north-chinese-leopards/problem-1.jpg') ?>" alt="过度开发">
             </li>
             <li class="pull-left">
                 <h3>非法盗猎</h3>
                 <p class="page-text">由于野生动物消费(皮毛制品及口腹之欲)、狩猎而起的非法盗猎，直接威胁到华北豹及其猎物的生存。非法盗猎的形式包括电击、猎套、猎夹、地枪、歼灭性围猎、网捕等。</p>
-                <img src="<? fe('/img/page/about-north-chinese-leopards/problem-2.jpg') ?>" alt="非法盗猎">
+                <img src="<? fe('/img/page/about-north-chinese-leopards/loading.gif') ?>" data-lazysrc="<? fe('/img/page/about-north-chinese-leopards/problem-2.jpg') ?>" alt="非法盗猎">
             </li>
             <li class="pull-left">
                 <h3>人兽冲突</h3>
                 <p class="page-text">豹吃家畜是导致村民与豹发生冲突的主要诱因，因吃牛而被毒杀或猎杀是华北豹的直接致危因素；村民因防止野猪吃庄稼而采取的猎杀行为也会对豹造成生存威胁。</p>
-                <img src="<? fe('/img/page/about-north-chinese-leopards/problem-3.jpg') ?>" alt="过度开发">
+                <img src="<? fe('/img/page/about-north-chinese-leopards/loading.gif') ?>" data-lazysrc="<? fe('/img/page/about-north-chinese-leopards/problem-3.jpg') ?>" alt="过度开发">
             </li>
         </ul>
     </div>
