@@ -21,7 +21,9 @@
 
 <a class="index-coverpic" href="https://weibo.com/ttarticle/p/show?id=2309404098266164782974" target="_blank" title="带豹回家网站即将上线">带豹回家网站即将上线</a>
 
-<? include VIEW_PATH . '/layout/footer.php' ?>
+<footer>
+    <i class="fa fa-code" aria-hidden="true" style="color: royalblue;"></i> with <i class="fa fa-heart" aria-hidden="true" style="color:indianred;"></i> by CFCA-Dev-Team.&copy; 2017-<? echo date("o") ?> .
+</footer>
 
 <? include VIEW_PATH . '/layout/foot-res.php' ?>
 

@@ -1,5 +1,6 @@
 @import "../base.styl"
 
+/* animation */
 $keyframe-pointdown = pointdown
 @keyframes {$keyframe-pointdown}
   0%
@@ -9,6 +10,7 @@ $keyframe-pointdown = pointdown
   100%
     padding-bottom: 0
 
+/* page commons */
 html,
 body
   height: 100%
@@ -16,11 +18,8 @@ body
   background-color: #000
   font-family: $font-sans
 
-footer
-  display: none
-
 .content
-  height: 100%
+  min-height: 100%
   padding-top: 100vh
 
   h2
@@ -28,12 +27,28 @@ footer
     font-size: 45px
     text-align: center
 
-.wrap
-  position: relative
-  max-width: 1280px
-  padding: 0 10px
-  margin: 0 auto
+.pull-left
+  float: left !important
 
+.pull-right
+  float: right !important
+
+.clearfix
+  &:after
+    content: ''
+    display: block
+    width: 0
+    height: 0
+    font-size: 0
+    clear: both
+    overflow: hidden
+
+.page-text
+  color: #777c80
+  font-size: 24px
+  line-height: 1.5
+
+/* page blocks */
 .banner
   position: absolute
   top: 0
@@ -42,7 +57,7 @@ footer
   left: 0
   background-image: url($imgDir/page/about-north-chinese-leopards/banner.jpg)
   background-size: cover
-  background-position: 50% 50%
+  background-position: 75% 50%
   z-index: 10
 
   h1
@@ -58,18 +73,17 @@ footer
   p
     position: absolute
     top: 50%
-    font-size: 24px
-    line-height: 35px
+    color: #fff
 
   i
     position: absolute
     bottom: 12%
     left: 50%
     transform: translateX(-50%)
-    animation-name: $keyframe-pointdown;
-    animation-duration: 2s;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
+    animation-name: $keyframe-pointdown
+    animation-duration: 2s
+    animation-timing-function: ease-in-out
+    animation-iteration-count: infinite
 
   .wrap
     height: 100%
@@ -81,24 +95,22 @@ footer
     right: 0
     bottom: 0
     left: 0
-    background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 1)));
-    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
-    background: -moz-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
-    background: -o-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
-    background: -ms-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0,1));
-    background: linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
-    background-color: rgba(0, 0, 0, 0);
+    background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 1)))
+    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1))
+    background: -moz-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1))
+    background: -o-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1))
+    background: -ms-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1))
+    background: linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1))
+    background-color: rgba(0, 0, 0, 0)
 
 .distribution
-  p
-    color: #777c80
-    font-size: 24px
-    line-height: 35px
+  img
+    display: block
+    width: 100%
 
   .distribution-slide
     position: relative
     width: 100%
-    height: 720px
     margin-bottom: 70px
     overflow: hidden
 
@@ -132,3 +144,218 @@ footer
           opacity: .5
           cursor: pointer
 
+.value
+  .value-wrap
+    position: relative
+    overflow: hidden
+    cursor: default
+
+    .wrap
+      position: relative
+      display: flex
+      z-index: 2
+
+    .value-wrap-bg
+      position: absolute
+      top: 0
+      right: 0
+      bottom: 0
+      left: 0
+      display: flex
+      z-index: 0
+
+      &:before
+        content: ''
+        width: 50%
+        background-color: #ffc52d
+
+      &:after
+        content: ''
+        width: 50%
+        background-color: #ffae00
+
+    .value-wrap-border
+      position: absolute
+      top: 50%
+      left: 50%
+      display: flex
+      width: 100%
+      height: 200%
+      transform: translate(-50%, -50%) rotate(20deg)
+      z-index: 1
+      transition: left .5s
+
+      &:before
+        content: ''
+        display: block
+        width: 50%
+        height: 100%
+        background-color: #ffc52d
+
+      &:after
+        content: ''
+        display: block
+        width: 50%
+        height: 100%
+        background-color: #ffae00
+
+    .value-wrap-block
+      width: 50%
+      padding: 45px 25px 60px 25px
+      box-sizing: border-box
+
+      &:first-child
+        padding-right: 100px
+
+      &:last-child
+        padding-left: 100px
+
+      h3
+        margin-bottom: 25px
+        color: #000
+        font-size: 30px
+        padding-left: 24px
+        background-image: url($imgDir/page/about-north-chinese-leopards/sprites.png)
+        background-image: -webkit-image-set(url($imgDir/page/about-north-chinese-leopards/sprites.png) 1x, url($imgDir/page/about-north-chinese-leopards/sprites@2x.png) 2x)
+        background-repeat: no-repeat
+        background-position: 0 -35px
+
+      p
+        color: #46352a
+        font-size: 22px
+
+  .value-left
+    .value-wrap-border
+      left: 51%
+
+  .value-right
+    .value-wrap-border
+      left: 49%
+
+.problem
+  li
+    width: 30%
+    opacity: .75
+    transition: opacity .5s
+
+    &:hover
+      opacity: 1
+
+    &:nth-child(2)
+      margin: 0 5%
+
+    h3
+      margin-bottom: 20px
+      color: #ffa200
+      font-size: 30px
+
+    p
+      height: 180px
+      margin-bottom: 40px
+      color: #777c80
+      font-size: 24px
+      line-height: 1.5
+
+    img
+      display: block
+      width: 100%
+
+.goal
+  width: 100%
+  height: 600px
+  margin-top: 115px
+  background-image: url($imgDir/page/about-north-chinese-leopards/banner-goal.jpg)
+  background-attachment: fixed
+  background-size: cover
+  background-position: 50% 50%
+
+  h2
+    margin: 0
+    padding: 70px 0 40px 0
+    font-family: "PingFangSC-Medium", $font-sans
+
+  h3
+    text-align: center
+    margin-bottom: 28px
+
+    span
+      display: inline-block
+      height: 55px
+      padding: 0 20px
+      background-color: #000
+      color: #fc0
+      font-size: 30px
+      line-height: 55px
+
+  p
+    color: #3a4044
+
+.project
+  h2
+    text-align: center
+
+    span
+      display: inline-block
+      height: 86px
+      padding: 0 35px
+      font-size: 32px
+      line-height: 86px
+      border: 2px solid #fc0
+
+  dt
+    padding-left: 24px
+    margin-bottom: 15px
+    color: #ffa200
+    font-size: 30px
+    background-image: url($imgDir/page/about-north-chinese-leopards/sprites.png)
+    background-image: -webkit-image-set(url($imgDir/page/about-north-chinese-leopards/sprites.png) 1x, url($imgDir/page/about-north-chinese-leopards/sprites@2x.png) 2x)
+    background-repeat: no-repeat
+    background-position: 0 0
+
+  dd
+    p
+      margin-bottom: 45px
+
+.measures
+  padding: 80px 0 45px 0
+  margin-top: 100px
+  background-color: #0a0a0a
+
+  h2
+    margin-top: 0
+    color: #ffc000
+
+  .measures-text
+    width: 637px
+    height: 257px
+    margin: 0 auto
+    font-size: 0
+    background-image: url($imgDir/page/about-north-chinese-leopards/bottom-text.png)
+    background-size: 100% 100%
+    background-repeat: no-repeat
+
+/* responsive styles */
+@media (max-width: 768px)
+  .page-text
+    font-size: 12px
+
+  .content
+    h2
+      margin: 35px 0
+      font-size: 22px
+
+  .banner
+    h1
+      font-size: 45px
+
+  .distribution
+    .distribution-slide
+      margin-bottom: 35px
+
+      .slick-dots
+        li
+          button
+            bottom: 15px
+            width: 6px
+            height: 6px
+            margin: 0 6px
