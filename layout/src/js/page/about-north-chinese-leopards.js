@@ -23,7 +23,7 @@ $(() => {
             let whellLock = false;
 
             // click event
-            $body.on('click', '.banner-scrollbtn', ()=> {
+            $body.on('click', '.banner-scrollbtn', () => {
                 whellLock = true;
                 $body.stop().animate({
                     scrollTop: window.innerHeight
@@ -33,7 +33,7 @@ $(() => {
             });
 
             // mouse wheel scroll
-            $body.on('mousewheel', function(e) {
+            $body.on('wheel', (e) => {
                 if (whellLock) {
                     e.preventDefault();
                     return false;
@@ -41,7 +41,6 @@ $(() => {
 
                 if ($doc.scrollTop() < window.innerHeight) {
                     // at banner
-
                     whellLock = true;
 
                     if ((e.originalEvent.deltaY || -e.originalEvent.wheelDelta) > 0) {
