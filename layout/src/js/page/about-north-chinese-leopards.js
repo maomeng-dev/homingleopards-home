@@ -1,5 +1,7 @@
 'use strict';
 
+let totop = require('../common/totop.module');
+
 $(() => {
     let $body = $('html, body');
     let $doc = $(document);
@@ -17,6 +19,8 @@ $(() => {
             this.initSlider();
             this.initValue();
             this.initGoal();
+
+            totop.init();
         },
 
         initBanner: function() {

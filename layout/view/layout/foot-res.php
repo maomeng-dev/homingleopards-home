@@ -1,4 +1,5 @@
 <script src="<? fe('/lib/jquery/jquery.min.js') ?>"></script>
+<script src="<? fe('/lib/ejs/ejs.min.js') ?>"></script>
 <script src="<? fe('/js/common/common.js') ?>"></script>
 
 <script>

@@ -27,7 +27,7 @@
 <div class="content">
     <!-- banner -->
     <div class="block banner">
-        <div class="wrap">
+        <div class="page-wrap">
             <h1>华北豹是什么？</h1>
             <p class="page-text">豹，民间俗称金钱豹，在中国，有四个亚种，分别是华北亚种（Panthera pardus japonensis）、印度亚种（Panthera pardus fusca）、印支亚种（Panthera pardus delacouri）和东北亚种（Panthera pardus orientalis）。其中，华北亚种与华南虎一样，是仅生活于中国的特有亚种，国际上又称中国豹。</p>
             <i class="banner-scrollbtn fa fa-angle-down fa-4x" aria-hidden="true"></i>
@@ -38,7 +38,7 @@
 
     <!-- distribution -->
     <div class="block distribution">
-        <div class="wrap">
+        <div class="page-wrap">
             <h2>华北豹的分布</h2>
 
             <ul class="distribution-slide">
@@ -74,7 +74,7 @@
     <div class="value">
         <h2>华北豹的保护价值</h2>
         <div class="value-wrap">
-            <div class="wrap">
+            <div class="page-wrap">
                 <div class="value-wrap-block" data-block="left">
                     <h3>生态价值</h3>
                     <p class="page-text">豹作为一种大型旗舰物种，其存在代表着高质量的环境和极高的生态价值。</p>
@@ -94,7 +94,7 @@
     <!-- problem -->
     <div class="problem">
         <h2>华北豹面临的保护问题</h2>
-        <ul class="wrap clearfix">
+        <ul class="page-wrap clearfix">
             <li class="pull-left">
                 <h3>过度开发</h3>
                 <p class="page-text">对华北豹现存或潜在栖息地进行的不当开发，以及迅速扩张的公路使华北豹的栖息地剧烈缩减，相互隔绝，是华北豹种群“孤岛化”的最大威胁。</p>
@@ -116,7 +116,7 @@
 
     <!-- goal -->
     <div class="goal">
-        <div class="wrap">
+        <div class="page-wrap">
             <h2>华北豹保护的最终目标</h2>
             <h3><span>以豹之名 修复华北荒野</span></h3>
             <p class="page-text">使已知的华北豹种群进一步稳定扩大，让华北豹的栖息地重新连接成片，使豹重新沿着太行山脉遍布山林，让华北的山地重现生机。</p>
@@ -128,7 +128,7 @@
     <div class="project">
         <h2><span>华北豹保护的长期项目</span></h2>
 
-        <dl class="wrap">
+        <dl class="page-wrap">
             <dt>共建山西人豹安居城</dt>
             <dd>
                 <p class="page-text">以山西和顺县为试点，推动华北豹成为华北地区的生态名片和全国性的保护明星物种；推动华北豹保护常态化、本地化；把华北豹的核心栖息地纳入富有成效的保护地格局，发展围绕保护的环境友好型经济，使当地居民从保护中获益。</p>

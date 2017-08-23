@@ -6,7 +6,7 @@ let lazyload = {
     init: function(conf) {
         conf = conf || {};
         this.delay = conf.delay || 100;
-        this.distance = conf.distance || 10;
+        this.distance = conf.distance || 100;
 
         let scrollTimer = 0;
 
