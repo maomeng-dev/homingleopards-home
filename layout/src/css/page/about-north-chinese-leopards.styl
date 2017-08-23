@@ -79,6 +79,7 @@ body
     position: absolute
     bottom: 12%
     left: 50%
+    cursor: pointer
     transform: translateX(-50%)
     animation-name: $keyframe-pointdown
     animation-duration: 2s
@@ -334,8 +335,9 @@ body
     background-size: 100% 100%
     background-repeat: no-repeat
 
+
 /* responsive styles */
-@media (max-width: 768px)
+@media (max-width: 1024px)
   .page-text
     font-size: 14px
 
@@ -405,6 +407,8 @@ body
         font-size: 14px
 
   .goal
+    margin-top: 50px
+    background-attachment: scroll
     background-position: 50% 0 !important
 
     h3
