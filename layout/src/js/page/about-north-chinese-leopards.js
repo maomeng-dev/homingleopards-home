@@ -1,7 +1,7 @@
 'use strict';
 
 $(() => {
-    let $body = $('body');
+    let $body = $('html, body');
     let $doc = $(document);
 
     let page = {
@@ -39,11 +39,12 @@ $(() => {
                     return false;
                 }
 
-                if ($body.scrollTop() < window.innerHeight) {
+                if ($doc.scrollTop() < window.innerHeight) {
                     // at banner
 
                     whellLock = true;
-                    if (e.originalEvent.deltaY > 0) {
+
+                    if ((e.originalEvent.deltaY || -e.originalEvent.wheelDelta) > 0) {
                         // wheel scroll down
                         $body.stop().animate({
                             scrollTop: window.innerHeight
