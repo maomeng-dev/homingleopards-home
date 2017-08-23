@@ -98,17 +98,17 @@
             <li class="pull-left">
                 <h3>过度开发</h3>
                 <p class="page-text">对华北豹现存或潜在栖息地进行的不当开发，以及迅速扩张的公路使华北豹的栖息地剧烈缩减，相互隔绝，是华北豹种群“孤岛化”的最大威胁。</p>
-                <img src="<? fe('/img/page/about-north-chinese-leopards/loading.gif') ?>" data-lazysrc="<? fe('/img/page/about-north-chinese-leopards/problem-1.jpg') ?>" alt="过度开发">
+                <img src="<? fe('/img/page/about-north-chinese-leopards/loading.gif') ?>" data-lazysrc="/resource/image/2017/08/problem-1.jpg" alt="过度开发">
             </li>
             <li class="pull-left">
                 <h3>非法盗猎</h3>
                 <p class="page-text">由于野生动物消费(皮毛制品及口腹之欲)、狩猎而起的非法盗猎，直接威胁到华北豹及其猎物的生存。非法盗猎的形式包括电击、猎套、猎夹、地枪、歼灭性围猎、网捕等。</p>
-                <img src="<? fe('/img/page/about-north-chinese-leopards/loading.gif') ?>" data-lazysrc="<? fe('/img/page/about-north-chinese-leopards/problem-2.jpg') ?>" alt="非法盗猎">
+                <img src="<? fe('/img/page/about-north-chinese-leopards/loading.gif') ?>" data-lazysrc="/resource/image/2017/08/problem-2.jpg" alt="非法盗猎">
             </li>
             <li class="pull-left">
                 <h3>人兽冲突</h3>
                 <p class="page-text">豹吃家畜是导致村民与豹发生冲突的主要诱因，因吃牛而被毒杀或猎杀是华北豹的直接致危因素；村民因防止野猪吃庄稼而采取的猎杀行为也会对豹造成生存威胁。</p>
-                <img src="<? fe('/img/page/about-north-chinese-leopards/loading.gif') ?>" data-lazysrc="<? fe('/img/page/about-north-chinese-leopards/problem-3.jpg') ?>" alt="过度开发">
+                <img src="<? fe('/img/page/about-north-chinese-leopards/loading.gif') ?>" data-lazysrc="/resource/image/2017/08/problem-3.jpg" alt="过度开发">
             </li>
         </ul>
     </div>
