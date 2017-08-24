@@ -1,5 +1,5 @@
 <footer>
-    <div class="wrap clearfix">
+    <div class="page-wrap clearfix">
         <ul class="pull-right footer-link">
             <li><a href="#" target="_blank" title="我们是谁">我们是谁</a></li>
             <li><a href="#" target="_blank" title="联系我们">联系我们</a></li>

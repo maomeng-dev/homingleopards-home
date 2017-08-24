@@ -43,22 +43,16 @@
 
             <ul class="distribution-slide">
                 <li class="distribution-slide-item">
-                    <img src="<? fe('/img/page/about-north-chinese-leopards/loading.gif') ?>" data-lazy="https://unsplash.it/1280/720/?random&_v=0" alt="image">
+                    <img src="<? fe('/img/page/about-north-chinese-leopards/loading.gif') ?>" data-lazy="/resource/image/2017/08/20170815162414.jpg" alt="image">
                 </li>
                 <li class="distribution-slide-item">
-                    <img src="<? fe('/img/page/about-north-chinese-leopards/loading.gif') ?>" data-lazy="https://unsplash.it/1280/720/?random&_v=1" alt="image">
+                    <img src="<? fe('/img/page/about-north-chinese-leopards/loading.gif') ?>" data-lazy="/resource/image/2017/08/20170815162417.jpg" alt="image">
                 </li>
                 <li class="distribution-slide-item">
-                    <img src="<? fe('/img/page/about-north-chinese-leopards/loading.gif') ?>" data-lazy="https://unsplash.it/1280/720/?random&_v=2" alt="image">
+                    <img src="<? fe('/img/page/about-north-chinese-leopards/loading.gif') ?>" data-lazy="/resource/image/2017/08/20170815162420.jpg" alt="image">
                 </li>
                 <li class="distribution-slide-item">
-                    <img src="<? fe('/img/page/about-north-chinese-leopards/loading.gif') ?>" data-lazy="https://unsplash.it/1280/720/?random&_v=3" alt="image">
-                </li>
-                <li class="distribution-slide-item">
-                    <img src="<? fe('/img/page/about-north-chinese-leopards/loading.gif') ?>" data-lazy="https://unsplash.it/1280/720/?random&_v=4" alt="image">
-                </li>
-                <li class="distribution-slide-item">
-                    <img src="<? fe('/img/page/about-north-chinese-leopards/loading.gif') ?>" data-lazy="https://unsplash.it/1280/720/?random&_v=5" alt="image">
+                    <img src="<? fe('/img/page/about-north-chinese-leopards/loading.gif') ?>" data-lazy="/resource/image/2017/08/20170815162423.jpg" alt="image">
                 </li>
             </ul>
 
