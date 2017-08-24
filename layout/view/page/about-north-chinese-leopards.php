@@ -15,7 +15,7 @@
         window.__pageData.pageName = 'about-north-chinese-leopards';
     </script>
 
-    <link rel="stylesheet" type="text/css" href="<? fe('/lib/slick/slick.css') ?>"/>
+    <link rel="stylesheet" type="text/css" href="<? fe('/lib/slick/slick.css') ?>" />
     <link rel="stylesheet" href="<? fe('/css/page/about-north-chinese-leopards.css') ?>">
 </head>
 
@@ -94,7 +94,7 @@
     <!-- problem -->
     <div class="problem">
         <h2>华北豹面临的保护问题</h2>
-        <ul class="page-wrap clearfix">
+        <ul class="page-wrap problem-textwrap clearfix">
             <li class="pull-left">
                 <h3>过度开发</h3>
                 <p class="page-text">对华北豹现存或潜在栖息地进行的不当开发，以及迅速扩张的公路使华北豹的栖息地剧烈缩减，相互隔绝，是华北豹种群“孤岛化”的最大威胁。</p>
@@ -108,6 +108,17 @@
             <li class="pull-left">
                 <h3>人兽冲突</h3>
                 <p class="page-text">豹吃家畜是导致村民与豹发生冲突的主要诱因，因吃牛而被毒杀或猎杀是华北豹的直接致危因素；村民因防止野猪吃庄稼而采取的猎杀行为也会对豹造成生存威胁。</p>
+                <img src="<? fe('/img/page/about-north-chinese-leopards/loading.gif') ?>" data-lazysrc="/resource/image/2017/08/problem-3.jpg" alt="过度开发">
+            </li>
+        </ul>
+        <ul class="page-wrap problem-picwrap clearfix">
+            <li class="pull-left">
+                <img src="<? fe('/img/page/about-north-chinese-leopards/loading.gif') ?>" data-lazysrc="/resource/image/2017/08/problem-1.jpg" alt="过度开发">
+            </li>
+            <li class="pull-left">
+                <img src="<? fe('/img/page/about-north-chinese-leopards/loading.gif') ?>" data-lazysrc="/resource/image/2017/08/problem-2.jpg" alt="非法盗猎">
+            </li>
+            <li class="pull-left">
                 <img src="<? fe('/img/page/about-north-chinese-leopards/loading.gif') ?>" data-lazysrc="/resource/image/2017/08/problem-3.jpg" alt="过度开发">
             </li>
         </ul>
