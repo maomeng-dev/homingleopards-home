@@ -1,7 +1,7 @@
 'use strict';
 
 let $doc = $(document);
-let $body = $('body');
+let $body = $('html, body');
 
 let totop = {
     init: function(conf) {
