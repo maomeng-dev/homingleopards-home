@@ -82,6 +82,42 @@ footer
       .fa
         font-size: 20px
 
+    .footer-layer-btn
+      position: relative
+      cursor: pointer
+
+      &:focus,
+      &:hover,
+      &:active
+        .footer-layer-wrap
+          display: block
+
+    .footer-layer-wrap
+      position: absolute
+      left: 50%
+      bottom: 32px
+      display: none
+      padding: 5px
+      background-color: #fff
+      border-radius: 4px
+      box-shadow: 0 0 5px 0 rgba(0, 0, 0, .5)
+      transform: translateX(-50%)
+
+      &:after
+        content: ''
+        position: absolute
+        bottom: -12px
+        left: 50%
+        display: block
+        width: 0
+        height: 0
+        border: 6px solid transparent
+        border-top-color: #fff;
+        transform: translateX(-50%)
+
+      img
+        display: block
+
   .footer-copyright
     color: #444
     font-size: 12px
