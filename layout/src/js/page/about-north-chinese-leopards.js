@@ -1,6 +1,7 @@
 'use strict';
 
 let totop = require('../common/totop.module');
+let passive = require('../common/passive.module');
 
 $(() => {
     let $body = $('html, body');
@@ -100,7 +101,7 @@ $(() => {
         },
 
         initGoal: function() {
-            $doc.on('scroll', () => {
+            passive.addPassiveEventListener($doc[0], 'scroll', () => {
                 this.eles.goalBlock.css({
                     'background-position': '0 ' + (this.eles.goalBlock[0].getBoundingClientRect().top / 20).toString() + 'px'
                 });

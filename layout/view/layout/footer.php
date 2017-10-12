@@ -8,7 +8,7 @@
             <li><a href="https://weibo.com/chinesefelid" target="_blank" title="微博主页" rel="noopener"><i class="fa fa-weibo" aria-hidden="true"></i></a></li>
         </ul>
         <div class="pull-left footer-copyright">
-            <p><i class="fa fa-code" aria-hidden="true"></i> with<i class="fa fa-heart" aria-hidden="true"></i> by CFCA-Dev-Team.</p>
+            <p><i class="fa fa-code" aria-hidden="true"></i> with <i class="fa fa-heart" aria-hidden="true"></i> by CFCA-Dev-Team.</p>
             <p>CFCA Copyright 2017-<? echo date("o") ?>. All rights reserved.</p>
             <p>京ICP备17044153号</p>
         </div>

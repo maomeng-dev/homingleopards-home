@@ -1,5 +1,7 @@
 'use strict';
 
+let passive = require('./passive.module');
+
 let $doc = $(document);
 let $body = $('html, body');
 
@@ -13,7 +15,7 @@ let totop = {
         this.template = '<a class="page-totop" style="display: none;"><i class="fa fa-chevron-up" aria-hidden="true"></i><span>返回顶部</span></a>';
         this.element = $(ejs.render(this.template));
 
-        $doc.on('scroll resize', () => {
+        passive.addPassiveEventListener($doc[0], 'scroll resize', () => {
             this.check();
         });
 
