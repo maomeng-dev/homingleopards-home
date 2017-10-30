@@ -21,8 +21,6 @@
 
 <body>
 
-<? include VIEW_PATH . '/layout/header.php' ?>
-
 <!-- content wrap -->
 <div class="content">
     <!-- banner -->
