@@ -1,39 +1,15 @@
-body
-  padding: 0
-  margin: 0
+.banner
+  position: relative
+  width: 100%
+  height: 0
+  padding-bottom: 50%
+  z-index: 0
 
-footer
-  position: fixed
-  right: 0
-  bottom: 0
-  height: 12px
-  padding: 5px 10px
-  background-color: rgba(255, 255, 255, .6)
-  border-top-left-radius: 5px
-  font-size: 12px
-  line-height: 1
-
-.index-coverpic
-  position: fixed
-  left: 0
-  right: 0
-  top: 0
-  bottom: 0
-  display: block
-  font-size: 0
-  background-image: url(/layout/dist/img/coming_soon.jpg)
-  background-repeat: no-repeat
-  background-position: 50% 25%
-  background-size: cover
-  animation: 10s 1s forwards
-  animation-name: pic-scale
-  transform: scale(1.05)
-
-@keyframes pic-scale {
-  from {
-    transform: scale(1.05)
-  }
-  to {
-    transform: scale(1)
-  }
-}
+  img
+    position: absolute
+    top: 0
+    right: 0
+    bottom: 0
+    left: 0
+    display: block
+    width: 100%
