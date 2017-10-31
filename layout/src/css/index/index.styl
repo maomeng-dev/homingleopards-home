@@ -15,7 +15,6 @@
     width: 100%
 
 .intro
-  padding: 200px 0 140px 0
   background-color: #fff
 
   h2
@@ -29,3 +28,113 @@
     color: #272727
     font-size: 26px
     line-height: 35px
+
+  .intro-organization
+    padding: 200px 0 140px 0
+
+  .intro-primer
+    padding: 128px 0 110px 0
+    background-color: #050505
+
+    p
+      width: 660px
+      color: #a6a6a6
+      font-size: 22px
+
+  .intro-member
+    padding: 142px 0 125px 0
+    background-color: #ffb400
+
+    p
+      color: #272727
+      font-size: 22px
+    a
+      color: #272727
+
+.contribute
+  position: relative
+  height: 640px
+  background-color: #fff
+
+  h2
+    padding: 77px 0 40px 0
+    color: #272727
+    font-size: 50px
+    text-align: center
+
+  p
+    color: #272727
+    font-size: 30px
+    text-align: center
+    line-height: 40px
+
+  a
+    position: absolute
+    bottom: 80px
+    left: 50%
+    padding: 22px 42px
+    margin: auto
+    background-color: #ffc000
+    color: #282828
+    font-size: 28px
+    cursor: pointer
+    transform: translateX(-50%)
+    transition: opacity .2s
+
+    &:hover,
+    &:focus
+      opacity: .6
+
+.gallery
+  h2
+    padding: 80px 0 50px 0
+    color: #e2e2e2
+    font-size: 30px
+    text-align: center
+
+  .gallery-list
+    display: flex
+    width: 1355px
+    padding-bottom: 35px
+    margin: 0 auto
+    flex-wrap: wrap
+    justify-content: space-between
+
+    .gallery-item
+      position: relative
+      width: 185px
+      height: 185px
+      margin-bottom: 10px
+      overflow: hidden
+
+      &:hover,
+      &:focus
+        .gallery-item-desc
+          bottom: 0
+
+      .gallery-item-desc
+        position: absolute
+        right: 0
+        bottom: -72px
+        left: 0
+        height: 40px
+        padding: 16px 0
+        background-color: rgba(0, 0, 0, .5)
+        overflow: hidden
+        transition: bottom .2s
+
+        span
+          display: block
+          width: 100%
+          line-height: 20px
+          text-align: center
+          text-overflow: ellipsis
+          white-space: nowrap
+          overflow: hidden
+
+        .gallery-item-title
+          font-size: 16px
+
+        .gallery-item-text
+          font-size: 12px
+
