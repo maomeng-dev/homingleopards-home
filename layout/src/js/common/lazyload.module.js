@@ -12,12 +12,17 @@ let lazyload = {
 
         $doc.on('scroll resize', () => {
             clearTimeout(scrollTimer);
-
             scrollTimer = setTimeout(() => {
-                $.each($('[data-lazysrc]'), (index, element) => {
-                    this.check(element);
-                });
+                this.lazy();
             }, this.delay);
+        });
+
+        this.lazy();
+    },
+
+    lazy: function() {
+        $.each($('[data-lazysrc]'), (index, element) => {
+            this.check(element);
         });
     },
 
