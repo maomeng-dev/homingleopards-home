@@ -1,5 +1,5 @@
 <header class="clearfix">
-    <div class="header-logo">CFCA</div>
+    <div class="header-logo"><a href="/" title="带豹回家">带豹回家</a></div>
     <ul class="header-menu">
         <li><a class="active" href="#" title="猫盟介绍">猫盟介绍</a></li>
         <li><a href="#" title="我们在募捐">我们在募捐</a></li>

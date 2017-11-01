@@ -256,7 +256,16 @@
     .gallery-list
       display: block
       width: auto
-      padding: 0 25px
+      padding: 0 15px 15px 15px
+
+      &:after
+        content: ''
+        display: block
+        width: 0
+        height: 0
+        font-size: 0
+        clear: both
+        overflow: hidden
 
       .gallery-item
         float: left
