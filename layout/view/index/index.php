@@ -86,7 +86,7 @@
     <!-- gallery -->
     <div class="gallery">
         <h2>了解更多信息，更懂动物保护</h2>
-        <ul class="gallery-list">
+        <ul class="gallery-list clearfix">
             <li class="gallery-item">
                 <img src="http://via.placeholder.com/185.png?text=Loading..." data-lazysrc="https://picsum.photos/185/185/?random&gallery=0" alt="图片标题&#13;Binomial Nomenclature">
                 <div class="gallery-item-desc" title="图片标题&#13;Binomial Nomenclature">

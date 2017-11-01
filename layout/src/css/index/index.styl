@@ -63,7 +63,7 @@
   p
     color: #272727
     font-size: 26px
-    line-height: 35px
+    line-height: 1.35
 
   .intro-organization
     position: relative
@@ -79,7 +79,7 @@
     padding: 128px 0 110px 0
     background: url($imgDir/index/intro-primer-bg.jpg) #050505 no-repeat
     background-size: contain
-    background-position: 100% 50%
+    background-position: 100% 100%
 
     p
       width: 660px
@@ -198,3 +198,70 @@
         .gallery-item-text
           font-size: 12px
 
+/* responsive styles */
+@media (max-width: 1024px)
+  .banner
+    .slick-dots
+      bottom: 20px
+
+      li
+        button
+          width: 20px
+          height: 2px
+
+  .intro
+    h2
+      font-size: 20px
+
+    p
+      font-size: 14px
+
+    .intro-organization
+      padding: 100px 0 70px 0
+
+    .intro-primer
+      p
+        position: relative
+        top: -100px
+        width: auto
+        font-size: 14px
+
+    .intro-member
+      padding: 70px 0 60px 0
+
+      p
+        font-size: 14px
+
+  .contribute
+    height: 320px
+
+    h2
+      font-size: 24px
+
+    p
+      font-size: 16px
+
+    a
+      bottom: 40px;
+      padding: 10px 20px;
+      font-size: 14px
+
+    .block-bg
+      height: 240px
+
+  .gallery
+    h2
+      font-size: 16px
+
+    .gallery-list
+      display: block
+      width: auto
+      padding: 0 25px
+
+      .gallery-item
+        float: left
+        width: 50%
+        height: auto
+        padding: 1%
+        margin: 0
+        box-sizing: border-box
