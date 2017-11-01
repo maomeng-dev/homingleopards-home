@@ -1,3 +1,17 @@
+@import "../base.styl"
+
+.block-content
+  position: relative
+  z-index: 1
+
+.block-bg
+  position: absolute
+  top: 0
+  right: 0
+  bottom: 0
+  left: 0
+  z-index: 0
+
 .banner
   position: relative
   width: 100%
@@ -15,8 +29,6 @@
     width: 100%
 
 .intro
-  background-color: #fff
-
   h2
     height: 45px
     padding-bottom: 52px
@@ -30,11 +42,20 @@
     line-height: 35px
 
   .intro-organization
+    position: relative
     padding: 200px 0 140px 0
+    background: url($imgDir/index/intro-organization-bg.jpg) #fff no-repeat
+    background-size: cover
+    background-position: 50% 50%
+
+    .block-bg
+      background-color: rgba(255, 255, 255, .5)
 
   .intro-primer
     padding: 128px 0 110px 0
-    background-color: #050505
+    background: url($imgDir/index/intro-primer-bg.jpg) #050505 no-repeat
+    background-size: contain
+    background-position: 100% 50%
 
     p
       width: 660px
@@ -43,7 +64,9 @@
 
   .intro-member
     padding: 142px 0 125px 0
-    background-color: #ffb400
+    background: url($imgDir/index/intro-member-bg.jpg) #ffb400 no-repeat
+    background-size: cover
+    background-position: 50% 50%
 
     p
       color: #272727
@@ -54,7 +77,9 @@
 .contribute
   position: relative
   height: 640px
-  background-color: #fff
+  background: url($imgDir/index/contribute-bg.jpg) #fff no-repeat
+  background-size: cover
+  background-position: 50% 50%
 
   h2
     padding: 77px 0 40px 0
@@ -79,11 +104,17 @@
     font-size: 28px
     cursor: pointer
     transform: translateX(-50%)
-    transition: opacity .2s
+    transition: background-color .2s
 
     &:hover,
     &:focus
-      opacity: .6
+      background-color: #ffde7b
+
+  .block-bg
+    bottom: auto
+    height: 435px
+    background: url($imgDir/index/contribute-mask.png) repeat-x
+    background-size: contain
 
 .gallery
   h2

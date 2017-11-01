@@ -15,7 +15,7 @@
         window.__pageData.pageName = 'index';
     </script>
 
-<!--    <link rel="stylesheet" type="text/css" href="--><?// fe('/lib/slick/slick.css') ?><!--" />-->
+    <!--    <link rel="stylesheet" type="text/css" href="--><? // fe('/lib/slick/slick.css') ?><!--" />-->
     <link rel="stylesheet" href="<? fe('/css/index/index.css') ?>">
 </head>
 
@@ -35,12 +35,15 @@
     <!-- intro -->
     <div class="intro">
         <div class="intro-block intro-organization">
-            <h2>中国猫科动物保护联盟（CFCA）简介</h2>
-            <div class="page-wrap">
-                <p>中国猫科动物保护联盟（CFCA）简称猫盟，是由几个生态爱好者和科学家共同成立的民间环保组织，这些年来一直在做一件事：研究和保护中国的野生猫科动动。</p>
-                <p><br></p>
-                <p>行走在山林里，猫盟的每一个人都像兽类一样安静，对移动的活物敏感，对各种动物痕迹敏感，摸爬滚打不在话下；离开山林，整理分析数据、写稿编视频、传播、设计制作周边……各有分工，每个人都是一支队伍。以下，逐一介绍一下猫盟的兄弟姐妹。</p>
+            <div class="block-content">
+                <h2>中国猫科动物保护联盟（CFCA）简介</h2>
+                <div class="page-wrap">
+                    <p>中国猫科动物保护联盟（CFCA）简称猫盟，是由几个生态爱好者和科学家共同成立的民间环保组织，这些年来一直在做一件事：研究和保护中国的野生猫科动动。</p>
+                    <p><br></p>
+                    <p>行走在山林里，猫盟的每一个人都像兽类一样安静，对移动的活物敏感，对各种动物痕迹敏感，摸爬滚打不在话下；离开山林，整理分析数据、写稿编视频、传播、设计制作周边……各有分工，每个人都是一支队伍。以下，逐一介绍一下猫盟的兄弟姐妹。</p>
+                </div>
             </div>
+            <div class="block-bg"></div>
         </div>
 
         <div class="intro-block intro-primer">
@@ -61,9 +64,12 @@
 
     <!-- contribute -->
     <div class="contribute">
-        <h2>您也可以贡献一份力量</h2>
-        <p>我们在腾讯公益发起了募捐，期待您的加入</p>
+        <div class="block-content">
+            <h2>您也可以贡献一份力量</h2>
+            <p>我们在腾讯公益发起了募捐，期待您的加入</p>
+        </div>
         <a>查看实时进度</a>
+        <div class="block-bg"></div>
     </div>
     <!--/contribute -->
 
@@ -182,7 +188,7 @@
 <? include VIEW_PATH . '/layout/foot-res.php' ?>
 
 <script src="<? fe('/lib/slick/slick.min.js') ?>"></script>
-<!--<script src="--><?// fe('/js/page/about-north-chinese-leopards.js') ?><!--"></script>-->
+<!--<script src="--><? // fe('/js/page/about-north-chinese-leopards.js') ?><!--"></script>-->
 
 </body>
 </html>
