@@ -15,7 +15,7 @@
         window.__pageData.pageName = 'index';
     </script>
 
-    <!--    <link rel="stylesheet" type="text/css" href="--><? // fe('/lib/slick/slick.css') ?><!--" />-->
+    <link rel="stylesheet" type="text/css" href="<? fe('/lib/slick/slick.css') ?>" />
     <link rel="stylesheet" href="<? fe('/css/index/index.css') ?>">
 </head>
 
@@ -28,7 +28,17 @@
 
     <!-- banner -->
     <div class="banner">
-        <img src="https://picsum.photos/1440/720/?random&i=0" alt="banner1">
+        <ul class="banner-slide">
+            <li class="banner-slide-item">
+                <img src=https://picsum.photos/1440/720/?random&i=0" alt="image">
+            </li>
+            <li class="banner-slide-item">
+                <img src=https://picsum.photos/1440/720/?random&i=1" alt="image">
+            </li>
+            <li class="banner-slide-item">
+                <img src=https://picsum.photos/1440/720/?random&i=2" alt="image">
+            </li>
+        </ul>
     </div>
     <!--/banner -->
 
@@ -188,7 +198,7 @@
 <? include VIEW_PATH . '/layout/foot-res.php' ?>
 
 <script src="<? fe('/lib/slick/slick.min.js') ?>"></script>
-<!--<script src="--><? // fe('/js/page/about-north-chinese-leopards.js') ?><!--"></script>-->
+<script src="<? fe('/js/index/index.js') ?>"></script>
 
 </body>
 </html>
