@@ -12,6 +12,13 @@
   left: 0
   z-index: 0
 
+[data-scroll-child]
+  opacity: 0
+  transition: all 1s
+
+  &.scroll-triggered
+    opacity: 1
+
 .banner
   position: relative
   width: 100%
@@ -50,8 +57,6 @@
         cursor: pointer
         transition: background-color .2s
 
-
-
 .intro
   h2
     height: 45px
@@ -73,13 +78,23 @@
     background-position: 50% 50%
 
     .block-bg
-      background-color: rgba(255, 255, 255, .5)
+      background-color: rgba(255, 255, 255, 0)
+      transition: background-color 1s
+
+    &.scroll-triggered
+      .block-bg
+        background-color: rgba(255, 255, 255, .5)
 
   .intro-primer
     padding: 128px 0 110px 0
     background: url($imgDir/index/intro-primer-bg.jpg) #050505 no-repeat
     background-size: contain
     background-position: 100% 100%
+    filter: grayscale(100%);
+    transition: filter 1s
+
+    &.scroll-triggered
+      filter: grayscale(0%);
 
     p
       width: 660px
@@ -97,6 +112,14 @@
       font-size: 22px
     a
       color: #272727
+
+    .page-wrap
+      opacity: 0
+      transition: opacity 1s
+
+    &.scroll-triggered
+      .page-wrap
+        opacity: 1
 
 .contribute
   position: relative
@@ -128,7 +151,7 @@
     font-size: 28px
     cursor: pointer
     transform: translateX(-50%)
-    transition: background-color .2s
+    transition: all .2s
 
     &:hover,
     &:focus
@@ -139,6 +162,12 @@
     height: 435px
     background: url($imgDir/index/contribute-mask.png) repeat-x
     background-size: contain
+    opacity: .75
+    transition: opacity 1s
+
+  &.scroll-triggered
+    .block-bg
+      opacity: 1
 
 .gallery
   h2

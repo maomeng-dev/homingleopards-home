@@ -1,5 +1,7 @@
 'use strict';
 
+let passive = require('./passive.module');
+
 let $doc = $(document);
 
 let lazyload = {
@@ -10,7 +12,7 @@ let lazyload = {
 
         let scrollTimer = 0;
 
-        $doc.on('scroll resize', () => {
+        passive.addPassiveEventListener($doc[0], 'scroll resize', () => {
             clearTimeout(scrollTimer);
             scrollTimer = setTimeout(() => {
                 this.lazy();

@@ -1,7 +1,7 @@
 'use strict';
 
 let totop = require('../common/totop.module');
-let passive = require('../common/passive.module');
+let scrollTrigger = require('../common/scrollTrigger.module');
 
 
 $(() => {
@@ -12,6 +12,7 @@ $(() => {
 
         init: function() {
             totop.init();
+            scrollTrigger.init();
 
             this.initSlider();
         },
