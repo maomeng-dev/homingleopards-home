@@ -25,9 +25,8 @@
 
 <!-- content wrap -->
 <div class="content">
-
     <!-- banner -->
-    <div class="banner">
+    <section class="banner">
         <ul class="banner-slide">
             <li class="banner-slide-item">
                 <img src=https://picsum.photos/1440/720/?random&i=0" alt="image">
@@ -39,11 +38,11 @@
                 <img src=https://picsum.photos/1440/720/?random&i=2" alt="image">
             </li>
         </ul>
-    </div>
+    </section>
     <!--/banner -->
 
     <!-- intro -->
-    <div class="intro">
+    <section class="intro">
         <div class="intro-block intro-organization" data-scroll>
             <div class="block-content">
                 <h2 data-scroll-child="500">中国猫科动物保护联盟（CFCA）简介</h2>
@@ -69,22 +68,22 @@
                 <p class="text-right"><a href="#">更多内容...</a></p>
             </div>
         </div>
-    </div>
+    </section>
     <!--/intro-->
 
     <!-- contribute -->
-    <div class="contribute" data-scroll>
+    <section class="contribute" data-scroll>
         <div class="block-content">
             <h2 data-scroll-child="1000">您也可以贡献一份力量</h2>
             <p data-scroll-child="1500">我们在腾讯公益发起了募捐，期待您的加入</p>
         </div>
         <a data-scroll-child="2000">查看实时进度</a>
         <div class="block-bg"></div>
-    </div>
+    </section>
     <!--/contribute -->
 
     <!-- gallery -->
-    <div class="gallery" data-scroll>
+    <section class="gallery" data-scroll>
         <h2>了解更多信息，更懂动物保护</h2>
         <ul class="gallery-list">
             <li class="gallery-item">
@@ -186,10 +185,8 @@
                 </div>
             </li>
         </ul>
-    </div>
+    </section>
     <!--/gallery -->
-
-
 </div>
 <!--/content wrap -->
 

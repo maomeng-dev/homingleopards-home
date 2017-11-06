@@ -52,14 +52,19 @@
 }
 
 /* page commons */
-html,
-body
+html
   height: 100%
   padding: 0
   margin: 0
   color: #e2e2e2
   background-color: #050505
   font-family: $font-sans
+
+body
+  position: relative
+  min-height: 100%
+  padding: 0 0 134px 0
+  box-sizing: border-box
 
 .pull-left
   float: left !important
@@ -146,6 +151,7 @@ header
     float: right
     height: 80px
     padding-right: 50px
+    font-size: 0
     line-height: 80px
 
     li
@@ -206,6 +212,10 @@ header
 
 /* footer */
 footer
+  position: absolute
+  right: 0
+  bottom: 0
+  left: 0
   padding: 40px 0
   color: #888
   font-size: 16px
@@ -287,12 +297,18 @@ footer
       font-size: 14px
       line-height: 40px
 
+      &:after
+        right: -10px
+        width: 10px
+        height: 40px
+
     .header-menu
       padding: 0 0 0 10px
       height: 40px
       line-height: 40px
       white-space: nowrap
-      overflow: auto
+      overflow-x: auto
+      overflow-y: hidden
 
       li
         a

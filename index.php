@@ -15,6 +15,10 @@ Flight::route('/', function(){
     Flight::render("index/index");
 });
 
+Flight::route('/gallery', function(){
+    Flight::render("gallery/gallery");
+});
+
 Flight::route('/pages/@page', function($page){
 	Flight::render("page/{$page}");
 });

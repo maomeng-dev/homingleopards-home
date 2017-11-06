@@ -21,21 +21,23 @@
 
 <body>
 
+<? include VIEW_PATH . '/layout/header.php' ?>
+
 <!-- content wrap -->
 <div class="content">
     <!-- banner -->
-    <div class="block banner">
+    <section class="block banner">
         <div class="page-wrap">
             <h1>华北豹是什么？</h1>
             <p class="page-text">豹，民间俗称金钱豹，在中国，有四个亚种，分别是华北亚种（Panthera pardus japonensis）、印度亚种（Panthera pardus fusca）、印支亚种（Panthera pardus delacouri）和东北亚种（Panthera pardus orientalis）。其中，华北亚种与华南虎一样，是仅生活于中国的特有亚种，国际上又称中国豹。</p>
             <i class="banner-scrollbtn fa fa-angle-down fa-4x" aria-hidden="true"></i>
         </div>
         <div class="mask"></div>
-    </div>
+    </section>
     <!--/banner -->
 
     <!-- distribution -->
-    <div class="block distribution">
+    <section class="block distribution">
         <div class="page-wrap">
             <h2>华北豹的分布</h2>
 
@@ -59,11 +61,11 @@
                 <p>然而，华北豹的分布目前还存在大量的调查空白地带，只有将所有潜在栖息地都调查到位，才能获知华北豹准确的分布现状。</p>
             </div>
         </div>
-    </div>
+    </section>
     <!--/distribution -->
 
     <!-- value -->
-    <div class="value">
+    <section class="value">
         <h2>华北豹的保护价值</h2>
         <div class="value-wrap">
             <div class="page-wrap">
@@ -80,11 +82,11 @@
             <div class="value-wrap-bg"></div>
             <div class="value-wrap-border"></div>
         </div>
-    </div>
+    </section>
     <!--/value -->
 
     <!-- problem -->
-    <div class="problem">
+    <section class="problem">
         <h2>华北豹面临的保护问题</h2>
         <ul class="page-wrap problem-textwrap clearfix">
             <li class="pull-left">
@@ -114,21 +116,21 @@
                 <img src="http://via.placeholder.com/760x466.png?text=Loading..." data-lazysrc="/resource/image/2017/08/problem-3.jpg" alt="过度开发">
             </li>
         </ul>
-    </div>
+    </section>
     <!--/problem -->
 
     <!-- goal -->
-    <div class="goal">
+    <section class="goal">
         <div class="page-wrap">
             <h2>华北豹保护的最终目标</h2>
             <h3><span>以豹之名 修复华北荒野</span></h3>
             <p class="page-text">使已知的华北豹种群进一步稳定扩大，让华北豹的栖息地重新连接成片，使豹重新沿着太行山脉遍布山林，让华北的山地重现生机。</p>
         </div>
-    </div>
+    </section>
     <!--/goal -->
 
     <!-- project -->
-    <div class="project">
+    <section class="project">
         <h2><span>华北豹保护的长期项目</span></h2>
 
         <dl class="page-wrap">
@@ -143,11 +145,11 @@
                 <p class="page-text">项目阶段性目标：让华北豹重返北京。 <br> 远期目标：不断改善太行山环境，恢复生物多样性。</p>
             </dd>
         </dl>
-    </div>
+    </section>
     <!--/project -->
 
     <!-- measures -->
-    <div class="measures">
+    <section class="measures">
         <h2>保护华北豹的日常</h2>
         <div class="measures-text">
             <p>不消费野生动物及制品</p>
@@ -155,7 +157,7 @@
             <p>山区行车注意避让，不惊扰野生动物</p>
             <p>文明生态游</p>
         </div>
-    </div>
+    </section>
     <!--/measures -->
 </div>
 <!--/content wrap -->
