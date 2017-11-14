@@ -34,7 +34,7 @@
                 <div class="subtitle text-center">Beijing</div>
                 <div class="cover">
                     <img src="https://picsum.photos/415/262/?random&alb=0" alt="">
-                    <span>北京位于华北平原北部，背靠燕山，毗邻天津市和河北省。北京的气候为典型的北温带半湿润大陆性季风气候。山里有好多好多野生动物。</span>
+                    <div class="album-text"><span>北京位于华北平原北部，背靠燕山，毗邻天津市和河北省。北京的气候为典型的北温带半湿润大陆性季风气候。山里有好多好多野生动物。</span></div>
                 </div>
             </li>
             <li class="album-item">
@@ -42,7 +42,7 @@
                 <div class="subtitle text-center">Beijing</div>
                 <div class="cover">
                     <img src="https://picsum.photos/415/262/?random&alb=1" alt="">
-                    <span>北京位于华北平原北部，背靠燕山，毗邻天津市和河北省。北京的气候为典型的北温带半湿润大陆性季风气候。山里有好多好多野生动物。</span>
+                    <div class="album-text"><span>北京位于华北平原北部，背靠燕山，毗邻天津市和河北省。北京的气候为典型的北温带半湿润大陆性季风气候。山里有好多好多野生动物。</span></div>
                 </div>
             </li>
             <li class="album-item">
@@ -50,7 +50,7 @@
                 <div class="subtitle text-center">Beijing</div>
                 <div class="cover">
                     <img src="https://picsum.photos/415/262/?random&alb=2" alt="">
-                    <span>北京位于华北平原北部，背靠燕山，毗邻天津市和河北省。北京的气候为典型的北温带半湿润大陆性季风气候。山里有好多好多野生动物。</span>
+                    <div class="album-text"><span>北京位于华北平原北部，背靠燕山，毗邻天津市和河北省。北京的气候为典型的北温带半湿润大陆性季风气候。山里有好多好多野生动物。</span></div>
                 </div>
             </li>
         </ul>

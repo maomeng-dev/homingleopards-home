@@ -18,7 +18,7 @@
     &:focus,
     &.active
       .cover
-        span
+        .album-text
           bottom: 0
           opacity: 1
 
@@ -39,7 +39,7 @@
         display: block
         width: 100%
 
-      span
+      .album-text
         position: absolute
         right: 0
         left: 0
@@ -51,9 +51,14 @@
         color: #3c2d22
         font-size: 14px
         line-height: 1.43
-        overflow: hidden;
+        overflow: hidden
         opacity: 0
         transition: all .2s
+
+        span
+          display: block
+          height: 60px
+          overflow: hidden
 
   .album-desc
     width: 1024px
@@ -154,7 +159,6 @@
         right: 14px
         bottom: 14px
         left: 14px
-        height: 50px
         padding: 8px 10px 10px 10px
         background-color: rgba(255, 180, 0, .9)
         color: #000
@@ -172,8 +176,82 @@
           display: block
           height: 40px
           font-size: 14px
-          line-height: 20px
+          line-height: 1.4
           overflow: hidden
 
+/* responsive styles */
+@media (max-width: 1024px)
+  .content
+    padding-top: 0
 
+  .album
+    margin: 20px auto 30px auto
 
+    .album-list
+      flex-wrap: wrap
+
+    .album-item
+      position: relative
+      width: 100%
+      margin-bottom: 20px
+
+      .title
+        position: absolute
+        top: 0
+        right: 0
+        left: 0
+        background-color: rgba(0, 0, 0, .5)
+        font-size: 18px
+        z-index: 1
+
+      .subtitle
+        display: none
+
+      .cover
+        .album-text
+          height: 34px
+          padding: 6px 4px
+          font-size: 12px
+
+          span
+            height: 34px
+
+    .album-desc
+      width: auto
+      margin: 0
+      font-size: 14px
+
+  .gallery
+    margin-bottom: 60px
+
+    .gallery-type
+      height: 24px
+
+      li
+
+        &:first-child
+          a
+            width: auto
+
+        a
+          width: auto
+          height: 14px
+          padding: 5px
+          font-size: 14px
+
+    .gallery-search
+      display: none
+
+    .gallery-list
+      li
+        width: 48%
+        height: auto
+        margin-bottom: 12px
+
+        div
+          .title
+            font-size: 12px
+
+          .desc
+            height: 32px
+            font-size: 12px
