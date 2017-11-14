@@ -15,12 +15,18 @@
     overflow: hidden
 
     &:hover,
-    &:focus,
-    &.active
+    &:focus
       .cover
         .album-text
           bottom: 0
           opacity: 1
+
+    &.active
+      .title
+        color: #ffb400
+        
+      .subtitle
+        color: #ffde7b
 
     .title
       font-size: 24px
