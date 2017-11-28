@@ -41,7 +41,12 @@ $keyframe-pointdown = pointdown
     font-family: "PingFangSC-Medium", $font-sans
     text-align: center
 
-  p
+  .page-cont
+    position: relative
+    width: 100%
+    height: 100%
+
+  .page-text
     position: absolute
     top: 50%
     color: #fff
@@ -407,14 +412,12 @@ $keyframe-pointdown = pointdown
         padding: 0 16px
         font-size: 24px
         line-height: 40px
-
-  .project
     dt
       font-size: 18px
 
-   dd
-    p
-      margin-bottom: 20px
+    dd
+      p
+        margin-bottom: 16px
 
   .measures
     padding: 20px 0 20px 0
