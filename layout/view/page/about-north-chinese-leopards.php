@@ -43,16 +43,24 @@
 
             <ul class="distribution-slide">
                 <li class="distribution-slide-item">
-                    <img src="http://via.placeholder.com/1280x720.png?text=Loading..." data-lazy="/resource/image/2017/08/20170815162414.jpg" alt="image">
+                    <img src="http://via.placeholder.com/1280x720.png?text=Loading..." data-lazy="/resource/image/2017/08/slide-1.jpg" alt="分布区域图">
+                    <span>分布区域图</span>
                 </li>
                 <li class="distribution-slide-item">
-                    <img src="http://via.placeholder.com/1280x720.png?text=Loading..." data-lazy="/resource/image/2017/08/20170815162417.jpg" alt="image">
+                    <img src="http://via.placeholder.com/1280x720.png?text=Loading..." data-lazy="/resource/image/2017/08/slide-2.jpg" alt="冬季的华北山地">
+                    <span>冬季的华北山地</span>
                 </li>
                 <li class="distribution-slide-item">
-                    <img src="http://via.placeholder.com/1280x720.png?text=Loading..." data-lazy="/resource/image/2017/08/20170815162420.jpg" alt="image">
+                    <img src="http://via.placeholder.com/1280x720.png?text=Loading..." data-lazy="/resource/image/2017/08/slide-3.jpg" alt="华北豹生活的山地和食物">
+                    <span>华北豹生活的山地和食物</span>
                 </li>
                 <li class="distribution-slide-item">
-                    <img src="http://via.placeholder.com/1280x720.png?text=Loading..." data-lazy="/resource/image/2017/08/20170815162423.jpg" alt="image">
+                    <img src="http://via.placeholder.com/1280x720.png?text=Loading..." data-lazy="/resource/image/2017/08/slide-4.jpg" alt="豹趴在太行山上">
+                    <span>豹趴在太行山上</span>
+                </li>
+                <li class="distribution-slide-item">
+                    <img src="http://via.placeholder.com/1280x720.png?text=Loading..." data-lazy="/resource/image/2017/08/slide-5.jpg" alt="在领地进行标记">
+                    <span>在领地进行标记</span>
                 </li>
             </ul>
 

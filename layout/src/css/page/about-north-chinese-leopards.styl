@@ -83,6 +83,8 @@ $keyframe-pointdown = pointdown
   .distribution-slide
     position: relative
     width: 100%
+    max-width: 1280px
+    max-height: 720px
     margin-bottom: 70px
     overflow: hidden
 
@@ -115,6 +117,19 @@ $keyframe-pointdown = pointdown
           font-size: 0
           opacity: .5
           cursor: pointer
+
+    .distribution-slide-item
+      position: relative
+
+      span
+        position: absolute
+        right: 0
+        bottom: 0
+        padding: 4px 8px
+        background-color: rgba(0, 0, 0, .4)
+        color: #fff
+        font-size: 12px
+        border-top-left-radius: 4px
 
 .value
   .value-wrap
@@ -313,7 +328,6 @@ $keyframe-pointdown = pointdown
     background-size: 100% 100%
     background-repeat: no-repeat
 
-
 /* responsive styles */
 @media (max-width: 1024px)
   .page-text
@@ -365,13 +379,13 @@ $keyframe-pointdown = pointdown
       .value-wrap-bg:before,
       .value-wrap-border:before,
       .value-wrap-border:after
-          background: none
+        background: none
 
   .problem
     li
       float: none !important
       width: auto
-      margin: 20px 0 0 0  !important
+      margin: 20px 0 0 0 !important
       padding: 0 0 20px 0
       border-bottom: 1px dashed #666
       opacity: 1
@@ -412,7 +426,7 @@ $keyframe-pointdown = pointdown
     dt
       font-size: 18px
 
-   dd
+  dd
     p
       margin-bottom: 20px
 
