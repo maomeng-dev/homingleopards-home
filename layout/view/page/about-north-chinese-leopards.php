@@ -30,7 +30,7 @@
         <div class="page-wrap">
             <div class="page-cont">
                 <h1>华北豹是什么？</h1>
-                <p class="page-text">豹，民间俗称金钱豹，在中国，有四个亚种，分别是华北亚种（Panthera pardus japonensis）、印度亚种（Panthera pardus fusca）、印支亚种（Panthera pardus delacouri）和东北亚种（Panthera pardus orientalis）。其中，华北亚种与华南虎一样，是仅生活于中国的特有亚种，国际上又称中国豹。</p>
+                <p class="page-text">豹，民间俗称金钱豹，在中国，有四个亚种，分别是华北亚种（<i class="text-italic">Panthera pardus japonensis</i>）、印度亚种（<i class="text-italic">Panthera pardus fusca</i>）、印支亚种（<i class="text-italic">Panthera pardus delacouri</i>）和东北亚种（<i class="text-italic">Panthera pardus orientalis</i>）。其中，华北亚种与华南虎一样，是仅生活于中国的特有亚种，国际上又称中国豹。</p>
                 <i class="banner-scrollbtn fa fa-angle-down fa-4x" aria-hidden="true"></i>
             </div>
         </div>
