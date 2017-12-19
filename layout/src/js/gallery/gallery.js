@@ -8,7 +8,7 @@ $(() => {
             slider: $('.banner-slide')
         },
 
-        init: function() {
+        init: function () {
             totop.init();
         }
     };

@@ -1,11 +1,11 @@
 'use strict';
 
-function Passive() {
+function Passive () {
     this.isSupport = (() => {
         let supportsPassive = false;
         try {
             let opts = Object.defineProperty({}, 'passive', {
-                get: function() {
+                get: function () {
                     supportsPassive = true;
                 }
             });
@@ -13,16 +13,16 @@ function Passive() {
         } catch (e) {
         }
         return supportsPassive;
-    })()
+    })();
 }
 
 Passive.prototype = {
     constructor: Passive,
 
-    addPassiveEventListener: function(element, event, handler) {
+    addPassiveEventListener: function (element, event, handler) {
         event = event || '';
         event.split(' ').forEach((eventName) => {
-            element.addEventListener(eventName, handler, this.isSupport ? {passive: true} : false);
+            element.addEventListener(eventName, handler, this.isSupport ? { passive: true } : false);
         });
     }
 };

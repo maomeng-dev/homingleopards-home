@@ -15,7 +15,7 @@ $(() => {
             goalBlock: $('.goal')
         },
 
-        init: function() {
+        init: function () {
             this.initBanner();
             this.initSlider();
             this.initValue();
@@ -24,7 +24,7 @@ $(() => {
             totop.init();
         },
 
-        initBanner: function() {
+        initBanner: function () {
             let whellLock = false;
 
             // click event
@@ -67,7 +67,7 @@ $(() => {
             });
         },
 
-        initSlider: function() {
+        initSlider: function () {
             this.eles.slider.slick({
                 autoplay: true,
                 autoplaySpeed: 5000,
@@ -78,12 +78,12 @@ $(() => {
             });
         },
 
-        initValue: function() {
+        initValue: function () {
             this.eles.valueWrap
                 .on('mouseenter', '.value-wrap-block', (e) => {
-                    let $target            = $(e.currentTarget),
+                    let $target = $(e.currentTarget),
                         targetClassElement = $(e.delegateTarget),
-                        targetClassName    = 'value-' + $target.attr('data-block');
+                        targetClassName = 'value-' + $target.attr('data-block');
 
                     if (!targetClassElement.hasClass(targetClassName)) {
                         targetClassElement
@@ -96,11 +96,11 @@ $(() => {
                     let $target = $(e.currentTarget);
                     $target
                         .removeClass('value-left')
-                        .removeClass('value-right')
+                        .removeClass('value-right');
                 });
         },
 
-        initGoal: function() {
+        initGoal: function () {
             passive.addPassiveEventListener($doc[0], 'scroll', () => {
                 this.eles.goalBlock.css({
                     'background-position': '0 ' + (this.eles.goalBlock[0].getBoundingClientRect().top / 20).toString() + 'px'

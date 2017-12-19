@@ -5,7 +5,7 @@ let passive = require('./passive.module');
 let $doc = $(document);
 
 let lazyload = {
-    init: function(conf) {
+    init: function (conf) {
         conf = conf || {};
         this.delay = conf.delay || 100;
         this.distance = conf.distance || 100;
@@ -22,19 +22,19 @@ let lazyload = {
         this.lazy();
     },
 
-    lazy: function() {
+    lazy: function () {
         $.each($('[data-lazysrc]'), (index, element) => {
             this.check(element);
         });
     },
 
-    check: function(element) {
+    check: function (element) {
         if (element.getBoundingClientRect().top - window.innerHeight < this.distance) {
             this.load(element);
         }
     },
 
-    load: function(element) {
+    load: function (element) {
         let $ele = $(element);
         $ele
             .attr({

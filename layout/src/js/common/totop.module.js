@@ -6,7 +6,7 @@ let $doc = $(document);
 let $body = $('html, body');
 
 let totop = {
-    init: function(conf) {
+    init: function (conf) {
         conf = conf || {};
         this.wrapWidth = conf.wrapWidth || 1440;
         this.className = conf.className || 'page-totop';
@@ -19,7 +19,7 @@ let totop = {
             this.check();
         });
 
-        this.element.on('click', function() {
+        this.element.on('click', function () {
             $body.stop().animate({
                 scrollTop: 0
             }, 500);
@@ -29,7 +29,7 @@ let totop = {
         this.check();
     },
 
-    check: function() {
+    check: function () {
         if (this.wrapWidth > window.innerWidth) {
             this.element.stop().fadeOut();
         } else {

@@ -3,21 +3,20 @@
 let totop = require('../common/totop.module');
 let scrollTrigger = require('../common/scrollTrigger.module');
 
-
 $(() => {
     let page = {
         eles: {
             slider: $('.banner-slide')
         },
 
-        init: function() {
+        init: function () {
             totop.init();
             scrollTrigger.init();
 
             this.initSlider();
         },
 
-        initSlider: function() {
+        initSlider: function () {
             this.eles.slider.slick({
                 autoplay: true,
                 autoplaySpeed: 5000,

@@ -4,9 +4,8 @@ let passive = require('./passive.module');
 
 let $doc = $(document);
 
-
 let scrollTrigger = {
-    init: function(conf) {
+    init: function (conf) {
         conf = conf || {};
         this.delay = conf.delay || 100;
         this.distance = conf.distance || 0;
@@ -23,7 +22,7 @@ let scrollTrigger = {
         this.check();
     },
 
-    check: function() {
+    check: function () {
         $.each($('[data-scroll]'), (index, element) => {
             let distance = this.distance || (window.innerHeight / 3);
             if (element.getBoundingClientRect().top - window.innerHeight < -distance) {
@@ -32,7 +31,7 @@ let scrollTrigger = {
         });
     },
 
-    trigger: function(element) {
+    trigger: function (element) {
         let $ele = $(element);
         $ele
             .addClass('scroll-triggered')
