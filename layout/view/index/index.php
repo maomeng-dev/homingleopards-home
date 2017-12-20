@@ -27,17 +27,17 @@
 <div class="content">
     <!-- banner -->
     <section class="banner">
-        <ul class="banner-slide">
-            <li class="banner-slide-item">
+        <div class="banner-slide">
+            <div class="banner-slide-item">
                 <img src=https://picsum.photos/1440/720/?random&i=0" alt="image">
-            </li>
-            <li class="banner-slide-item">
+            </div>
+            <div class="banner-slide-item">
                 <img src=https://picsum.photos/1440/720/?random&i=1" alt="image">
-            </li>
-            <li class="banner-slide-item">
+            </div>
+            <div class="banner-slide-item">
                 <img src=https://picsum.photos/1440/720/?random&i=2" alt="image">
-            </li>
-        </ul>
+            </div>
+        </div>
     </section>
     <!--/banner -->
 

@@ -43,28 +43,28 @@
         <div class="page-wrap">
             <h2>华北豹的分布</h2>
 
-            <ul class="distribution-slide">
-                <li class="distribution-slide-item">
+            <div class="distribution-slide">
+                <div class="distribution-slide-item">
                     <img src="http://via.placeholder.com/1280x720.png?text=Loading..." data-lazy="/resource/image/2017/08/slide-1.jpg" alt="分布区域图">
                     <span>分布区域图</span>
-                </li>
-                <li class="distribution-slide-item">
+                </div>
+                <div class="distribution-slide-item">
                     <img src="http://via.placeholder.com/1280x720.png?text=Loading..." data-lazy="/resource/image/2017/08/slide-2.jpg" alt="冬季的华北山地">
                     <span>冬季的华北山地</span>
-                </li>
-                <li class="distribution-slide-item">
+                </div>
+                <div class="distribution-slide-item">
                     <img src="http://via.placeholder.com/1280x720.png?text=Loading..." data-lazy="/resource/image/2017/08/slide-3.jpg" alt="华北豹生活的山地和食物">
                     <span>华北豹生活的山地和食物</span>
-                </li>
-                <li class="distribution-slide-item">
+                </div>
+                <div class="distribution-slide-item">
                     <img src="http://via.placeholder.com/1280x720.png?text=Loading..." data-lazy="/resource/image/2017/08/slide-4.jpg" alt="豹趴在太行山上">
                     <span>豹趴在太行山上</span>
-                </li>
-                <li class="distribution-slide-item">
+                </div>
+                <div class="distribution-slide-item">
                     <img src="http://via.placeholder.com/1280x720.png?text=Loading..." data-lazy="/resource/image/2017/08/slide-5.jpg" alt="在领地进行标记">
                     <span>在领地进行标记</span>
-                </li>
-            </ul>
+                </div>
+            </div>
 
             <div class="distribution-text page-text">
                 <p>华北豹分布在中国华北地区，随着近年实地调查的陆续开展，历史分布区内的太行山、太岳山、吕梁山、中条山、六盘山、秦岭等山系都已确认了华北豹种群的分布。</p>
