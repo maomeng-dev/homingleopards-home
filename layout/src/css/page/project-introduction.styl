@@ -242,7 +242,7 @@
     li
 
       img
-        width: 43%
+        width: 42%
 
       div
         width: 56%
@@ -252,3 +252,48 @@
 
         &:first-child
           margin-top: 0
+
+/* responsive styles */
+@media (max-width: 1024px)
+  .banner
+    .page-wrap
+      flex-direction: column-reverse
+      height: auto
+      background: none
+
+    .banner-text
+      width: 100%
+
+    .banner-photo
+      position: static
+      top: auto
+      right: auto
+
+  .intro
+    .intro-phase
+      .intro-phase-list
+        flex-wrap: wrap
+
+      .intro-phase-item
+        width: 100%
+        margin-bottom: 10px
+
+      .intro-phase-text
+        padding: 0
+
+    .intro-plan
+      overflow: auto
+
+      .intro-plan-bar
+        min-width: 720px
+
+    .intro-slide
+      flex-wrap: wrap
+
+      .intro-slide-container
+        width: 100%
+        margin-bottom: 10px
+
+      .intro-slide-item
+        img
+          width: 100%
