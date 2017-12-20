@@ -24,7 +24,7 @@
 <? include VIEW_PATH . '/layout/header.php' ?>
 
 <!-- content wrap -->
-<div class="content">
+<div class="content content-static">
 
     <!-- album -->
     <section class="album page-wrap">
