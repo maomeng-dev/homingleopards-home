@@ -51,7 +51,7 @@ $(() => {
                     if ((e.originalEvent.deltaY || -e.originalEvent.wheelDelta) > 0) {
                         // wheel scroll down
                         $body.stop().animate({
-                            scrollTop: window.innerHeight
+                            scrollTop: window.innerHeight + 5 // scroll more pixel to aviod scroll lock
                         }, 500, () => {
                             whellLock = false;
                         });
