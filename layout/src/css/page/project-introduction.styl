@@ -187,10 +187,34 @@
     flex-wrap: nowrap
 
     .intro-slide-container
+      display: flex
       flex-grow: 0
       flex-shrink: 0
+      align-items: center
       width: 480px
       margin-right: 40px
+
+      .intro-slide-item
+        outline: none
+
+      .slick-arrow
+        flex-grow: 0
+        flex-shrink: 0
+        display: flex
+        justify-content: center
+        align-items: center
+        width: 40px
+        height: 100%
+        cursor: pointer
+
+      .slick-list
+        flex-grow: 1
+        flex-shrink: 1
+
+      .page-text
+        padding-top: 5px
+        font-size: 14px
+        line-height: 1.4
 
     .intro-slide-detail
       h4
@@ -240,6 +264,10 @@
 
   .progress-content
     li
+      display: none
+
+      &.active
+        display: block
 
       img
         width: 42%
