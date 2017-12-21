@@ -24,6 +24,8 @@ $(() => {
         initSlider: function () {
             this.eles.introSlide.slick({
                 autoplay: true,
+                autoplaySpeed: 5000,
+                pauseOnHover: false,
                 dots: false,
                 prevArrow: '<a><i class="fa fa-chevron-left" aria-hidden="true"></i></a>',
                 nextArrow: '<a><i class="fa fa-chevron-right" aria-hidden="true"></i></a>',

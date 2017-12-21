@@ -55,18 +55,24 @@
                 <ol class="intro-phase-list">
                     <li class="intro-phase-item">
                         <img src="https://picsum.photos/400/300" alt="">
-                        <h4>第一阶段：找到豹子</h4>
-                        <p class="page-text">主要采用红外相机野外调查的方法，调查太行山北段华北豹的分布现状。</p>
+                        <div class="page-text">
+                            <h5><span>第一阶段：找到豹子</span></h5>
+                            <p>主要采用红外相机野外调查的方法，调查太行山北段华北豹的分布现状。</p>
+                        </div>
                     </li>
                     <li class="intro-phase-item">
                         <img src="https://picsum.photos/400/300" alt="">
-                        <h4>第二阶段：找到归路</h4>
-                        <p class="page-text">对太行山北段的预设扩散廊道上的考察点进行民间问卷调查，寻找有价值的线索并评估当地生物多样性质量，根据实际情况进行廊道路线修正，勾画出华北豹种群扩散的廊道。</p>
+                        <div class="page-text">
+                            <h5><span>第二阶段：找到归路</span></h5>
+                            <p>对太行山北段进行预设扩散廊道的走访调查，收集线索，评估当地生物多样性，并根据实际情况修正廊道路线，勾画华北豹种群扩散的廊道。</p>
+                        </div>
                     </li>
                     <li class="intro-phase-item">
                         <img src="https://picsum.photos/400/300" alt="">
-                        <h4>第三阶段：带豹回家</h4>
-                        <p class="page-text">利用猫科动物的扩散天性，让豹在自然状态下在畅通的生态廊道下扩散回京。</p>
+                        <div class="page-text">
+                            <h5><span>第三阶段：带豹回家</span></h5>
+                            <p>利用猫科动物的扩散天性，让豹在自然状态下在畅通的生态廊道下扩散回京。</p>
+                        </div>
                     </li>
                 </ol>
                 <p class="intro-phase-text page-text">
@@ -98,7 +104,7 @@
                     <div class="bar-border"></div>
                 </div>
                 <div class="intro-plan-img">
-                    <img src="https://picsum.photos/440/320" alt="">
+                    <img src="<? fe('/img/page/project-introduction/plan.jpg') ?>" alt="">
                 </div>
             </div>
 
@@ -106,24 +112,31 @@
             <div class="intro-slide">
                 <div class="intro-slide-container" id="introSlide">
                     <div class="intro-slide-item">
-                        <img src="https://picsum.photos/400/225" alt="">
+                        <img src="http://via.placeholder.com/400x225.png?text=Loading..." data-lazy="/resource/image/2017/12/intro-photo-1.jpg" alt="">
                         <div class="page-text">
                             <p>孟买西部山区的豹子俯瞰城区。</p>
                             <p>照片来源：Niket Surve/SGNP</p>
                         </div>
                     </div>
                     <div class="intro-slide-item">
-                        <img src="https://picsum.photos/400/225" alt="">
+                        <img src="http://via.placeholder.com/400x225.png?text=Loading..." data-lazy="/resource/image/2017/12/intro-photo-2.jpg" alt="">
                         <div class="page-text">
                             <p>美国加州，一只名叫P22的美洲狮生活在市郊的公园里。</p>
                             <p>图片来源：Steve Winter/blog.nwf.org</p>
                         </div>
                     </div>
                     <div class="intro-slide-item">
-                        <img src="https://picsum.photos/400/225" alt="">
+                        <img src="http://via.placeholder.com/400x225.png?text=Loading..." data-lazy="/resource/image/2017/12/intro-photo-3.jpg" alt="">
                         <div class="page-text">
                             <p>一头年轻的美洲狮趴在美国犹他州希伯城一户人家的阳台边休息。</p>
                             <p>图片来源：Rhett Riding</p>
+                        </div>
+                    </div>
+                    <div class="intro-slide-item">
+                        <img src="http://via.placeholder.com/400x225.png?text=Loading..." data-lazy="/resource/image/2017/12/intro-photo-4.jpg" alt="">
+                        <div class="page-text">
+                            <p>不用害怕，它们不会吃我们啦，最多吃掉我们的野猪……</p>
+                            <p>图片来源：猫盟CFCA</p>
                         </div>
                     </div>
                 </div>
@@ -143,13 +156,13 @@
                 <div class="intro-organization-block">
                     <div class="intro-organization-text page-text">
                         <h4>请你一起带豹回家</h4>
-                        <p>“带豹回家”项目由<a href="#">猫盟CFCA</a>牵头推动，但这是一个开放的社会公益项目。</p>
+                        <p>“带豹回家”项目由<a href="/">猫盟CFCA</a>牵头推动，但这是一个开放的社会公益项目。</p>
                         <p>牵头方猫盟的专长主要在猫科动物的研究保护以及生物多样性方面；而整个太行山 北段的环境保护需要更广泛的专业能力以及各方社会资源的参与才能有效推进。</p>
                         <p>无论你是户外爱好者、摄影师、纪录片制作人、生态教育专家、 社区工作专家、感兴趣的赞助企业……机构或个人，只要合适，都无限欢迎加入“带豹回家”的阵营，你甚至有可能成为“带豹回家”的项目负责人。</p>
                     </div>
                     <div class="intro-organization-img">
                         <img src="<? fe('/img/page/project-introduction/org.png') ?>" alt="">
-                        <p class="page-text text-center">带豹回家的“梦之队”架构（<a href="#">志愿者报名请戳</a>）</p>
+                        <p class="page-text text-center">带豹回家的“梦之队”架构（<a href="https://f.lingxi360.com/formfill?fid=oOWh0gRCsdpwZ&utm_bccid=LXE8jPnL&disable_autofill=0" target="_blank" rel="noopener">志愿者报名请戳</a>）</p>
                     </div>
                 </div>
             </div>
@@ -221,7 +234,7 @@
                 <p>美国佛罗里达州有一条“美洲狮之路”，主办方从 2012 年开始，推动公众和合作者做了非常重要的探索旅程——联结佛罗里达州从森林到海岸的荒野之地，为海陆空的野生动物，以及其中的人类重新修复一个跨省的土地和水域网络。</p>
                 <p>如今他们已经贯穿了东边一条长达160公里的生态廊道的联结（此前为虚线），此后，美洲狮的轨迹又重新活跃在了廊道之上。这表明，只要推动公众和合作者持续提供保护和修复所需的帮助，廊道的永久联结就不是梦想。</p>
                 <p>而，贯通的生态廊道=良好的生态环境=干净的水和空气。</p>
-                <p>（链接：FlorridaWildlifeCorridor.org）</p>
+                <p class="text-right">（链接：<a href="http://floridawildlifecorridor.org/" target="_blank" rel="noopener">FloridaWildlifeCorridor.org</a>）</p>
             </div>
             <div class="progress-case-img">
                 <img src="<? fe('/img/page/project-introduction/case.jpg') ?>" alt="">

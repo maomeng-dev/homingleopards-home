@@ -10,6 +10,14 @@
     font-size: 40px
     text-align: center
 
+  h4
+    height: 40px
+    padding-bottom: 25px
+    color: #e2e2e2
+    font-size: 40px
+    line-height: 40px
+
+
   .block
     margin-bottom: 60px
 
@@ -55,33 +63,44 @@
     .intro-phase-item
       position: relative
       width: 31.25%
+      border: 1px solid #343434
+      box-sizing: border-box
+
+      &:hover,
+      &:focus
+        img
+          opacity: .4
 
       img
+        display: block
         width: 100%
+        opacity: .2
+        transition: .2s opacity
 
-      h4
-        position: absolute
-        bottom: 80px
-        left: 50%
-        margin: auto
-        height: 20px
-        padding: 16px 30px
-        color: #000
-        font-size: 20px
+      h5
+        margin-bottom: 10px
         text-align: center
-        white-space: nowrap
-        background-color: #ffb400
-        transform: translateX(-50%)
+
+        span
+          display: inline-block
+          height: 20px
+          padding: 16px 30px
+          color: #000
+          font-size: 20px
+          line-height: 20px
+          white-space: nowrap
+          background-color: #ffb400
+
 
       p
-        position: absolute
-        right: 0
-        bottom: 10px
-        left: 0
         padding: 0 35px
         color: #e2e2e2
         font-size: 14px
         line-height: 1.4
+
+      .page-text
+        position: absolute
+        top: 170px
 
     .intro-phase-text
       padding: 25px 135px
@@ -97,16 +116,27 @@
       flex-shrink: 1
       max-width: 840px
       min-width: 680px
-      margin-bottom: 80px
+      margin: 0 16px 80px 0
 
       .bar-list
+        position: relative
         display: flex
         align-items: flex-end
         justify-content: space-around
+        z-index: 1
 
       .bar-item
         position: relative
         width: 200px
+        cursor: default
+
+        &:hover,
+        &:focus
+          .popup
+            margin-bottom: 60px
+
+          .dot
+            transform: scale(1.2)
 
         &:first-child
           width: 270px
@@ -120,6 +150,7 @@
           line-height: 1.4
           background-color: #0f0f0f
           border-radius: 10px
+          transition: .5s margin-bottom
 
           &:after
             content: ""
@@ -146,6 +177,7 @@
           margin: auto
           background-color: #fa0
           border-radius: 50%
+          transition: .5s transform
 
           &:after
             content: ""
@@ -168,14 +200,33 @@
           text-align: center
 
       .bar-border
+        position: relative
         height: 2px
         margin: 0 30px
         background-color: #575757
         border-radius: 2px
 
+        &:before,
+        &:after
+          content: ""
+          position: absolute
+          display: block
+          width: 29px
+          height: 2px
+          background: url($imgDir/page/project-introduction/border-head.png) no-repeat
+          background-size: 100%
+
+        &:before
+          left: -29px
+
+        &:after
+          right: -29px
+          transform: rotate(180deg)
+
     .intro-plan-img
       flex-grow: 0
       flex-shrink: 1
+      max-width: 440px
       align-self: center
 
       img
@@ -191,9 +242,10 @@
       display: flex
       flex-grow: 0
       flex-shrink: 0
-      align-items: center
+      align-items: top
       width: 480px
       margin-right: 40px
+      overflow: hidden
 
       .intro-slide-item
         outline: none
@@ -205,7 +257,7 @@
         justify-content: center
         align-items: center
         width: 40px
-        height: 100%
+        height: 225px
         cursor: pointer
 
       .slick-list
@@ -218,12 +270,6 @@
         line-height: 1.4
 
     .intro-slide-detail
-      h4
-        height: 40px
-        padding-bottom: 25px
-        color: #e2e2e2
-        font-size: 40px
-
       p
         margin-top: 25px
 
@@ -231,13 +277,6 @@
           margin-top: 0
 
   .intro-organization
-    h4
-      height: 40px
-      padding-bottom: 25px
-      color: #e2e2e2
-      font-size: 40px
-      line-height: 40px
-
     .page-text
       p
         margin-bottom: 25px
@@ -328,13 +367,6 @@
   .progress-case
     display: flex
 
-    h4
-      height: 40px
-      padding-bottom: 25px
-      color: #e2e2e2
-      font-size: 40px
-      line-height: 40px;
-
     .page-text
       p
         margin-bottom: 25px
@@ -360,28 +392,74 @@
 
 /* responsive styles */
 @media (max-width: 1024px)
+  .content
+    h2
+      height: 24px
+      margin-bottom: 15px
+      font-size: 24px
+      line-height: 24px
+
+    h4
+      height: 18px
+      padding-bottom: 10px
+      color: #e2e2e2
+      font-size: 18px
+      line-height: 18px
+
+    .page-text
+      font-size: 14px
+
   .banner
     .page-wrap
-      flex-direction: column-reverse
+      display: flex
+      flex-wrap: wrap-reverse
+      justify-content: center
       height: auto
       background: none
 
     .banner-text
       width: 100%
+      padding-top: 60px
+      font-size: 14px
 
     .banner-photo
       position: static
       top: auto
       right: auto
+      padding-top: 30px
 
   .intro
     .intro-phase
+      margin-bottom: 30px
+
       .intro-phase-list
         flex-wrap: wrap
 
       .intro-phase-item
         width: 100%
         margin-bottom: 10px
+
+        h5
+          position: absolute
+          top: 0
+          left: 0
+          text-align: left
+
+          span
+            padding: 4px 8px
+            font-size: 16px
+
+        p
+          position: absolute
+          bottom: 10px
+          padding: 0 10px
+          font-size: 12px
+
+        .page-text
+          top: 0
+          right: 0
+          left: 0
+          bottom: 0
 
       .intro-phase-text
         padding: 0
@@ -397,8 +475,49 @@
 
       .intro-slide-container
         width: 100%
-        margin-bottom: 10px
+        margin-bottom: 60px
+
+        .slick-arrow
+          display: none !important
 
       .intro-slide-item
         img
           width: 100%
+
+    .intro-organization
+      .intro-organization-block
+        flex-wrap: wrap
+
+      .intro-organization-text,
+      .intro-organization-img
+        width: 100%
+        flex-shrink: 0
+
+  .progress
+    .progress-tab
+      display: block
+      margin-bottom: 20px
+
+      li
+        margin: 0 auto
+        border-width: 0 1px 1px 1px
+
+    .progress-content
+      li
+        img,
+        div
+          float: none !important
+          display: block
+          width: 100%
+          margin-bottom: 10px
+
+    .progress-case
+      flex-wrap: wrap
+
+      .progress-case-text,
+      .progress-case-img
+        width: 100%
+        flex-shrink: 0
+
+
+
