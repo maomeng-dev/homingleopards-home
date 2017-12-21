@@ -20,6 +20,7 @@ $(() => {
             this.eles.slider.slick({
                 autoplay: true,
                 autoplaySpeed: 5000,
+                pauseOnHover: false,
                 arrows: false,
                 dots: true,
                 infinite: true
