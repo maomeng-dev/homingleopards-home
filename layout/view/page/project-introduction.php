@@ -137,13 +137,29 @@
                     </div>
                 </div>
             </div>
+
+            <!-- intro-organization -->
+            <div class="intro-organization">
+                <div class="intro-organization-block">
+                    <div class="intro-organization-text page-text">
+                        <h4>请你一起带豹回家</h4>
+                        <p>“带豹回家”项目由<a href="#">猫盟CFCA</a>牵头推动，但这是一个开放的社会公益项目。</p>
+                        <p>牵头方猫盟的专长主要在猫科动物的研究保护以及生物多样性方面；而整个太行山 北段的环境保护需要更广泛的专业能力以及各方社会资源的参与才能有效推进。</p>
+                        <p>无论你是户外爱好者、摄影师、纪录片制作人、生态教育专家、 社区工作专家、感兴趣的赞助企业……机构或个人，只要合适，都无限欢迎加入“带豹回家”的阵营，你甚至有可能成为“带豹回家”的项目负责人。</p>
+                    </div>
+                    <div class="intro-organization-img">
+                        <img src="<? fe('/img/page/project-introduction/org.png') ?>" alt="">
+                        <p class="page-text text-center">带豹回家的“梦之队”架构（<a href="#">志愿者报名请戳</a>）</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
     <!--/intro -->
 
     <!-- progress -->
     <section class="block progress">
-        <div class="page-wrap">
+        <div class="progress-intro page-wrap">
             <h2>项目整体进展</h2>
             <ul class="progress-tab" id="progressTab">
                 <li class="active" data-tab="item"><a href="#">豹子在哪儿？</a></li>
@@ -198,6 +214,18 @@
                     </div>
                 </li>
             </ul>
+        </div>
+        <div class="progress-case page-wrap">
+            <div class="progress-case-text page-text">
+                <h4>案例借鉴</h4>
+                <p>美国佛罗里达州有一条“美洲狮之路”，主办方从 2012 年开始，推动公众和合作者做了非常重要的探索旅程——联结佛罗里达州从森林到海岸的荒野之地，为海陆空的野生动物，以及其中的人类重新修复一个跨省的土地和水域网络。</p>
+                <p>如今他们已经贯穿了东边一条长达160公里的生态廊道的联结（此前为虚线），此后，美洲狮的轨迹又重新活跃在了廊道之上。这表明，只要推动公众和合作者持续提供保护和修复所需的帮助，廊道的永久联结就不是梦想。</p>
+                <p>而，贯通的生态廊道=良好的生态环境=干净的水和空气。</p>
+                <p>（链接：FlorridaWildlifeCorridor.org）</p>
+            </div>
+            <div class="progress-case-img">
+                <img src="<? fe('/img/page/project-introduction/case.jpg') ?>" alt="">
+            </div>
         </div>
     </section>
     <!--/progress -->
