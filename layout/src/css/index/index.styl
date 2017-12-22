@@ -4,6 +4,23 @@
   position: relative
   z-index: 1
 
+.link-btn
+  position: absolute
+  left: 50%
+  padding: 20px 40px
+  margin: auto
+  background-color: #ffc000
+  color: #262626
+  font-size: 28px
+  cursor: pointer
+  transform: translateX(-50%)
+  transition: all .2s
+
+  &:hover,
+  &:focus
+    color: #262626
+    background-color: #ffde7b
+
 .block-bg
   position: absolute
   top: 0
@@ -74,17 +91,20 @@
   p
     color: #262626
     font-size: 26px
-    line-height: 1.35
+    line-height: 1.4
 
   .intro-organization
     position: relative
-    padding: 200px 0 140px 0
+    padding:  80px 0 200px 0;
     background: url($imgDir/index/intro-organization-bg.jpg) #fff no-repeat
     background-size: cover
     background-position: 50% 50%
 
     h2
       color: #262626
+
+    .link-btn
+      bottom: 80px;
 
     .block-bg
       background-color: rgba(255, 255, 255, 0)
@@ -95,15 +115,16 @@
         background-color: rgba(255, 255, 255, .5)
 
   .intro-primer
-    padding: 128px 0 110px 0
+    position: relative
+    padding: 70px 0 160px 0
     background: url($imgDir/index/intro-primer-bg.jpg) #050505 no-repeat
     background-size: contain
     background-position: 100% 100%
-    filter: grayscale(100%);
+    filter: grayscale(100%)
     transition: filter 1s
 
     &.scroll-triggered
-      filter: grayscale(0%);
+      filter: grayscale(0%)
 
     h2
       color: #e2e2e2
@@ -112,6 +133,9 @@
       width: 660px
       color: #a6a6a6
       font-size: 22px
+
+    .link-btn
+      bottom: 60px
 
   .intro-member
     padding: 142px 0 125px 0
@@ -149,24 +173,10 @@
     color: #262626
     font-size: 30px
     text-align: center
-    line-height: 40px
+    line-height: 1.4
 
-  a
-    position: absolute
+  .link-btn
     bottom: 80px
-    left: 50%
-    padding: 22px 42px
-    margin: auto
-    background-color: #ffc000
-    color: #262626
-    font-size: 28px
-    cursor: pointer
-    transform: translateX(-50%)
-    transition: all .2s
-
-    &:hover,
-    &:focus
-      background-color: #ffde7b
 
   .block-bg
     bottom: auto
@@ -241,6 +251,10 @@
 
 /* responsive styles */
 @media (max-width: 1024px)
+  .link-btn
+    padding: 10px 20px
+    font-size: 14px
+
   .banner
     .slick-dots
       bottom: 20px
@@ -258,12 +272,20 @@
       font-size: 14px
 
     .intro-organization
-      padding: 100px 0 70px 0
+      padding: 50px 0 110px 0
+
+      .link-btn
+        bottom: 40px
 
     .intro-primer
+      padding: 70px 0 240px 0
+
       .page-wrap
         position: relative
-        top: -80px
+        top: -30px
+
+      .link-btn
+        bottom: 220px
 
       h2
         padding-bottom: 32px
@@ -287,10 +309,8 @@
     p
       font-size: 16px
 
-    a
-      bottom: 40px;
-      padding: 10px 20px;
-      font-size: 14px
+    .link-btn
+      bottom: 40px
 
     .block-bg
       height: 240px

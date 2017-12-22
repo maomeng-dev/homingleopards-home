@@ -29,13 +29,19 @@
     <section class="banner">
         <div class="banner-slide">
             <div class="banner-slide-item">
-                <img src=https://picsum.photos/1440/720/?random&i=0" alt="image">
+                <img src=/resource/image/2017/12/index-1.jpg alt="冬季的豹">
             </div>
             <div class="banner-slide-item">
-                <img src=https://picsum.photos/1440/720/?random&i=1" alt="image">
+                <img src=/resource/image/2017/12/index-2.jpg alt="豹猫">
             </div>
             <div class="banner-slide-item">
-                <img src=https://picsum.photos/1440/720/?random&i=2" alt="image">
+                <img src=/resource/image/2017/12/index-3.jpg alt="赤狐">
+            </div>
+            <div class="banner-slide-item">
+                <img src=/resource/image/2017/12/index-4.jpg alt="狍">
+            </div>
+            <div class="banner-slide-item">
+                <img src=/resource/image/2017/12/index-5.jpg alt="华北豹">
             </div>
         </div>
     </section>
@@ -53,6 +59,7 @@
                 </div>
             </div>
             <div class="block-bg"></div>
+            <a class="link-btn" href="/pages/project-introduction/" data-scroll-child="1500" title="项目详情">项目详情</a>
         </div>
 
         <div class="intro-block intro-primer" data-scroll>
@@ -60,6 +67,7 @@
                 <h2 class="text-left">为什么是华北豹？</h2>
                 <p>华北豹（<i class="text-italic">Panthera pardus japonensis</i>），国际上又叫做中国豹，就像华南虎一样，是唯一一个仅生活在中国的豹亚种。这个中国特有豹亚种的模式标本采自19世纪的北京。对于有北京户口的华北豹来说，北京是它的家。</p>
             </div>
+            <a class="link-btn" href="/pages/about-north-chinese-leopards/" data-scroll-child="1000" title="华北豹介绍">华北豹介绍</a>
         </div>
 
         <div class="intro-block intro-member" data-scroll>
@@ -76,7 +84,7 @@
             <h2 data-scroll-child="1000">您也可以贡献一份力量</h2>
             <p data-scroll-child="1500">我们在腾讯公益发起了募捐，期待您的加入</p>
         </div>
-        <a href="http://gongyi.qq.com/succor/detail.htm?id=23848" target="_blank" rel="noopener" data-scroll-child="2000">查看实时进度</a>
+        <a class="link-btn" href="http://gongyi.qq.com/succor/detail.htm?id=23848" target="_blank" rel="noopener" data-scroll-child="2000" title="查看实时进度">查看实时进度</a>
         <div class="block-bg"></div>
     </section>
     <!--/contribute -->
