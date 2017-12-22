@@ -20,8 +20,8 @@ function shareJssdk($api)
         /**
          * 账号基本信息，请从微信公众平台/开放平台获取
          */
-        'app_id'  => 'wx86c3af430d674a91',  // AppID
-        'secret'  => 'f5b02fe0a36376bcf62fbb54877859b0',     // AppSecret
+        'app_id'  => 'wx8758c214cb84c524',  // AppID
+        'secret'  => '442ae884069ea57925344ed8479066e3',     // AppSecret
         /**
          * 日志配置
          *
