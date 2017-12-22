@@ -51,7 +51,7 @@
 
     <!-- intro -->
     <section class="intro">
-        <div class="intro-block intro-organization" data-scroll>
+        <div class="intro-block intro-project" data-scroll>
             <div class="block-content">
                 <h2 data-scroll-child="500">带豹回家是什么？</h2>
                 <div class="page-wrap" data-scroll-child="1000">
@@ -64,7 +64,7 @@
             <a class="link-btn" href="/pages/project-introduction/" data-scroll-child="1500" title="带豹回家">带豹回家</a>
         </div>
 
-        <div class="intro-block intro-primer" data-scroll>
+        <div class="intro-block intro-leopards" data-scroll>
             <div class="page-wrap" data-scroll-child="500">
                 <h2 class="text-left">为什么是华北豹？</h2>
                 <p>华北豹（<i class="text-italic">Panthera pardus japonensis</i>），国际上又叫做中国豹，就像华南虎一样，是唯一一个仅生活在中国的豹亚种。这个中国特有豹亚种的模式标本采自19世纪的北京。对于有北京户口的华北豹来说，北京是它的家。</p>
