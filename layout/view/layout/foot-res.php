@@ -11,10 +11,18 @@
         /* share */
         wx.config(<? echo shareJssdk(array('onMenuShareAppMessage', 'onMenuShareTimeline')) ?>);
         wx.ready(function () {
-            console.log('success');
-        });
-        wx.error(function (res) {
-            console.log(res);
+            wx.onMenuShareTimeline({
+                title: window.__shareConfig.title,
+                link: window.__shareConfig.link,
+                imgUrl: window.__shareConfig.imgUrl
+            });
+
+            wx.onMenuShareAppMessage({
+                title: window.__shareConfig.title,
+                desc: window.__shareConfig.desc,
+                link: window.__shareConfig.link,
+                imgUrl: window.__shareConfig.imgUrl
+            });
         });
 
         /* track */
