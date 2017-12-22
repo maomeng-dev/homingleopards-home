@@ -8,7 +8,7 @@
 
     window.__shareConfig = {
         title: document.title,
-        desc: '猫盟带豹回家，敬请关注~',
+        desc: '以豹之名，修复华北荒野。',
         link: location.href,
         imgUrl: location.origin + '<? fe('/favicon.png') ?>'
     };

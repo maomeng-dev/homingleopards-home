@@ -7,6 +7,8 @@
 
     <link rel="icon" href="<? fe('/favicon.png') ?>">
 
+    <title>修复荒野人心，重振太行 - 带豹回家 - 猫盟CFCA</title>
+
     <? include VIEW_PATH . '/layout/tdk.php' ?>
 
     <? include VIEW_PATH . '/layout/head-res.php' ?>
@@ -54,21 +56,21 @@
             <div class="intro-phase">
                 <ol class="intro-phase-list">
                     <li class="intro-phase-item">
-                        <img src="http://via.placeholder.com/400x300.png?text=Loading..." data-lazysrc="https://picsum.photos/400/300" alt="第一阶段：找到豹子">
+                        <img src="http://via.placeholder.com/400x300.png?text=Loading..." data-lazysrc="/resource/image/2017/12/intro-phase-1.jpg" alt="第一阶段：找到豹子">
                         <div class="page-text">
                             <h5><span>第一阶段：找到豹子</span></h5>
                             <p>主要采用红外相机野外调查的方法，调查太行山北段华北豹的分布现状。</p>
                         </div>
                     </li>
                     <li class="intro-phase-item">
-                        <img src="http://via.placeholder.com/400x300.png?text=Loading..." data-lazysrc="https://picsum.photos/400/300" alt="第二阶段：找到归路">
+                        <img src="http://via.placeholder.com/400x300.png?text=Loading..." data-lazysrc="/resource/image/2017/12/intro-phase-2.jpg" alt="第二阶段：找到归路">
                         <div class="page-text">
                             <h5><span>第二阶段：找到归路</span></h5>
                             <p>对太行山北段进行预设扩散廊道的走访调查，收集线索，评估当地生物多样性，并根据实际情况修正廊道路线，勾画华北豹种群扩散的廊道。</p>
                         </div>
                     </li>
                     <li class="intro-phase-item">
-                        <img src="http://via.placeholder.com/400x300.png?text=Loading..." data-lazysrc="https://picsum.photos/400/300" alt="第三阶段：带豹回家">
+                        <img src="http://via.placeholder.com/400x300.png?text=Loading..." data-lazysrc="/resource/image/2017/12/intro-phase-3.jpg" alt="第三阶段：带豹回家">
                         <div class="page-text">
                             <h5><span>第三阶段：带豹回家</span></h5>
                             <p>利用猫科动物的扩散天性，让豹在自然状态下在畅通的生态廊道下扩散回京。</p>
@@ -185,7 +187,7 @@
                         <img src="http://via.placeholder.com/493x370.png?text=Loading..." data-lazysrc="/resource/image/2017/12/progress-item-1.jpg" alt="">
                         <div class="page-text">
                             <p>
-                                1、太行山北段 <br>
+                                太行山北段 <br>
                                 太行山北段很大，为了科学有效地找到华北豹，我们沿着山脉自北向南拉出了三条横切山脉的关卡，就像华北豹回家的三重门：
                             </p>
                             <p>

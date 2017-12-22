@@ -7,6 +7,8 @@
 
     <link rel="icon" href="<? fe('/favicon.png') ?>">
 
+    <title>影像 - 带豹回家 - 猫盟CFCA</title>
+
     <? include VIEW_PATH . '/layout/tdk.php' ?>
 
     <? include VIEW_PATH . '/layout/head-res.php' ?>

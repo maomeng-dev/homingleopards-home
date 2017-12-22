@@ -7,6 +7,8 @@
 
     <link rel="icon" href="<? fe('/favicon.png') ?>">
 
+    <title>华北豹只生活在中国 - 带豹回家 - 猫盟CFCA</title>
+
     <? include VIEW_PATH . '/layout/tdk.php' ?>
 
     <? include VIEW_PATH . '/layout/head-res.php' ?>
