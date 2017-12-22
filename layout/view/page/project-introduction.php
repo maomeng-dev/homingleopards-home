@@ -12,7 +12,7 @@
     <? include VIEW_PATH . '/layout/head-res.php' ?>
 
     <script>
-        window.__pageData.pageName = 'about-north-chinese-leopards';
+        window.__pageData.pageName = 'project-introduction';
     </script>
 
     <link rel="stylesheet" type="text/css" href="<? fe('/lib/slick/slick.css') ?>"/>
@@ -54,21 +54,21 @@
             <div class="intro-phase">
                 <ol class="intro-phase-list">
                     <li class="intro-phase-item">
-                        <img src="https://picsum.photos/400/300" alt="">
+                        <img src="http://via.placeholder.com/400x300.png?text=Loading..." data-lazysrc="https://picsum.photos/400/300" alt="">
                         <div class="page-text">
                             <h5><span>第一阶段：找到豹子</span></h5>
                             <p>主要采用红外相机野外调查的方法，调查太行山北段华北豹的分布现状。</p>
                         </div>
                     </li>
                     <li class="intro-phase-item">
-                        <img src="https://picsum.photos/400/300" alt="">
+                        <img src="http://via.placeholder.com/400x300.png?text=Loading..." data-lazysrc="https://picsum.photos/400/300" alt="">
                         <div class="page-text">
                             <h5><span>第二阶段：找到归路</span></h5>
                             <p>对太行山北段进行预设扩散廊道的走访调查，收集线索，评估当地生物多样性，并根据实际情况修正廊道路线，勾画华北豹种群扩散的廊道。</p>
                         </div>
                     </li>
                     <li class="intro-phase-item">
-                        <img src="https://picsum.photos/400/300" alt="">
+                        <img src="http://via.placeholder.com/400x300.png?text=Loading..." data-lazysrc="https://picsum.photos/400/300" alt="">
                         <div class="page-text">
                             <h5><span>第三阶段：带豹回家</span></h5>
                             <p>利用猫科动物的扩散天性，让豹在自然状态下在畅通的生态廊道下扩散回京。</p>
@@ -181,7 +181,7 @@
             </ul>
             <ul class="progress-content" id="progressContent">
                 <li data-tab="item" class="clearfix active">
-                    <img src="https://picsum.photos/560/420" alt="" class="pull-left">
+                    <img src="http://via.placeholder.com/560x420.png?text=Loading..." data-lazysrc="https://picsum.photos/560/420" alt="" class="pull-left">
                     <div class="pull-right page-text">
                         <p>
                             1、太行山北段 <br>
@@ -205,7 +205,7 @@
                     </div>
                 </li>
                 <li data-tab="item" class="clearfix">
-                    <img src="https://picsum.photos/560/420" alt="" class="pull-left">
+                    <img src="http://via.placeholder.com/560x420.png?text=Loading..." data-lazysrc="https://picsum.photos/560/420" alt="" class="pull-left">
                     <div class="pull-right page-text">
                         <p>豹子沿着太行山返京，首先要敲的门就是北京的西部山区——亚种模式标本的产地，这里也是华北豹的历史栖息地。“家门”的生物多样性指数及栖息地质量，是华北豹能否成功扩散回京的决定性因素。</p>
                         <p>2016年猫盟在怀柔、延庆做过为期一年的兽类监测，北京的兽类中除了豹子外其他的物种仍在。只要加以保护让猎物数量增长，豹子就能待得住。</p>
@@ -213,7 +213,7 @@
                     </div>
                 </li>
                 <li data-tab="item" class="clearfix">
-                    <img src="https://picsum.photos/560/420" alt="" class="pull-left">
+                    <img src="http://via.placeholder.com/560x420.png?text=Loading..." data-lazysrc="https://picsum.photos/560/420" alt="" class="pull-left">
                     <div class="pull-right page-text">
                         <p>
                             太行山展向纵深大，千沟万壑都可能成为豹子扩散的路径；而山区也同样村庄密集、人为干扰明显。怎样才能找到华北豹沿着太行山扩散的潜在路径呢？

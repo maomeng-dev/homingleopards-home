@@ -45,11 +45,11 @@
     <section class="intro">
         <div class="intro-block intro-organization" data-scroll>
             <div class="block-content">
-                <h2 data-scroll-child="500">中国猫科动物保护联盟（CFCA）简介</h2>
+                <h2 data-scroll-child="500">带豹回家是什么？</h2>
                 <div class="page-wrap" data-scroll-child="1000">
-                    <p>中国猫科动物保护联盟（CFCA）简称猫盟，是由几个生态爱好者和科学家共同成立的民间环保组织，这些年来一直在做一件事：研究和保护中国的野生猫科动动。</p>
+                    <p>“带豹回家”不是要向北京空投豹子，而是以豹之名，修复荒野：改善太行山环境，恢复其生物多样性；重新连通被割裂的生态廊道，帮助华北豹避开盗猎者的戕害，让豹从山西、河北沿着太行山脉和燕山山脉自然扩散，重回阔别十二年之久的北京老家，并在这个过程中，重新建立人与自然荒野的紧密联结。</p>
                     <p><br></p>
-                    <p>行走在山林里，猫盟的每一个人都像兽类一样安静，对移动的活物敏感，对各种动物痕迹敏感，摸爬滚打不在话下；离开山林，整理分析数据、写稿编视频、传播、设计制作周边……各有分工，每个人都是一支队伍。以下，逐一介绍一下猫盟的兄弟姐妹。</p>
+                    <p>志愿者团队于2017年4月开始集结，项目执行依托于科学的调查和评估，以及脚踏实地的野外工作。目前项目首期已经完成跨度长达230公里的民间走访，太行山北段的华北豹种群仍在持续寻找中。</p>
                 </div>
             </div>
             <div class="block-bg"></div>
@@ -57,15 +57,15 @@
 
         <div class="intro-block intro-primer" data-scroll>
             <div class="page-wrap" data-scroll-child="500">
-                <p>离开山林，整理分析数据、写稿编视频、传播、设计制作周边……各有分工，每个人都是一支队伍。以下，逐一介绍一下猫盟的兄弟姐妹。</p>
-                <p class="text-right">——猫克·吐奶</p>
+                <p class="text-center">为什么是华北豹？</p>
+                <p><br></p>
+                <p>华北豹（<i class="text-italic">Panthera pardus japonensis</i>），国际上又叫做中国豹，就像华南虎一样，是唯一一个仅生活在中国的豹亚种。这个中国特有豹亚种的模式标本采自19世纪的北京。对于有北京户口的华北豹来说，北京是它的家。</p>
             </div>
         </div>
 
         <div class="intro-block intro-member" data-scroll>
             <div class="page-wrap">
-                <p>行走在山林里，猫盟的每一个人都像兽类一样安静，对移动的活物敏感，对各种动物痕迹敏感，摸爬滚打不在话下；离开山林，整理分析数据、写稿编视频、传播、设计制作周边……各有分工，每个人都是一支队伍。</p>
-                <p class="text-right"><a href="#">更多内容...</a></p>
+                <p>已经在北京消失12年的华北豹，是华北山地的灵魂。惟有华北豹的回归能唤回公众关注自然的热情，使太行荒野重新焕发生机。</p>
             </div>
         </div>
     </section>
@@ -77,7 +77,7 @@
             <h2 data-scroll-child="1000">您也可以贡献一份力量</h2>
             <p data-scroll-child="1500">我们在腾讯公益发起了募捐，期待您的加入</p>
         </div>
-        <a data-scroll-child="2000">查看实时进度</a>
+        <a href="http://gongyi.qq.com/succor/detail.htm?id=23848" target="_blank" rel="noopener" data-scroll-child="2000">查看实时进度</a>
         <div class="block-bg"></div>
     </section>
     <!--/contribute -->

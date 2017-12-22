@@ -9,7 +9,7 @@ Flight::set('flight.views.path', VIEW_PATH);
 
 function fe($path)
 {
-	echo "/layout/dist" . $path . "?v=" . RES_VERSION;
+    echo "/layout/dist" . $path . "?v=" . RES_VERSION;
 }
 
 function shareJssdk($api)
@@ -49,15 +49,15 @@ Flight::route('/gallery', function(){
 });
 
 Flight::route('/pages/@page', function($page){
-	Flight::render("page/{$page}");
+    Flight::render("page/{$page}");
 });
 
 Flight::map('notFound', function(){
-	// 显示自定义的404页面
-	echo "喵，你也穿越失败了?";
+    // 显示自定义的404页面
+    echo "喵，你也穿越失败了?";
 });
 
 Flight::route('/@con/@act/',function ($con,$act){
-	Flight::render("{$con}/{$act}");});
+    Flight::render("{$con}/{$act}");});
 Flight::start();
 ?>
