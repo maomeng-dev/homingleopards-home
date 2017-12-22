@@ -48,13 +48,17 @@ Flight::route('/gallery', function(){
     Flight::render("gallery/gallery");
 });
 
+Flight::route('/coming', function(){
+    Flight::render("coming");
+});
+
 Flight::route('/pages/@page', function($page){
     Flight::render("page/{$page}");
 });
 
 Flight::map('notFound', function(){
     // 显示自定义的404页面
-    echo "喵，你也穿越失败了?";
+    Flight::render("error/404");
 });
 
 Flight::route('/@con/@act/',function ($con,$act){

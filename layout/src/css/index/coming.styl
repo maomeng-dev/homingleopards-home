@@ -1,33 +1,96 @@
+html,
 body
+  width: 100%
+  height: 100%
   padding: 0
   margin: 0
 
-footer
+.main
+  position: relative
+  width: 100%
+  height: 100%
+  overflow: hidden
+
+  .bg
+    position: absolute
+    top: 0
+    right: 0
+    bottom: 0
+    left: 0
+    background: url(/layout/dist/img/common/bg.jpg) 50% 50%
+    background-size: cover
+    z-index: 0
+    animation: 10s 1s forwards
+    animation-name: pic-scale
+    transform: scale(1.05)
+
+  .mask
+    position: absolute
+    top: 0
+    right: 0
+    bottom: 0
+    left: 0
+    display: flex
+    flex-direction: column
+    z-index: 1
+
+  .mask-row,
+  .mask-col
+    position: relative
+    display: flex
+    flex-grow: 1
+    flex-shrink: 1
+
+    &:nth-child(2)
+      flex-grow: 0
+      flex-shrink: 0
+
+  .mask-bg
+    background-color: rgba(0, 0, 0, .7)
+
+  .mask-text
+    position: absolute
+    right: 0
+    bottom: -70px
+    left: 0
+    height: 30px
+    color: #fff
+    font-size: 30px
+    line-height: 1
+    text-align: center
+    z-index: 2
+
+  .mask-center
+    position: absolute
+    top: 0
+    right: 0
+    bottom: 0
+    left: 0
+    border-bottom: 2px solid #fff
+    background-size: contain
+
+  .mask-404
+    background-image: url(/layout/dist/img/common/404.png)
+
+  .mask-comingsoon
+    background-image: url(/layout/dist/img/common/comingsoon.png)
+
+.footer
   position: fixed
   right: 0
   bottom: 0
   height: 12px
   padding: 5px 10px
-  background-color: rgba(255, 255, 255, .6)
-  border-top-left-radius: 5px
+  color: #333
   font-size: 12px
-  line-height: 1
+  text-align: right
+  z-index: 1
 
-.index-coverpic
-  position: fixed
-  left: 0
-  right: 0
-  top: 0
-  bottom: 0
-  display: block
-  font-size: 0
-  background-image: url(/layout/dist/img/coming_soon.jpg)
-  background-repeat: no-repeat
-  background-position: 50% 25%
-  background-size: cover
-  animation: 10s 1s forwards
-  animation-name: pic-scale
-  transform: scale(1.05)
+@media (max-width: 1024px)
+  .main
+    .mask
+      .mask-text
+        font-size: 14px
 
 @keyframes pic-scale {
   from {
