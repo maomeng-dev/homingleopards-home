@@ -13,10 +13,6 @@
 
     <? include VIEW_PATH . '/layout/head-res.php' ?>
 
-    <script>
-        window.__pageData.pageName = 'gallery';
-    </script>
-
     <link rel="stylesheet" type="text/css" href="<? fe('/lib/slick/slick.css') ?>" />
     <link rel="stylesheet" href="<? fe('/css/gallery/gallery.css') ?>">
 </head>

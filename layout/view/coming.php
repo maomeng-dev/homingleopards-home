@@ -13,10 +13,6 @@
 
     <? include VIEW_PATH . '/layout/head-res.php' ?>
 
-    <script>
-        window.__pageData.pageName = 'coming';
-    </script>
-
     <link rel="stylesheet" href="<? fe('/css/index/coming.css') ?>">
 </head>
 

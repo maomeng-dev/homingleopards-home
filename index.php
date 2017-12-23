@@ -1,6 +1,6 @@
 <?php
 require 'flight/Flight.php';
-require __DIR__.'/vendor/autoload.php';
+require __DIR__ . '/vendor/autoload.php';
 
 define("VIEW_PATH", __DIR__ . "/layout/view");
 define("RES_VERSION", "20171223");
@@ -15,13 +15,13 @@ function fe($path)
 function shareJssdk($api)
 {
     $config = [
-        
-        'debug'  => true,
+
+        'debug' => true,
         /**
          * 账号基本信息，请从微信公众平台/开放平台获取
          */
-        'app_id'  => 'wx8758c214cb84c524',  // AppID
-        'secret'  => '442ae884069ea57925344ed8479066e3',     // AppSecret
+        'app_id' => 'wx8758c214cb84c524',  // AppID
+        'secret' => '442ae884069ea57925344ed8479066e3',     // AppSecret
         /**
          * 日志配置
          *
@@ -31,37 +31,39 @@ function shareJssdk($api)
          * file：日志文件位置(绝对路径!!!)，要求可写权限
          */
         'log' => [
-            'level'      => 'debug',
+            'level' => 'debug',
             'permission' => 0777,
-            'file'       => '/tmp/easywechat.log',
+            'file' => '/tmp/easywechat.log',
         ],
     ];
     $app = EasyWeChat\Factory::officialAccount($config);
     return $app->jssdk->buildConfig($api);
 }
 
-Flight::route('/', function(){
-    Flight::render("index/index");
+Flight::route('/', function () {
+    Flight::render("index/index", array("name" => "index"));
 });
 
-Flight::route('/gallery', function(){
-    Flight::render("gallery/gallery");
+Flight::route('/gallery', function () {
+    Flight::render("gallery/gallery", array("name" => "gallery"));
 });
 
-Flight::route('/coming', function(){
-    Flight::render("coming");
+Flight::route('/coming', function () {
+    Flight::render("coming", array("name" => "coming"));
 });
 
-Flight::route('/pages/@page', function($page){
-    Flight::render("page/{$page}");
+Flight::route('/pages/@page', function ($page) {
+    Flight::render("page/{$page}", array("name" => $page));
 });
 
-Flight::map('notFound', function(){
+Flight::map('notFound', function () {
     // 显示自定义的404页面
-    Flight::render("error/404");
+    Flight::render("error/404", array("name" => "404"));
 });
 
-Flight::route('/@con/@act/',function ($con,$act){
-    Flight::render("{$con}/{$act}");});
+Flight::route('/@con/@act/', function ($con, $act) {
+    Flight::render("{$con}/{$act}");
+});
+
 Flight::start();
 ?>

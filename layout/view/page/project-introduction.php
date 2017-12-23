@@ -13,10 +13,6 @@
 
     <? include VIEW_PATH . '/layout/head-res.php' ?>
 
-    <script>
-        window.__pageData.pageName = 'project-introduction';
-    </script>
-
     <link rel="stylesheet" type="text/css" href="<? fe('/lib/slick/slick.css') ?>"/>
     <link rel="stylesheet" href="<? fe('/css/page/project-introduction.css') ?>">
 </head>

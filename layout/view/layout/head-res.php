@@ -4,7 +4,7 @@
 <script>
     window.__pageData = {};
     window.__pageData.bootTime = (new Date()).getTime();
-    window.__pageData.pageName = '';
+    window.__pageData.pageName = '<?= $name ?>';
 
     window.__shareConfig = {
         title: document.title,
