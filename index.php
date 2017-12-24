@@ -20,8 +20,8 @@ function shareJssdk($api)
         /**
          * 账号基本信息，请从微信公众平台/开放平台获取
          */
-        'app_id' => 'wx8758c214cb84c524',  // AppID
-        'secret' => '442ae884069ea57925344ed8479066e3',     // AppSecret
+        'app_id' => \Yaconf::get('maomeng.wechat.appid'),  // AppID
+        'secret' => \Yaconf::get('maomeng.wechat.secret'),     // AppSecret
         /**
          * 日志配置
          *
@@ -39,6 +39,7 @@ function shareJssdk($api)
     $app = EasyWeChat\Factory::officialAccount($config);
     return $app->jssdk->buildConfig($api);
 }
+
 
 Flight::route('/', function () {
     Flight::render("index/index", array("name" => "index"));
