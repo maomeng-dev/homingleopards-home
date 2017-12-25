@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="google-site-verification" content="Uhz1FZcsead9D5leoMd7fxT05GWcfH--KsSYMQqKL6c" />
     <meta name="baidu-site-verification" content="v0Dp6gUvky" />
 
     <link rel="icon" href="<? fe('/favicon.png') ?>">
