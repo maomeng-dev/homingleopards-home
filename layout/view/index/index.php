@@ -197,8 +197,6 @@
 </div>
 <!--/content wrap -->
 
-<? include VIEW_PATH . '/layout/sidebar.php' ?>
-
 <? include VIEW_PATH . '/layout/footer.php' ?>
 
 <? include VIEW_PATH . '/layout/foot-res.php' ?>
