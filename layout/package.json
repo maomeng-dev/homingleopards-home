@@ -29,5 +29,6 @@
     "rimraf": "^2.6.1",
     "run-sequence": "^1.2.2",
     "webpack": "^3.4.1"
-  }
+  },
+  "dependencies": {}
 }
