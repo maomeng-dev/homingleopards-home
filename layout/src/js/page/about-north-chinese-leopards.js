@@ -1,6 +1,5 @@
 'use strict';
 
-let totop = require('../common/totop.module');
 let passive = require('../common/passive.module');
 
 $(() => {
@@ -20,8 +19,6 @@ $(() => {
             this.initSlider();
             this.initValue();
             this.initGoal();
-
-            totop.init();
         },
 
         initBanner: function () {
