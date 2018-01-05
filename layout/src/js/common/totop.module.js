@@ -13,7 +13,8 @@ let totop = {
         this.duration = conf.duration || 500;
 
         this.template = '<a class="page-totop" style="display: none;"><i class="fa fa-chevron-up" aria-hidden="true"></i><span>返回顶部</span></a>';
-        this.element = $(ejs.render(this.template));
+        this.element = $(conf.element) || $(ejs.render(this.template));
+        this.isShowing = false;
 
         passive.addPassiveEventListener($doc[0], 'scroll resize', () => {
             this.check();
@@ -25,19 +26,50 @@ let totop = {
             }, 500);
         });
 
-        $body.append(this.element);
+        if (!conf.element) {
+            $body.append(this.element);
+        }
+
         this.check();
     },
 
     check: function () {
         if (this.wrapWidth > window.innerWidth) {
-            this.element.stop().fadeOut();
+            this.hide();
         } else {
             if ($doc.scrollTop() > window.innerHeight) {
-                this.element.stop().fadeIn();
+                this.show();
             } else {
-                this.element.stop().fadeOut();
+                this.hide();
             }
+        }
+    },
+
+    show: function () {
+        if (!this.isShowing) {
+            this.element
+                .stop()
+                .css({
+                    'display': 'block',
+                    'opacity': '0'
+                })
+                .animate({
+                    'opacity': '1'
+                }, 200);
+            this.isShowing = true;
+        }
+    },
+
+    hide: function () {
+        if (this.isShowing) {
+            this.element
+                .stop()
+                .animate({
+                    'opacity': '0'
+                }, 200, () => {
+                    this.element.css({ 'display': 'none' });
+                });
+            this.isShowing = false;
         }
     }
 };
