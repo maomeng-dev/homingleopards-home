@@ -214,7 +214,6 @@ header
       img
         display: block
 
-
 /* content */
 .content-static
   padding-top: 80px
@@ -295,6 +294,82 @@ footer
     color: #444
     font-size: 12px
 
+/* sidebar */
+.sidebar
+  position: fixed
+  top: 50%
+  right: 0
+  display: block
+  width: 60px
+  transform: translateY(-100px)
+  z-index: 100
+
+  .share-btn
+    position: relative
+    right: 0
+    display: block
+    width: 30px
+    height: 30px
+    padding: 15px
+    margin: 1px 0
+    background-color: rgba(0, 0, 0, .5)
+    line-height: 60px
+    cursor: pointer
+    overflow: hidden
+    transition: background-color .2s, right .2s
+
+    &:hover,
+    &:focus,
+    &:active
+      background-color: rgba(0, 0, 0, .8)
+
+      .sidebar-icon
+        opacity: 1
+
+    .sidebar-icon
+      display: block
+      width: 30px
+      height: 30px
+      opacity: .7
+      transition: opacity .2s
+
+    .icon-wx
+      background-image: url($imgDir/common/sidebar-sprites.png)
+      background-image: -webkit-image-set(url($imgDir/common/sidebar-sprites.png) 1x, url($imgDir/common/sidebar-sprites@2x.png) 2x)
+      background-position: 0 -30px
+
+    .icon-wb
+      background-image: url($imgDir/common/sidebar-sprites.png)
+      background-image: -webkit-image-set(url($imgDir/common/sidebar-sprites.png) 1x, url($imgDir/common/sidebar-sprites@2x.png) 2x)
+      background-position: 0 -60px
+
+    .icon-top
+      background-image: url($imgDir/common/sidebar-sprites.png)
+      background-image: -webkit-image-set(url($imgDir/common/sidebar-sprites.png) 1x, url($imgDir/common/sidebar-sprites@2x.png) 2x)
+      background-position: 0 0
+
+  .share-img
+    position: absolute
+    display: block
+    padding: 10px
+    margin-top: -1px
+    background-color: rgba(0, 0, 0, .5)
+    transform: translateY(-100%)
+    transition: all .2s
+
+    .img
+      display: block
+      width: 140px
+      height: 140px
+
+    .text
+      display: block
+      height: 14px
+      margin-top: 10px
+      color: #fff
+      font-size: 14px
+      line-height: 1
+
 @media (max-width: 1024px)
   header
     position: static
@@ -366,6 +441,9 @@ footer
       float: none !important
       text-align: left
 
+  .sidebar
+    display: none
+
 /* wrap */
 .page-wrap
   position: relative
@@ -373,36 +451,3 @@ footer
   padding: 0 40px
   margin: 0 auto
 
-/* totop */
-.page-totop
-  position: fixed
-  right: 20px
-  bottom: 20px
-  display: block
-  width: 46px
-  height: 46px
-  border: 2px solid
-  border-color: rgba(255, 255, 255, .2)
-  border-radius: 4px
-  color: rgba(255, 255, 255, .3)
-  text-align: center
-  text-decoration: none
-  line-height: 46px
-  background-color: rgba(255, 255, 255, .2)
-  cursor: pointer
-  z-index: 1000
-  overflow: hidden
-  opacity: .5
-  transition: border-color .5s, color .5s
-
-  &:focus,
-  &:hover,
-  &:active
-    border-color: rgba(255, 255, 255, .4)
-    color: rgba(255, 255, 255, .6)
-
-  i
-    font-size: 24px
-
-  span
-    font-size: 0

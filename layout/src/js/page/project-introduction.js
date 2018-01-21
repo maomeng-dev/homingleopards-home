@@ -1,6 +1,5 @@
 'use strict';
 
-let totop = require('../common/totop.module');
 let Tab = require('../common/tab.module');
 
 $(() => {
@@ -18,7 +17,6 @@ $(() => {
         init: function () {
             this.initSlider();
             this.initTab();
-            totop.init();
         },
 
         initSlider: function () {
