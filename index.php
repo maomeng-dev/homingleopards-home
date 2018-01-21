@@ -7,9 +7,16 @@ define("RES_VERSION", "20180105");
 
 Flight::set('flight.views.path', VIEW_PATH);
 
+require __DIR__ . "/public/function.php";
+
 Flight::route('/', function () {
     Flight::render("index/index", array("name" => "index"));
 });
 
+Flight::before('start', function(&$params, &$output){
+	App\Route\Web::router();
+});
+
 Flight::start();
+
 ?>

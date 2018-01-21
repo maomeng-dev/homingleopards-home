@@ -8,6 +8,11 @@
 
 namespace App\Route;
 
+/**
+ * 前台页面路由
+ * Class Web
+ * @package App\Route
+ */
 
 final class Web
 {
