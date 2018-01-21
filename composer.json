@@ -1,5 +1,6 @@
 {
     "require": {
-        "overtrue/wechat": "~4.0"
+        "overtrue/wechat": "~4.0",
+        "illuminate/database": "^5.5"
     }
 }
