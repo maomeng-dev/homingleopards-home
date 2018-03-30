@@ -49,6 +49,10 @@ Flight::route('/gallery', function () {
     Flight::render("gallery/gallery", array("name" => "gallery"));
 });
 
+Flight::route('/download', function () {
+    Flight::render("download/download", array("name" => "download"));
+});
+
 Flight::route('/coming', function () {
     Flight::render("coming", array("name" => "coming"));
 });
