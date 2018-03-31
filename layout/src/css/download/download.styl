@@ -1,8 +1,158 @@
 @import "../base.styl"
 
 .download {
+  .download-header {
+    margin-bottom: 15px
+  }
+
   h2 {
+    height: 35px
+    margin-top: 35px
     color: #fff
     font-size: 24px
+    line-height: 35px
+  }
+
+  .download-header-search {
+    margin-top: 35px
+    font-size: 0
+
+    input[type="search"] {
+      width: 400px
+      height: 16px
+      padding: 20px 10px
+      border: 0
+      color: #8c9198
+      font-size: 16px
+      font-family: $font-sans
+      background-color: #1a1a1a
+      outline:none
+      vertical-align: top
+    }
+
+    button {
+      width: 100px
+      height: 40px
+      border: 0
+      color: #000
+      font-size: 16px
+      font-family: $font-sans
+      line-height: 40px
+      background-color: #ffb20d
+      cursor: pointer
+      vertical-align: top
+    }
+  }
+
+  .download-list {
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+    margin: 0 -10px
+  }
+
+  .download-item {
+    width: 35%
+    flex-grow: 1
+    flex-shrink: 0
+    margin: 0 10px 20px 10px
+
+    a {
+      display: flex
+      height: 45px
+      padding: 20px
+      background-color: #131313
+      cursor: pointer
+      transition: background-color .2s
+
+      &:hover {
+        background-color: #1e1e1e
+      }
+    }
+
+    i {
+      position: relative
+      top: 4px
+      color: #535353
+      font-size: 26px
+    }
+
+    .item-icon {
+      flex-grow: 0
+      flex-shrink: 0
+      display: block
+      width: 38px
+      height: 43px
+      border: 1px solid #535353
+      border-radius: 5px
+      background-color: #1b1b1b
+      line-height: 43px
+      text-align: center
+    }
+
+    .item-main {
+      flex-grow: 1
+      flex-shrink: 1
+      margin-left: 20px
+    }
+
+    .item-title {
+      display: block
+      margin-bottom: 8px
+      color: #8c9198
+      font-size: 16px
+    }
+
+    .item-tags {
+      display: block
+      width: 100%
+      height: 20px
+      overflow: hidden
+
+      em {
+        display: inline-block
+        height: 20px
+        padding: 0 10px
+        margin-right: 5px
+        color: #797c7c
+        line-height: 20px
+        background-color: #2d2f30
+        border-radius: 2px
+        transition: all .2s
+
+        &:hover {
+          color: #000
+          background-color: #ffae00
+        }
+      }
+    }
+
+    .item-info {
+      flex-grow: 0
+      flex-shrink: 0
+      height: 45px
+      color: #5e5e5e
+      font-size: 14px
+      line-height: 45px
+    }
+
+    .item-time {
+      margin-left: 26px
+    }
+  }
+
+  .download-more {
+    display: block
+    width: 50%
+    height: 40px
+    margin: 0 auto
+    color: #8c9198
+    font-size: 14px
+    text-align: center
+    line-height: 40px
+
+    &:hover {
+      color: #ffffff
+    }
   }
 }

@@ -24,20 +24,59 @@
 <div class="content content-static">
 
     <section class="download page-wrap">
-        <div class="download-header">
-            <h2>项目资料</h2>
-            <div class="download-header-search">
-                <input type="search">
-                <button>sousuo</button>
+        <div class="download-header clearfix">
+            <h2 class="pull-left">项目资料</h2>
+            <div class="download-header-search pull-right">
+                <input type="search" placeholder="根据附件名称或标签进行匹配…">
+                <button>搜索</button>
             </div>
         </div>
 
         <ol class="download-list">
-            <li>
-                <a href="#">
-                    <span class="item-icon"></span>
+            <li class="download-item">
+                <a href="#" class="clearfix">
+                    <span class="item-icon"><i class="fa fa-file-archive-o" aria-hidden="true"></i></span>
                     <span class="item-main">
-                        <span class="item-title">title</span>
+                        <span class="item-title">中文</span>
+                        <span class="item-tags"><em>tags</em><em>tags</em><em>tags</em><em>tags</em><em>tags</em><em>tags</em><em>tags</em><em>tags</em><em>tags</em></span>
+                    </span>
+                    <span class="item-info">
+                        <span class="item-size">10MB</span>
+                        <span class="item-time">2019-19-10</span>
+                    </span>
+                </a>
+            </li>
+            <li class="download-item">
+                <a href="#">
+                    <span class="item-icon"><i class="fa fa-file-text-o" aria-hidden="true"></i></span>
+                    <span class="item-main">
+                        <span class="item-title">中文标题喵啊啊啊喵喵</span>
+                        <span class="item-tags"><em>tags</em><em>tags</em><em>tags</em></span>
+                    </span>
+                    <span class="item-info">
+                        <span class="item-size">10MB</span>
+                        <span class="item-time">2019-19-10</span>
+                    </span>
+                </a>
+            </li>
+            <li class="download-item">
+                <a href="#">
+                    <span class="item-icon"><i class="fa fa-file-text-o" aria-hidden="true"></i></span>
+                    <span class="item-main">
+                        <span class="item-title">中文标题喵啊啊啊喵喵</span>
+                        <span class="item-tags"><em>tags</em><em>tags</em><em>tags</em></span>
+                    </span>
+                    <span class="item-info">
+                        <span class="item-size">10MB</span>
+                        <span class="item-time">2019-19-10</span>
+                    </span>
+                </a>
+            </li>
+            <li class="download-item">
+                <a href="#">
+                    <span class="item-icon"><i class="fa fa-file-text-o" aria-hidden="true"></i></span>
+                    <span class="item-main">
+                        <span class="item-title">中文标题喵啊啊啊喵喵</span>
                         <span class="item-tags"><em>tags</em><em>tags</em><em>tags</em></span>
                     </span>
                     <span class="item-info">
