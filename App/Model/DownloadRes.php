@@ -10,7 +10,12 @@ namespace App\Model;
 
 
 
-class DownloadRes
+class DownloadRes extends BaseModel
 {
+    protected $table = 'res_down_list';
     
+    public function __construct(array $attributes = [])
+    {
+        parent::__construct($attributes);
+    }
 }

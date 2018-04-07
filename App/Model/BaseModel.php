@@ -27,4 +27,22 @@ class BaseModel extends Model
     {
         $this->runSoftDelete();
     }
+    
+    public function getResult($fileds = ['*'], $cond, $page, $size)
+    {
+        if (intval($page) == 0) {
+            $page = 1;
+        }
+        if (intval($size) == 0) {
+            $size = 10;
+        }
+        if (!empty($cond)) {
+        
+        }
+        $total = self::count();
+        if ($total == 0) {
+            return ['list'=>[], 'total' => 0, 'pageSize' => 0];
+        }
+        
+    }
 }
