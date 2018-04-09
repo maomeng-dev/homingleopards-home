@@ -32,26 +32,33 @@
             </div>
         </div>
 
-        <ol class="download-list">
-            <li class="download-item">
-                <a href="#" class="clearfix" target="_blank" rel="noopener">
-                    <span class="item-icon"><i class="fa fa-file-archive-o" aria-hidden="true"></i></span>
-                    <span class="item-main">
-                        <span class="item-title">中文</span>
-                        <span class="item-tags"><em>tags</em><em>tags</em><em>tags</em><em>tags</em><em>tags</em><em>tags</em><em>tags</em><em>tags</em><em>tags</em></span>
-                    </span>
-                    <span class="item-info">
-                        <span class="item-size">10MB</span>
-                        <span class="item-time">2019-19-10</span>
-                    </span>
-                </a>
-            </li>
-        </ol>
+        <ol class="download-list" id="downloadList"></ol>
 
-        <div class="download-loading" id="downloadLoading" style="display: none;"><i class="fa fa-circle-o-notch fa-spin fa-3x fa-fw"></i></div>
+        <div class="download-loading" id="downloadLoading" style="display: block;">
+            <i class="fa fa-circle-o-notch fa-spin fa-3x fa-fw"></i></div>
 
-        <a href="#" class="download-more"  id="downloadMore">点击加载更多内容…</a>
+        <a href="#" class="download-fetch" id="downloadFetch" data-page="1" style="display: none;">点击加载更多内容…</a>
     </section>
+
+    <script type="text/template" id="downloadItemTemplate">
+        <li class="download-item">
+            <a href="<%= down_url %>" class="clearfix" target="_blank" rel="noopener">
+                <span class="item-icon"><i class="fa <%= type %>" aria-hidden="true"></i></span>
+                <span class="item-main">
+                    <span class="item-title"><%= title %></span>
+                    <span class="item-tags">
+                        <% tags.forEach(function(index, tag) { %>
+                            <em><%= tag %></em>
+                        <% }) %>
+                    </span>
+                </span>
+                <span class="item-info">
+                    <span class="item-size"><%= size %></span>
+                    <span class="item-time"><%= modify_time %></span>
+                </span>
+            </a>
+        </li>
+    </script>
 
 </div>
 <!--/content wrap -->
