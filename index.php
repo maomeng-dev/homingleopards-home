@@ -13,13 +13,9 @@ Flight::route('/', function () {
     Flight::render("index/index", array("name" => "index"));
 });
 
-Flight::route('/test/', function () {
-    $down = new App\Model\DownloadRes();
-    $down->getResult(1, 2);
-});
-
 Flight::before('start', function(&$params, &$output){
 	App\Route\Web::router();
+    App\Route\Api::router();
 	App\BootStarp::start();
 });
 

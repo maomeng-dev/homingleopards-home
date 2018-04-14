@@ -8,7 +8,7 @@
 
 namespace App\Route;
 
-use App\Front\Download\Download;
+use App\Api\Front\Download;
 
 /**
  * Router of Api.
