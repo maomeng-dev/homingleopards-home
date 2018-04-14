@@ -26,10 +26,12 @@
     <section class="download page-wrap">
         <div class="download-header clearfix">
             <h2 class="pull-left">项目资料</h2>
+            <!--
             <div class="download-header-search pull-right">
                 <input type="search" placeholder="根据附件名称或标签进行匹配…" id="downloadSearchInput">
                 <button id="downloadSearchButton">搜索</button>
             </div>
+            -->
         </div>
 
         <ol class="download-list" id="downloadList"></ol>
@@ -42,12 +44,12 @@
 
     <script type="text/template" id="downloadItemTemplate">
         <li class="download-item">
-            <a href="<%= down_url %>" class="clearfix" target="_blank" rel="noopener">
+            <a href="<%= down_url %>" class="clearfix" target="_blank" rel="noopener" title="<%= title %>">
                 <span class="item-icon"><i class="fa <%= type %>" aria-hidden="true"></i></span>
                 <span class="item-main">
                     <span class="item-title"><%= title %></span>
                     <span class="item-tags">
-                        <% tags.forEach(function(index, tag) { %>
+                        <% tags.forEach(function(tag) { %>
                             <em><%= tag %></em>
                         <% }) %>
                     </span>

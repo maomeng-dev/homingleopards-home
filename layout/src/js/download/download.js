@@ -3,11 +3,63 @@
 let totop = require('../common/totop.module');
 
 $(() => {
+    let util = {
+        dateFormat: function (timestamp, format) {
+            let targetDate = (timestamp instanceof Date)
+                ? timestamp
+                : new Date(timestamp);
+            let targetFormat = format || 'yyyy-mm-dd';
+
+            let paddingZero = function (str) {
+                str = str.toString();
+                str = (str.length < 1)
+                    ? ('0' + str)
+                    : str;
+                return str;
+            };
+
+            let yearString = targetDate.getFullYear();
+            let monthString = paddingZero((targetDate.getMonth() + 1).toString());
+            let dateString = paddingZero(targetDate.getDate());
+            let hourString = paddingZero(targetDate.getHours());
+            let minuteString = paddingZero(targetDate.getMinutes());
+            let secondString = paddingZero(targetDate.getSeconds());
+
+            return targetFormat
+                .replace(/yyyy/g, yearString)
+                .replace(/mm/g, monthString)
+                .replace(/dd/g, dateString)
+                .replace(/HH/g, hourString)
+                .replace(/MM/g, minuteString)
+                .replace(/SS/g, secondString);
+        },
+
+        sizeFormat: function (size) {
+            let units = ['KB', 'MB', 'GB'];
+            let resultUnit = '';
+            let resultSize = size;
+
+            (units).forEach((currentUnit, level) => {
+                if (level !== (units.length - 1)) {
+                    if (resultSize >= 1024) {
+                        resultSize /= 1024;
+                    } else {
+                        resultUnit = resultUnit || currentUnit;
+                    }
+                } else {
+                    resultUnit = resultUnit || units[units.length - 1];
+                }
+            });
+
+            return (resultSize.toFixed(2) + resultUnit);
+        }
+    };
+
     let page = {
         param: {
             page: 1,
-            pageSize: 20,
-            query: ''
+            pageSize: 20
+            // query: ''
         },
 
         eles: {
@@ -23,18 +75,21 @@ $(() => {
         },
 
         typeiconMap: {
-            1: 'fa-file-archive-o',
-            2: 'fa-file-text-o'
+            1: 'fa-file-text-o',
+            2: 'fa-file-archive-o'
         },
 
         init: function () {
             totop.init();
 
+            // load more click handler
             this.eles.downloadFetch.on('click', (e) => {
                 e.preventDefault();
+                this.param.page = +this.eles.downloadFetch.attr('data-page');
                 this.fetchData();
             });
 
+            // search button click handler
             this.eles.downloadSearchButton.on('click', () => {
                 this.param.page = 0;
                 this.param.query = $.trim(this.eles.downloadSearchInput.val());
@@ -42,9 +97,10 @@ $(() => {
                 this.fetchData();
             });
 
+            // request param init
             let currentSearchParam = this.getPageParamObject();
             this.param.page = currentSearchParam.page || 1;
-            this.param.query = currentSearchParam.query || '';
+            // this.param.query = currentSearchParam.query || '';
 
             // first fetch
             this.fetchData();
@@ -95,91 +151,27 @@ $(() => {
             this.param.page = +this.eles.downloadFetch.attr('data-page');
 
             // change state
-            window.history.pushState(this.param, document.title, (location.origin + location.pathname + this.getPageParamString()));
+            // window.history.pushState(this.param, document.title, (location.origin + location.pathname + this.getPageParamString()));
 
             $.ajax({
-                // url: '//api.homingleopards.org/front/download/list',
-                url: '/',
+                url: '//api.homingleopards.org/front/download/list',
                 data: this.param
             }).done((res) => {
                 this.showLoading(false);
 
-                console.log(res);
-
-                // mock data
-                res = {
-                    errno: 0,
-                    errmsg: '',
-                    data: {
-                        list: [
-                            {
-                                index: 1,
-                                id: 10001,
-                                title: '啊啊密码妈妈阿萨德',
-                                modify_time: '2001-01-01',
-                                down_url: '/',
-                                type: '1',
-                                tags: ['tag1', 'tag2', 'tag3'],
-                                size: '10MB'
-                            },
-                            {
-                                index: 2,
-                                id: 10002,
-                                title: '持续了健康误区饿哦iue',
-                                modify_time: '2001-01-01',
-                                down_url: '/',
-                                type: '2',
-                                tags: ['tag1', 'tag2', 'tag3'],
-                                size: '10MB'
-                            },
-                            {
-                                index: 3,
-                                id: 10003,
-                                title: '从需哦抛弃我了空间',
-                                modify_time: '2001-01-01',
-                                down_url: '/',
-                                type: '2',
-                                tags: ['tag1', 'tag2', 'tag3'],
-                                size: '10MB'
-                            },
-                            {
-                                index: 4,
-                                id: 10004,
-                                title: '加快了珍惜哦一哦的',
-                                modify_time: '2001-01-01',
-                                down_url: '/',
-                                type: '1',
-                                tags: ['tag1', 'tag2', 'tag3'],
-                                size: '10MB'
-                            },
-                            {
-                                index: 5,
-                                id: 10005,
-                                title: '自行车金克拉无敌',
-                                modify_time: '2001-01-01',
-                                down_url: '/',
-                                type: '1',
-                                tags: ['tag1', 'tag2', 'tag3'],
-                                size: '10MB'
-                            }
-                        ],
-
-                        page: {
-                            current: 1,
-                            size: 20,
-                            page_total: 5,
-                            total: 100
-                        }
-                    }
-                };
-
                 if (res.errno === 0) {
                     let data = res.data;
+
+                    // add page param
+                    this.eles.downloadFetch.attr({ 'data-page': data.page.current + 1 });
 
                     // check data
                     if (data.list && data.list.length > 0) {
                         data.list.forEach((downloadItem) => {
+                            // make params
                             downloadItem.type = this.typeiconMap[downloadItem.type];
+                            downloadItem.modify_time = util.dateFormat(downloadItem.modify_time, 'yyyy-mm-dd');
+                            downloadItem.size = util.sizeFormat(downloadItem.size);
                             this.eles.downloadList.append(
                                 ejs.render(this.tpls.downloadItem, downloadItem)
                             );
@@ -188,7 +180,6 @@ $(() => {
 
                     // check has more
                     if (data.page.current < data.page.page_total) {
-                        this.eles.downloadFetch.attr({ 'data-page': data.page.current + 1 });
                         this.showMore(true);
                     } else {
                         this.showMore(false);
