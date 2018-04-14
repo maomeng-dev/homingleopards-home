@@ -85,12 +85,16 @@
       flex-grow: 1
       flex-shrink: 1
       margin-left: 20px
+      overflow: hidden
 
     .item-title
       display: block
       margin-bottom: 8px
       color: #8c9198
       font-size: 16px
+      overflow: hidden
+      text-overflow: ellipsis
+      white-space: nowrap
 
     .item-tags
       display: block
@@ -107,6 +111,7 @@
         line-height: 20px
         background-color: #2d2f30
         border-radius: 2px
+        vertical-align: top
         transition: all .2s
 
         &:hover
@@ -117,6 +122,7 @@
       flex-grow: 0
       flex-shrink: 0
       height: 45px
+      min-width: 130px
       padding-left: 10px
       color: #5e5e5e
       font-size: 14px
@@ -154,16 +160,13 @@
       a
         padding: 10px
 
-      .item-main
-        white-space: nowrap
-        overflow: hidden
-
       .item-title
         font-size: 14px
-        overflow: hidden
-        text-overflow: ellipsis
 
       .item-tags
+        height: 16px
+        overflow: hidden
+
         em
           height: 16px
           padding: 0 5px
