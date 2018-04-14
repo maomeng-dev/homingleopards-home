@@ -14,9 +14,9 @@ Flight::route('/', function () {
 });
 
 Flight::before('start', function(&$params, &$output){
-	App\Route\Web::router();
+    App\Route\Web::router();
     App\Route\Api::router();
-	App\BootStarp::start();
+    App\BootStarp::start();
 });
 
 Flight::start();
