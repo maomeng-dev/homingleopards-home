@@ -95,83 +95,13 @@ $(() => {
             this.param.page = +this.eles.downloadFetch.attr('data-page');
 
             // change state
-            window.history.pushState(this.param, document.title, (location.origin + location.pathname + this.getPageParamString()));
+            // window.history.pushState(this.param, document.title, (location.origin + location.pathname + this.getPageParamString()));
 
             $.ajax({
-                // url: '//api.homingleopards.org/front/download/list',
-                url: '/',
+                url: '//api.homingleopards.org/front/download/list',
                 data: this.param
             }).done((res) => {
                 this.showLoading(false);
-
-                console.log(res);
-
-                // mock data
-                res = {
-                    errno: 0,
-                    errmsg: '',
-                    data: {
-                        list: [
-                            {
-                                index: 1,
-                                id: 10001,
-                                title: '啊啊密码妈妈阿萨德',
-                                modify_time: '2001-01-01',
-                                down_url: '/',
-                                type: '1',
-                                tags: ['tag1', 'tag2', 'tag3'],
-                                size: '10MB'
-                            },
-                            {
-                                index: 2,
-                                id: 10002,
-                                title: '持续了健康误区饿哦iue',
-                                modify_time: '2001-01-01',
-                                down_url: '/',
-                                type: '2',
-                                tags: ['tag1', 'tag2', 'tag3'],
-                                size: '10MB'
-                            },
-                            {
-                                index: 3,
-                                id: 10003,
-                                title: '从需哦抛弃我了空间',
-                                modify_time: '2001-01-01',
-                                down_url: '/',
-                                type: '2',
-                                tags: ['tag1', 'tag2', 'tag3'],
-                                size: '10MB'
-                            },
-                            {
-                                index: 4,
-                                id: 10004,
-                                title: '加快了珍惜哦一哦的',
-                                modify_time: '2001-01-01',
-                                down_url: '/',
-                                type: '1',
-                                tags: ['tag1', 'tag2', 'tag3'],
-                                size: '10MB'
-                            },
-                            {
-                                index: 5,
-                                id: 10005,
-                                title: '自行车金克拉无敌',
-                                modify_time: '2001-01-01',
-                                down_url: '/',
-                                type: '1',
-                                tags: ['tag1', 'tag2', 'tag3'],
-                                size: '10MB'
-                            }
-                        ],
-
-                        page: {
-                            current: 1,
-                            size: 20,
-                            page_total: 5,
-                            total: 100
-                        }
-                    }
-                };
 
                 if (res.errno === 0) {
                     let data = res.data;
