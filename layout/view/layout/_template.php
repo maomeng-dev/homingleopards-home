@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="icon" href="<? fe('/favicon.ico') ?>">
+    <link rel="icon" href="<? fe('/layout/dist/favicon.png') ?>">
 
     <? include VIEW_PATH . '/layout/tdk.php' ?>
 
@@ -34,7 +34,7 @@
 
 <? include VIEW_PATH . '/layout/foot-res.php' ?>
 
-<script src="<? fe('/assets/index.js') ?>"></script>
+<script src="<? fe('/layout/dist/assets/index.js') ?>"></script>
 
 </body>
 </html>
