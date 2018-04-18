@@ -8,12 +8,13 @@
 
 /**
  * @param $path
+ * @param $subpath
  */
-function fe($path)
+function fe($path, $subpath = 'dist')
 {
     $cdn = true;
     $host = $cdn ? "cdn" : "res";
-    echo "https://{$host}.homingleopards.org/dist" . $path . "?v=" . RES_VERSION;
+    echo "https://{$host}.homingleopards.org/{$subpath}" . $path . "?v=" . RES_VERSION;
 }
 
 function shareJssdk($api)
