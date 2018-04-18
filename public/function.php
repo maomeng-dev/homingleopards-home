@@ -13,7 +13,7 @@ function fe($path)
 {
     $requestHost = $_SERVER['SERVER_NAME'];
     $host = strpos($requestHost, 'dev.') ? $requestHost : "https://cdn.homingleopards.org";
-    echo "{$host}/" . $path . "?v=" . RES_VERSION;
+    echo "{$host}" . $path . "?v=" . RES_VERSION;
 }
 
 function shareJssdk($api)
