@@ -6,9 +6,14 @@
  * Time: 上午10:59
  */
 
+/**
+ * @param $path
+ */
 function fe($path)
 {
-    echo "/layout/dist" . $path . "?v=" . RES_VERSION;
+    $cdn = true;
+    $host = $cdn ? "cdn" : "res";
+    echo "http://{$host}.homingleopards.org/layout/dist" . $path . "?v=" . RES_VERSION;
 }
 
 function shareJssdk($api)
