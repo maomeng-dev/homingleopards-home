@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="icon" href="<? fe('/favicon.png') ?>">
+    <link rel="icon" href="<? fe('/layout/dist/favicon.png') ?>">
 
     <title>华北豹只生活在中国 - 带豹回家 - 猫盟CFCA</title>
 
@@ -13,8 +13,8 @@
 
     <? include VIEW_PATH . '/layout/head-res.php' ?>
 
-    <link rel="stylesheet" type="text/css" href="<? fe('/lib/slick/slick.css') ?>" />
-    <link rel="stylesheet" href="<? fe('/css/page/about-north-chinese-leopards.css') ?>">
+    <link rel="stylesheet" type="text/css" href="<? fe('/layout/dist/lib/slick/slick.css') ?>" />
+    <link rel="stylesheet" href="<? fe('/layout/dist/css/page/about-north-chinese-leopards.css') ?>">
 </head>
 
 <body>
@@ -43,23 +43,23 @@
 
             <div class="distribution-slide">
                 <div class="distribution-slide-item">
-                    <img src="https://via.placeholder.com/1280x720.png?text=Loading..." data-lazy="/resource/image/2017/08/slide-1.jpg" alt="分布区域图">
+                    <img src="https://via.placeholder.com/1280x720.png?text=Loading..." data-lazy="<? fe('/resource/image/2017/08/slide-1.jpg') ?>" alt="分布区域图">
                     <span>分布区域图</span>
                 </div>
                 <div class="distribution-slide-item">
-                    <img src="https://via.placeholder.com/1280x720.png?text=Loading..." data-lazy="/resource/image/2017/08/slide-2.jpg" alt="冬季的华北山地">
+                    <img src="https://via.placeholder.com/1280x720.png?text=Loading..." data-lazy="<? fe('/resource/image/2017/08/slide-2.jpg') ?>" alt="冬季的华北山地">
                     <span>冬季的华北山地</span>
                 </div>
                 <div class="distribution-slide-item">
-                    <img src="https://via.placeholder.com/1280x720.png?text=Loading..." data-lazy="/resource/image/2017/08/slide-3.jpg" alt="华北豹生活的山地和食物">
+                    <img src="https://via.placeholder.com/1280x720.png?text=Loading..." data-lazy="<? fe('/resource/image/2017/08/slide-3.jpg') ?>" alt="华北豹生活的山地和食物">
                     <span>华北豹生活的山地和食物</span>
                 </div>
                 <div class="distribution-slide-item">
-                    <img src="https://via.placeholder.com/1280x720.png?text=Loading..." data-lazy="/resource/image/2017/08/slide-4.jpg" alt="豹趴在太行山上">
+                    <img src="https://via.placeholder.com/1280x720.png?text=Loading..." data-lazy="<? fe('/resource/image/2017/08/slide-4.jpg') ?>" alt="豹趴在太行山上">
                     <span>豹趴在太行山上</span>
                 </div>
                 <div class="distribution-slide-item">
-                    <img src="https://via.placeholder.com/1280x720.png?text=Loading..." data-lazy="/resource/image/2017/08/slide-5.jpg" alt="在领地进行标记">
+                    <img src="https://via.placeholder.com/1280x720.png?text=Loading..." data-lazy="<? fe('/resource/image/2017/08/slide-5.jpg') ?>" alt="在领地进行标记">
                     <span>在领地进行标记</span>
                 </div>
             </div>
@@ -100,28 +100,28 @@
             <li class="pull-left">
                 <h3>过度开发</h3>
                 <p class="page-text">对华北豹现存或潜在栖息地进行的不当开发，以及迅速扩张的公路使华北豹的栖息地剧烈缩减，相互隔绝，是华北豹种群“孤岛化”的最大威胁。</p>
-                <img src="<? fe('/img/common/loading.png') ?>" data-lazysrc="/resource/image/2017/08/problem-1.jpg" alt="过度开发">
+                <img src="<? fe('/layout/dist/img/common/loading.png') ?>" data-lazysrc="<? fe('/resource/image/2017/08/problem-1.jpg') ?>" alt="过度开发">
             </li>
             <li class="pull-left">
                 <h3>非法盗猎</h3>
                 <p class="page-text">由于野生动物消费(皮毛制品及口腹之欲)、狩猎而起的非法盗猎，直接威胁到华北豹及其猎物的生存。非法盗猎的形式包括电击、猎套、猎夹、地枪、歼灭性围猎、网捕等。</p>
-                <img src="<? fe('/img/common/loading.png') ?>" data-lazysrc="/resource/image/2017/08/problem-2.jpg" alt="非法盗猎">
+                <img src="<? fe('/layout/dist/img/common/loading.png') ?>" data-lazysrc="<? fe('/resource/image/2017/08/problem-2.jpg') ?>" alt="非法盗猎">
             </li>
             <li class="pull-left">
                 <h3>人兽冲突</h3>
                 <p class="page-text">豹吃家畜是导致村民与豹发生冲突的主要诱因，因吃牛而被毒杀或猎杀是华北豹的直接致危因素；村民因防止野猪吃庄稼而采取的猎杀行为也会对豹造成生存威胁。</p>
-                <img src="<? fe('/img/common/loading.png') ?>" data-lazysrc="/resource/image/2017/08/problem-3.jpg" alt="过度开发">
+                <img src="<? fe('/layout/dist/img/common/loading.png') ?>" data-lazysrc="<? fe('/resource/image/2017/08/problem-3.jpg') ?>" alt="过度开发">
             </li>
         </ul>
         <ul class="page-wrap problem-picwrap clearfix">
             <li class="pull-left">
-                <img src="https://via.placeholder.com/760x466.png?text=Loading..." data-lazysrc="/resource/image/2017/08/problem-1.jpg" alt="过度开发">
+                <img src="https://via.placeholder.com/760x466.png?text=Loading..." data-lazysrc="<? fe('/resource/image/2017/08/problem-1.jpg') ?>" alt="过度开发">
             </li>
             <li class="pull-left">
-                <img src=https://via.placeholder.com/760x466.png?text=Loading... data-lazysrc="/resource/image/2017/08/problem-2.jpg" alt="非法盗猎">
+                <img src=https://via.placeholder.com/760x466.png?text=Loading... data-lazysrc="<? fe('/resource/image/2017/08/problem-2.jpg') ?>" alt="非法盗猎">
             </li>
             <li class="pull-left">
-                <img src="https://via.placeholder.com/760x466.png?text=Loading..." data-lazysrc="/resource/image/2017/08/problem-3.jpg" alt="过度开发">
+                <img src="https://via.placeholder.com/760x466.png?text=Loading..." data-lazysrc="<? fe('/resource/image/2017/08/problem-3.jpg') ?>" alt="过度开发">
             </li>
         </ul>
     </section>
@@ -176,8 +176,8 @@
 
 <? include VIEW_PATH . '/layout/foot-res.php' ?>
 
-<script src="<? fe('/lib/slick/slick.min.js') ?>"></script>
-<script src="<? fe('/js/page/about-north-chinese-leopards.js') ?>"></script>
+<script src="<? fe('/layout/dist/lib/slick/slick.min.js') ?>"></script>
+<script src="<? fe('/layout/dist/js/page/about-north-chinese-leopards.js') ?>"></script>
 
 </body>
 </html>
