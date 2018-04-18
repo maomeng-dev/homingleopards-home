@@ -8,13 +8,12 @@
 
 /**
  * @param $path
- * @param $subpath
  */
-function fe($path, $subpath = 'dist')
+function fe($path)
 {
     $requestHost = $_SERVER['SERVER_NAME'];
     $host = strpos($requestHost, 'dev.') ? $requestHost : "https://cdn.homingleopards.org";
-    echo "{$host}/{$subpath}" . $path . "?v=" . RES_VERSION;
+    echo "{$host}/" . $path . "?v=" . RES_VERSION;
 }
 
 function shareJssdk($api)
