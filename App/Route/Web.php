@@ -18,6 +18,10 @@ final class Web
 {
     public static function router()
     {
+        \Flight::route('/download', function () {
+            \Flight::render("download/download", array("name" => "download"));
+        });
+
         \Flight::route('/gallery', function () {
             \Flight::render("gallery/gallery", array("name" => "gallery"));
         });
