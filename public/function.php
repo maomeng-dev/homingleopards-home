@@ -13,7 +13,7 @@ function fe($path)
 {
     $cdn = true;
     $host = $cdn ? "cdn" : "res";
-    echo "http://{$host}.homingleopards.org/dist" . $path . "?v=" . RES_VERSION;
+    echo "https://{$host}.homingleopards.org/dist" . $path . "?v=" . RES_VERSION;
 }
 
 function shareJssdk($api)
