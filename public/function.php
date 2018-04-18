@@ -12,9 +12,9 @@
  */
 function fe($path, $subpath = 'dist')
 {
-    $cdn = true;
-    $host = $cdn ? "cdn" : "res";
-    echo "https://{$host}.homingleopards.org/{$subpath}" . $path . "?v=" . RES_VERSION;
+    $requestHost = $_SERVER['SERVER_NAME'];
+    $host = strpos($requestHost, 'dev.') ? $requestHost : "https://cdn.homingleopards.org";
+    echo "{$host}/{$subpath}" . $path . "?v=" . RES_VERSION;
 }
 
 function shareJssdk($api)
