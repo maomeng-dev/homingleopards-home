@@ -12,7 +12,7 @@
     "server": "gulp server --gulpfile ./config/gulpfile.js --color",
     "clean": "node ./scripts/clean.js",
     "build": "yarn install && yarn run prod",
-    "deploy": "cd /data/maomeng/home/layout && git pull && yarn run build && yarn run version"
+    "deploy": "yarn run build && yarn run version"
   },
   "author": "Konru",
   "license": "MIT",
