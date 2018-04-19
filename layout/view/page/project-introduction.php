@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="icon" href="<? fe('/favicon.png') ?>">
+    <link rel="icon" href="<? fe('/layout/dist/favicon.png') ?>">
 
     <title>修复荒野人心，重振太行 - 带豹回家 - 猫盟CFCA</title>
 
@@ -13,8 +13,8 @@
 
     <? include VIEW_PATH . '/layout/head-res.php' ?>
 
-    <link rel="stylesheet" type="text/css" href="<? fe('/lib/slick/slick.css') ?>"/>
-    <link rel="stylesheet" href="<? fe('/css/page/project-introduction.css') ?>">
+    <link rel="stylesheet" type="text/css" href="<? fe('/layout/dist/lib/slick/slick.css') ?>"/>
+    <link rel="stylesheet" href="<? fe('/layout/dist/css/page/project-introduction.css') ?>">
 </head>
 
 <body>
@@ -38,7 +38,7 @@
                 <p>一言以蔽之，以豹之名，修复华北的荒野与人心。</p>
             </div>
 
-            <img src="<? fe('/img/page/project-introduction/banner-photo.png') ?>" class="banner-photo" alt="华北豹的得名">
+            <img src="<? fe('/layout/dist/img/page/project-introduction/banner-photo.png') ?>" class="banner-photo" alt="华北豹的得名">
         </div>
     </section>
     <!--/banner -->
@@ -52,21 +52,21 @@
             <div class="intro-phase">
                 <ol class="intro-phase-list">
                     <li class="intro-phase-item">
-                        <img src="https://via.placeholder.com/400x300.png?text=Loading..." data-lazysrc="/resource/image/2017/12/intro-phase-1.jpg" alt="第一阶段：找到豹子">
+                        <img src="https://via.placeholder.com/400x300.png?text=Loading..." data-lazysrc="<? fe('/resource/image/2017/12/intro-phase-1.jpg') ?>" alt="第一阶段：找到豹子">
                         <div class="page-text">
                             <h5><span>第一阶段：找到豹子</span></h5>
                             <p>主要采用红外相机野外调查的方法，调查太行山北段华北豹的分布现状。</p>
                         </div>
                     </li>
                     <li class="intro-phase-item">
-                        <img src="https://via.placeholder.com/400x300.png?text=Loading..." data-lazysrc="/resource/image/2017/12/intro-phase-2.jpg" alt="第二阶段：找到归路">
+                        <img src="https://via.placeholder.com/400x300.png?text=Loading..." data-lazysrc="<? fe('/resource/image/2017/12/intro-phase-2.jpg') ?>" alt="第二阶段：找到归路">
                         <div class="page-text">
                             <h5><span>第二阶段：找到归路</span></h5>
                             <p>对太行山北段进行预设扩散廊道的走访调查，收集线索，评估当地生物多样性，并根据实际情况修正廊道路线，勾画华北豹种群扩散的廊道。</p>
                         </div>
                     </li>
                     <li class="intro-phase-item">
-                        <img src="https://via.placeholder.com/400x300.png?text=Loading..." data-lazysrc="/resource/image/2017/12/intro-phase-3.jpg" alt="第三阶段：带豹回家">
+                        <img src="https://via.placeholder.com/400x300.png?text=Loading..." data-lazysrc="<? fe('/resource/image/2017/12/intro-phase-3.jpg') ?>" alt="第三阶段：带豹回家">
                         <div class="page-text">
                             <h5><span>第三阶段：带豹回家</span></h5>
                             <p>利用猫科动物的扩散天性，让豹在自然状态下在畅通的生态廊道下扩散回京。</p>
@@ -102,7 +102,7 @@
                     <div class="bar-border"></div>
                 </div>
                 <div class="intro-plan-img">
-                    <img src="<? fe('/img/page/project-introduction/plan.jpg') ?>" alt="怎么带豹回家">
+                    <img src="<? fe('/layout/dist/img/page/project-introduction/plan.jpg') ?>" alt="怎么带豹回家">
                 </div>
             </div>
 
@@ -110,28 +110,28 @@
             <div class="intro-slide">
                 <div class="intro-slide-container" id="introSlide">
                     <div class="intro-slide-item">
-                        <img src="https://via.placeholder.com/400x225.png?text=Loading..." data-lazy="/resource/image/2017/12/intro-photo-1.jpg" alt="孟买西部山区的豹子俯瞰城区">
+                        <img src="https://via.placeholder.com/400x225.png?text=Loading..." data-lazy="<? fe('/resource/image/2017/12/intro-photo-1.jpg') ?>" alt="孟买西部山区的豹子俯瞰城区">
                         <div class="page-text">
                             <p>孟买西部山区的豹子俯瞰城区。</p>
                             <p>照片来源：Niket Surve/SGNP</p>
                         </div>
                     </div>
                     <div class="intro-slide-item">
-                        <img src="https://via.placeholder.com/400x225.png?text=Loading..." data-lazy="/resource/image/2017/12/intro-photo-2.jpg" alt="一只名叫P22的美洲狮生活在市郊的公园里">
+                        <img src="https://via.placeholder.com/400x225.png?text=Loading..." data-lazy="<? fe('/resource/image/2017/12/intro-photo-2.jpg') ?>" alt="一只名叫P22的美洲狮生活在市郊的公园里">
                         <div class="page-text">
                             <p>美国加州，一只名叫P22的美洲狮生活在市郊的公园里。</p>
                             <p>图片来源：Steve Winter/blog.nwf.org</p>
                         </div>
                     </div>
                     <div class="intro-slide-item">
-                        <img src="https://via.placeholder.com/400x225.png?text=Loading..." data-lazy="/resource/image/2017/12/intro-photo-3.jpg" alt="一头年轻的美洲狮">
+                        <img src="https://via.placeholder.com/400x225.png?text=Loading..." data-lazy="<? fe('/resource/image/2017/12/intro-photo-3.jpg') ?>" alt="一头年轻的美洲狮">
                         <div class="page-text">
                             <p>一头年轻的美洲狮趴在美国犹他州希伯城一户人家的阳台边休息。</p>
                             <p>图片来源：Rhett Riding</p>
                         </div>
                     </div>
                     <div class="intro-slide-item">
-                        <img src="https://via.placeholder.com/400x225.png?text=Loading..." data-lazy="/resource/image/2017/12/intro-photo-4.jpg" alt="豹子不吃人">
+                        <img src="https://via.placeholder.com/400x225.png?text=Loading..." data-lazy="<? fe('/resource/image/2017/12/intro-photo-4.jpg') ?>" alt="豹子不吃人">
                         <div class="page-text">
                             <p>不用害怕，它们不会吃我们啦，最多吃掉我们的野猪……</p>
                             <p>图片来源：猫盟CFCA</p>
@@ -159,7 +159,7 @@
                         <p>无论你是户外爱好者、摄影师、纪录片制作人、生态教育专家、 社区工作专家、感兴趣的赞助企业……机构或个人，只要合适，都无限欢迎加入“带豹回家”的阵营，你甚至有可能成为“带豹回家”的项目负责人。</p>
                     </div>
                     <div class="intro-organization-img">
-                        <a href="<? fe('/img/page/project-introduction/org.png') ?>"><img src="<? fe('/img/page/project-introduction/org.png') ?>" alt="带豹回家的“梦之队”架构"></a>
+                        <a href="<? fe('/layout/dist/img/page/project-introduction/org.png') ?>"><img src="<? fe('/layout/dist/img/page/project-introduction/org.png') ?>" alt="带豹回家的“梦之队”架构"></a>
                         <p class="page-text text-center">带豹回家的“梦之队”架构（<a href="https://f.lingxi360.com/formfill?fid=oOWh0gRCsdpwZ&utm_bccid=LXE8jPnL&disable_autofill=0" target="_blank" rel="noopener">志愿者报名请戳</a>）</p>
                     </div>
                 </div>
@@ -180,7 +180,7 @@
             <ul class="progress-content" id="progressContent">
                 <li data-tab="item" class="active">
                     <div class="progress-item">
-                        <img src="https://via.placeholder.com/493x370.png?text=Loading..." data-lazysrc="/resource/image/2017/12/progress-item-1.jpg" alt="">
+                        <img src="https://via.placeholder.com/493x370.png?text=Loading..." data-lazysrc="<? fe('/resource/image/2017/12/progress-item-1.jpg') ?>" alt="">
                         <div class="page-text">
                             <p>
                                 太行山北段 <br>
@@ -206,7 +206,7 @@
                 </li>
                 <li data-tab="item">
                     <div class="progress-item">
-                        <img src="https://via.placeholder.com/493x370.png?text=Loading..." data-lazysrc="/resource/image/2017/12/progress-item-2.jpg" alt="">
+                        <img src="https://via.placeholder.com/493x370.png?text=Loading..." data-lazysrc="<? fe('/resource/image/2017/12/progress-item-2.jpg') ?>" alt="">
                         <div class="page-text">
                             <p>豹子沿着太行山返京，首先要敲的门就是北京的西部山区——亚种模式标本的产地，这里也是华北豹的历史栖息地。“家门”的生物多样性指数及栖息地质量，是华北豹能否成功扩散回京的决定性因素。</p>
                             <p>2016年猫盟在怀柔、延庆做过为期一年的兽类监测，北京的兽类中除了豹子外其他的物种仍在。只要加以保护让猎物数量增长，豹子就能待得住。</p>
@@ -216,7 +216,7 @@
                 </li>
                 <li data-tab="item">
                     <div class="progress-item">
-                        <img src="https://via.placeholder.com/493x370.png?text=Loading..." data-lazysrc="/resource/image/2017/12/progress-item-3.jpg" alt="">
+                        <img src="https://via.placeholder.com/493x370.png?text=Loading..." data-lazysrc="<? fe('/resource/image/2017/12/progress-item-3.jpg') ?>" alt="">
                         <div class="page-text">
                             <p>
                                 太行山展向纵深大，千沟万壑都可能成为豹子扩散的路径；而山区也同样村庄密集、人为干扰明显。怎样才能找到华北豹沿着太行山扩散的潜在路径呢？
@@ -241,7 +241,7 @@
                 <p class="text-right">（链接：<a href="http://floridawildlifecorridor.org/" target="_blank" rel="noopener">FloridaWildlifeCorridor.org</a>）</p>
             </div>
             <div class="progress-case-img">
-                <img src="<? fe('/img/page/project-introduction/case.jpg') ?>" alt="">
+                <img src="<? fe('/layout/dist/img/page/project-introduction/case.jpg') ?>" alt="">
             </div>
         </div>
     </section>
@@ -255,8 +255,8 @@
 
 <? include VIEW_PATH . '/layout/foot-res.php' ?>
 
-<script src="<? fe('/lib/slick/slick.min.js') ?>"></script>
-<script src="<? fe('/js/page/project-introduction.js') ?>"></script>
+<script src="<? fe('/layout/dist/lib/slick/slick.min.js') ?>"></script>
+<script src="<? fe('/layout/dist/js/page/project-introduction.js') ?>"></script>
 
 </body>
 </html>

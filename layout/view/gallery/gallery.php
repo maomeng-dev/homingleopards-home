@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="icon" href="<? fe('/favicon.png') ?>">
+    <link rel="icon" href="<? fe('/layout/dist/favicon.png') ?>">
 
     <title>影像 - 带豹回家 - 猫盟CFCA</title>
 
@@ -13,8 +13,8 @@
 
     <? include VIEW_PATH . '/layout/head-res.php' ?>
 
-    <link rel="stylesheet" type="text/css" href="<? fe('/lib/slick/slick.css') ?>" />
-    <link rel="stylesheet" href="<? fe('/css/gallery/gallery.css') ?>">
+    <link rel="stylesheet" type="text/css" href="<? fe('/layout/dist/lib/slick/slick.css') ?>" />
+    <link rel="stylesheet" href="<? fe('/layout/dist/css/gallery/gallery.css') ?>">
 </head>
 
 <body>
@@ -173,8 +173,8 @@
 
 <? include VIEW_PATH . '/layout/foot-res.php' ?>
 
-<script src="<? fe('/lib/slick/slick.min.js') ?>"></script>
-<script src="<? fe('/js/gallery/gallery.js') ?>"></script>
+<script src="<? fe('/layout/dist/lib/slick/slick.min.js') ?>"></script>
+<script src="<? fe('/layout/dist/js/gallery/gallery.js') ?>"></script>
 
 </body>
 </html>

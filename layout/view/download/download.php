@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="icon" href="<? fe('/favicon.png') ?>">
+    <link rel="icon" href="<? fe('/layout/dist/favicon.png') ?>">
 
     <title>下载 - 带豹回家 - 猫盟CFCA</title>
 
@@ -13,7 +13,7 @@
 
     <? include VIEW_PATH . '/layout/head-res.php' ?>
 
-    <link rel="stylesheet" href="<? fe('/css/download/download.css') ?>">
+    <link rel="stylesheet" href="<? fe('/layout/dist/css/download/download.css') ?>">
 </head>
 
 <body>
@@ -71,7 +71,7 @@
 
 <? include VIEW_PATH . '/layout/foot-res.php' ?>
 
-<script src="<? fe('/js/download/download.js') ?>"></script>
+<script src="<? fe('/layout/dist/js/download/download.js') ?>"></script>
 
 </body>
 </html>

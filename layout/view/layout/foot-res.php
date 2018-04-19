@@ -1,7 +1,7 @@
-<script src="<? fe('/lib/jquery/jquery.min.js') ?>"></script>
-<script src="<? fe('/lib/ejs/ejs.min.js') ?>"></script>
-<script src="<? fe('/lib/qrcodejs/qrcode.min.js') ?>"></script>
-<script src="<? fe('/js/common/common.js') ?>"></script>
+<script src="<? fe('/layout/dist/lib/jquery/jquery.min.js') ?>"></script>
+<script src="<? fe('/layout/dist/lib/ejs/ejs.min.js') ?>"></script>
+<script src="<? fe('/layout/dist/lib/qrcodejs/qrcode.min.js') ?>"></script>
+<script src="<? fe('/layout/dist/js/common/common.js') ?>"></script>
 
 
 <script src="//res.wx.qq.com/open/js/jweixin-1.2.0.js"></script>
