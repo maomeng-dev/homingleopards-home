@@ -11,8 +11,7 @@
  */
 function fe($path)
 {
-    $requestHost = $_SERVER['SERVER_NAME'];
-    $host = strpos($requestHost, 'dev.') !== false ? $requestHost : "cdn.homingleopards.org";
+    $host = DEV ? $_SERVER['SERVER_NAME'] : "cdn.homingleopards.org";
     echo "https://{$host}" . $path . "?v=" . RES_VERSION;
 }
 
