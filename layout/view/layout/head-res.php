@@ -10,7 +10,7 @@
         title: document.title,
         desc: '以豹之名，修复华北荒野。',
         link: location.href,
-        imgUrl: location.origin + '<? fe('/layout/dist/favicon.png') ?>'
+        imgUrl: '<? fe('/layout/dist/favicon.png') ?>'
     };
 </script>
 
