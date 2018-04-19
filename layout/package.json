@@ -6,12 +6,13 @@
   "scripts": {
     "start": "node ./scripts/help.js",
     "help": "node ./scripts/help.js",
+    "version": "node ./scripts/version.js",
     "dev": "yarn run clean && gulp dev --gulpfile ./config/gulpfile.js --color",
     "prod": "yarn run clean && gulp prod --gulpfile ./config/gulpfile.js --color",
     "server": "gulp server --gulpfile ./config/gulpfile.js --color",
     "clean": "node ./scripts/clean.js",
     "build": "yarn install && yarn run prod",
-    "deploy": "cd /data/maomeng/home/layout && git pull && yarn run build"
+    "deploy": "yarn run build && yarn run version"
   },
   "author": "Konru",
   "license": "MIT",
