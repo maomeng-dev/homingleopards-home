@@ -5,6 +5,8 @@ require __DIR__ . '/vendor/autoload.php';
 define("VIEW_PATH", __DIR__ . "/layout/view");
 define("RES_VERSION", "20180418");
 
+define("DEV", strpos($_SERVER['SERVER_NAME'], 'dev.') !== false);
+
 Flight::set('flight.views.path', VIEW_PATH);
 
 require __DIR__ . "/public/function.php";
