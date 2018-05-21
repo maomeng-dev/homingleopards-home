@@ -3,7 +3,7 @@ require 'flight/Flight.php';
 require __DIR__ . '/vendor/autoload.php';
 
 define("VIEW_PATH", __DIR__ . "/layout/view");
-define("RES_VERSION", "20180420");
+define("RES_VERSION", "20180521");
 
 define("DEV", strpos($_SERVER['SERVER_NAME'], 'dev.') !== false);
 
