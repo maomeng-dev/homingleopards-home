@@ -33,23 +33,13 @@ class Download
                 [
                     "index" => 0,
                     "id" => 1,
-                    "title" => "测试下载",
-                    "modify_time" => 1503897505631,
+                    "title" => "2017年带豹回家年报",
+                    "modify_time" => 1525336721402,
                     "type" => 1,
-                    "size" => 505631,
-                    "down_url"=>'https://api.homingleopards.org/',
-                    "tags" => ['华北豹', '华北豹', '大喵', '回家'],
+                    "size" => 24000,
+                    "down_url"=>'https://cdn.homingleopards.org/resource/file/bring-leopards-home-annual-report-2017.pdf',
+                    "tags" => ['带豹回家', '年报', '猫盟', '荒野分析'],
                 ],
-                [
-                    "index" => 2,
-                    "id" => 1,
-                    "title" => "测试下载2",
-                    "modify_time" => 1503897505631,
-                    "type" => 1,
-                    "size" => 505631,
-                    "down_url"=>'https://api.homingleopards.org/',
-                    "tags" => ['华北豹2', '华北豹', '大喵', '回家'],
-                ]
             )
         );
         \Flight::json(['errno' => 0, 'errmsg' => '', 'data' => $data]);
