@@ -13,7 +13,7 @@
 
     <? include VIEW_PATH . '/layout/head-res.php' ?>
 
-    <link rel="stylesheet" href="<? fe('/layout/dist/layout/dist/css/index/coming.css') ?>">
+    <link rel="stylesheet" href="<? fe('/layout/dist/css/index/coming.css') ?>">
 </head>
 
 <body>
