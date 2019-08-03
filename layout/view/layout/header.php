@@ -7,6 +7,9 @@ function checkActive($itemName, $pageName)
         return '';
     }
 }
+
+if(!isset($name))
+    $name = '';
 ?>
 
 <header>
