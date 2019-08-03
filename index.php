@@ -6,6 +6,7 @@ define("ROOT_PATH", __DIR__);
 define("VIEW_PATH", __DIR__ . "/layout/view");
 
 define("DEV", strpos($_SERVER['SERVER_NAME'], 'dev.') !== false);
+define("INC_FILE", DEV ? "maomeng_dev" : "maomeng");
 
 Flight::set('flight.views.path', VIEW_PATH);
 

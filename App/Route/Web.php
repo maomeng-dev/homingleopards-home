@@ -8,6 +8,9 @@
 
 namespace App\Route;
 
+use App\Model\Article;
+use App\Model\ArticleContent;
+
 /**
  * 前台页面路由
  * Class Web
@@ -33,7 +36,18 @@ final class Web
         \Flight::route('/pages/@page', function ($page) {
             \Flight::render("page/{$page}", array("name" => $page));
         });
-    
+
+        \Flight::route('/articles/@id', function ($id) {
+            $article = new Article();
+            $article->id($id);
+            if(empty($article->getData()))
+            {
+                exit('error article id');
+            }
+            $content = new ArticleContent();
+            \Flight::render("article/show", array("content" => $content->getContent($id), 'info' => $article->getData()));
+        });
+
         \Flight::map('notFound', function () {
             // 显示自定义的404页面
             \Flight::render("error/404", array("name" => "404"));

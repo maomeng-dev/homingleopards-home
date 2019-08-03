@@ -42,3 +42,8 @@ function shareJssdk($api)
     $app = EasyWeChat\Factory::officialAccount($config);
     return $app->jssdk->buildConfig($api);
 }
+
+function getConfig($name)
+{
+    return \Yaconf::get(INC_FILE . "." . $name);
+}

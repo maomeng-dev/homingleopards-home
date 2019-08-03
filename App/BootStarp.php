@@ -40,35 +40,57 @@ class BootStarp
         file_put_contents($fileName, $time);
         return $time;
     }
-    
+
     /**
      * init the db conn;
      */
     protected static function initDb()
     {
-        \Flight::register("Capsule", "\Illuminate\Database\Capsule\Manager", array(),function ($capsule) {
-            $capsule->addConnection([
-            
-                'driver'    => 'mysql',
-            
-                'host'      => \Yaconf::get("maomeng.db.host"),
-            
-                'database'  => \Yaconf::get("maomeng.db.dbname"),
-            
-                'username'  => \Yaconf::get("maomeng.db.user"),
-            
-                'password'  => \Yaconf::get("maomeng.db.pass"),
-            
-                'charset'   => 'utf8mb4',
-            
-                'collation' => 'utf8mb4_general_ci',
-            
-                'prefix'    => ''
-        
-            ]);
-        
-            $capsule->bootEloquent();
-        });
-    
+        \Flight::register(
+            "Db",
+            "Medoo\Medoo",
+            array(
+                ['database_type' => 'mysql',
+                 'database_name' => getConfig("db.dbname"),
+                 'server' => getConfig("db.host"),
+                 'username' => getConfig("db.user"),
+                 'password' => getConfig("db.pass")]
+            ),
+            function() {
+
+            }
+        );
+
+        \Flight::register(
+            "Capsule",
+            "\Illuminate\Database\Capsule\Manager",
+            array(),
+            function($capsule) {
+                $capsule->addConnection(
+                    [
+
+                        'driver' => 'mysql',
+
+                        'host' => \Yaconf::get("maomeng.db.host"),
+
+                        'database' => \Yaconf::get("maomeng.db.dbname"),
+
+                        'username' => \Yaconf::get("maomeng.db.user"),
+
+                        'password' => \Yaconf::get("maomeng.db.pass"),
+
+                        'charset' => 'utf8mb4',
+
+                        'collation' => 'utf8mb4_general_ci',
+
+                        'prefix' => '',
+
+                    ]
+                );
+
+                $capsule->bootEloquent();
+            }
+        );
+
     }
 }

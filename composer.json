@@ -1,6 +1,7 @@
 {
     "require": {
         "overtrue/wechat": "~4.0",
-        "illuminate/database": "^5.5"
+        "illuminate/database": "^5.5",
+        "catfan/Medoo": "^1.7"
     }
 }
