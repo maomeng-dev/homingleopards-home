@@ -24,10 +24,17 @@
 <? include VIEW_PATH . '/layout/header.php' ?>
 
 <!-- content wrap -->
+
 <div class="content content-static">
     <section class="article page-wrap rich_media_inner">
       <div class="page-main rich_media_content">
           <h2><?=$info['title']?></h2>
+
+          <div class="page-info">
+            <span>原创： <?=$info['author']?></span>
+            <span><a href="#" title="猫盟CFCA">猫盟CFCA</a></span>
+            <span><?=$info['create_time']?></span>
+          </div>
 
           <?php
               echo str_replace("data-src", 'src', $content);

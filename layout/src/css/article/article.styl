@@ -5,20 +5,41 @@
   color: #333
   font-size: 16px
 
-  .page-main
-    width: 645px
-    margin: 0 auto
-    padding: 60px 0
+  a
+    color: #576b95;
+    text-decoration: none;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
 
   h2
-    height: 35px
-    padding-left: 24px
+    height: auto
     margin-bottom: 40px
     color: #333
     font-size: 24px
     line-height: 35px
-    vertical-align: middle
-    background-image: url($imgDir/page/about-north-chinese-leopards/sprites.png)
-    background-image: -webkit-image-set(url($imgDir/page/about-north-chinese-leopards/sprites.png) 1x, url(/layout/dist/img/page/about-north-chinese-leopards/sprites@2x.png) 2x)
-    background-repeat: no-repeat
-    background-position: 0 2px
+
+    &:before
+      content: ''
+      position: relative
+      top: 4px
+      display: inline-block
+      width: 24px
+      height: 30px
+      background-image: url($imgDir/page/about-north-chinese-leopards/sprites.png)
+      background-image: -webkit-image-set(url($imgDir/page/about-north-chinese-leopards/sprites.png) 1x, url(/layout/dist/img/page/about-north-chinese-leopards/sprites@2x.png) 2x)
+      background-repeat: no-repeat
+      background-position: 0 0
+
+
+
+  .page-main
+    max-width: 645px
+    margin: 0 auto
+    padding: 60px 0
+
+  .page-info
+    margin-bottom: 40px
+    color: #999
+    font-size: 14px
+
+    span
+      margin-right: 10px
