@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="icon" href="<? fe('/layout/dist/favicon.png') ?>">
-
+    <meta name="referrer" content="no-referrer">
     <title><?=$info['title']?> - 带豹回家 - 猫盟CFCA</title>
 
 
@@ -14,7 +14,7 @@
 </head>
 <body>
 <?php
-    echo $content;
+    echo str_replace("data-src", 'src', $content);
 ?>
 </body>
 
