@@ -21,6 +21,10 @@ final class Web
 {
     public static function router()
     {
+        \Flight::route('/article', function () {
+            \Flight::render("article/article", array("name" => "article"));
+        });
+
         \Flight::route('/download', function () {
             \Flight::render("download/download", array("name" => "download"));
         });
@@ -28,11 +32,11 @@ final class Web
         \Flight::route('/gallery', function () {
             \Flight::render("gallery/gallery", array("name" => "gallery"));
         });
-    
+
         \Flight::route('/coming', function () {
             \Flight::render("coming", array("name" => "coming"));
         });
-    
+
         \Flight::route('/pages/@page', function ($page) {
             \Flight::render("page/{$page}", array("name" => $page));
         });
@@ -52,10 +56,10 @@ final class Web
             // 显示自定义的404页面
             \Flight::render("error/404", array("name" => "404"));
         });
-    
+
         \Flight::route('/@con/@act/', function ($con, $act) {
             \Flight::render("{$con}/{$act}");
         });
-    
+
     }
 }
