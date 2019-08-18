@@ -28,7 +28,7 @@
             <h2 class="pull-left">项目资料</h2>
             <!--
             <div class="download-header-search pull-right">
-                <input type="search" placeholder="根据附件名称或标签进行匹配…" id="downloadSearchInput">
+                <input type="search" placeholder="搜索附件名称或附件标签…" id="downloadSearchInput">
                 <button id="downloadSearchButton">搜索</button>
             </div>
             -->
