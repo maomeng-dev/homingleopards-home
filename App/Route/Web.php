@@ -44,12 +44,13 @@ final class Web
         \Flight::route('/articles/@id', function ($id) {
             $article = new Article();
             $article->id($id);
-            if(empty($article->getData()))
+            $data = $article->getData();
+            if(empty($data))
             {
                 exit('error article id');
             }
             $content = new ArticleContent();
-            \Flight::render("article/show", array("content" => $content->getContent($id), 'info' => $article->getData()));
+            \Flight::render("article/show", array("content" => $content->getContent($id, $data['wechat_url']), 'info' => $data));
         });
 
         \Flight::map('notFound', function () {

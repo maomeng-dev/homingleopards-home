@@ -19,9 +19,16 @@ class ArticleContent extends BaseModel
      * 返回内容
      * @param $aid
      */
-    public function getContent($aid)
+    public function getContent($aid, $url)
     {
         $result = $this->select(['content'], ['a_id' => $aid], true);
+        $titleImg = '<img data-src="https://mmbiz.qpic.cn/mmbiz_gif/U3GCYnicWcLNy7oicebEAvTshsLY97d5ibOVicuACnxh9FzD6iaCu8E7u7t0j9oGaQKTMoc5PN8IVPq1gqsOyGH5A6Q/640?wx_fmt=gif" data-type="gif" class="" data-ratio="0.1088" data-w="625"  />';
+        //var_dump($result['content']);
+        $result['content'] = str_replace(
+            $titleImg,
+            "<a href='{$url}' >{$titleImg}</a>",
+            $result['content']
+        );
         return $result['content'] ?? '';
     }
 
