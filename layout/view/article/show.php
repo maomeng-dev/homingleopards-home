@@ -26,7 +26,7 @@
 <!-- content wrap -->
 <div class="content content-static">
     <section class="article page-wrap rich_media_inner">
-      <div class="page-main rich_media_content">
+      <div class="page-main rich_media_content" id="img-content">
           <h2><?=$info['title']?></h2>
 
           <div class="page-info">
@@ -48,7 +48,7 @@
 
 <? include VIEW_PATH . '/layout/foot-res.php' ?>
 
-<script src="<? fe('/layout/dist/lib/slick/slick.min.js') ?>"></script>
+<script src="<? fe('/layout/dist/js/article/show.js') ?>"></script>
 
 </body>
 
