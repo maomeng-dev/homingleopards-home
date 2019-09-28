@@ -1,17 +1,17 @@
-'use strict';
+'use strict'
 
-let totop = require('../common/totop.module');
+let totop = require('../common/totop.module')
 
 $(() => {
-    let page = {
-        eles: {
-            slider: $('.banner-slide')
-        },
+  let page = {
+    eles: {
+      slider: $('.banner-slide')
+    },
 
-        init: function () {
-            totop.init();
-        }
-    };
+    init: function () {
+      totop.init()
+    }
+  }
 
-    page.init();
-});
+  page.init()
+})
