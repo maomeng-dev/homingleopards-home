@@ -44,13 +44,21 @@
 
     <script type="text/template" id="articleItemTemplate">
         <li class="article-item">
-            <a href="<%= down_url %>" class="clearfix" target="_blank" rel="noopener" title="<%= title %>">
+            <a href="/articles/<%= id %>" class="clearfix" target="_blank" rel="noopener" title="<%= title %>">
                 <span class="item-main">
-                    <span class="item-title"><%= title %></span>
-                    <span class="item-author"><i class="fa fa-user"></i> <span><%= author %></span></span>
+                    <span class="item-thumb">
+                    <% if (thumb_url) { %>
+                      <img src="<%= thumb_url %>" alt="<%= title %>">
+                    <% } %>
+                    </span>
+                    <span class="item-text">
+                        <span class="item-title"><%= title %></span>
+                        <span class="item-digest"><%= digest %></span>
+                        <span class="item-author"><i class="fa fa-user"></i> <span><%= author || '猫盟CFCA' %></span></span>
+                    </span>
                 </span>
                 <span class="item-info">
-                    <span class="item-time"><%= modify_time %></span>
+                    <span class="item-time"><%= create_time %></span>
                 </span>
             </a>
         </li>

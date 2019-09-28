@@ -129,7 +129,7 @@ $(() => {
             // window.history.pushState(this.param, document.title, (location.origin + location.pathname + this.getPageParamString()));
 
             $.ajax({
-                url: '//api.homingleopards.org/front/download/list',
+                url: '//api.dev.homingleopards.org/front/article/list',
                 data: this.param
             }).done((res) => {
                 this.showLoading(false);
@@ -145,7 +145,6 @@ $(() => {
                         data.list.forEach((articleItem) => {
                             // make params
                             articleItem.modify_time = util.dateFormat(articleItem.modify_time, 'yyyy-mm-dd');
-                            articleItem.author = 'huli';
                             this.eles.articleList.append(
                                 ejs.render(this.tpls.articleItem, articleItem)
                             );

@@ -78,19 +78,38 @@
       text-align: center
 
     .item-main
+      display: flex
       flex-grow: 1
       flex-shrink: 1
-      margin-left: 20px
       overflow: hidden
+
+    .item-thumb
+      flex-grow: 0
+      flex-shrink: 0
+      max-width: 228px
+      height: 95px
+      margin-right: 20px
+      overflow: hidden
+
+      img
+        display: block
+        width: 100%
 
     .item-title
       display: block
       margin-bottom: 16px
-      color: #8c9198
+      color: #eee
       font-size: 24px
       overflow: hidden
       text-overflow: ellipsis
       white-space: nowrap
+
+    .item-digest
+      display: block
+      margin-bottom: 16px
+      color: #8c9198
+      font-size: 14px
+      line-height: 1.4
 
     .item-author
       display: block
@@ -125,7 +144,8 @@
     display: block
     width: 50%
     height: 40px
-    margin: 30px auto
+    padding: 30px
+    margin: auto
     color: #8c9198
     font-size: 14px
     text-align: center
@@ -146,13 +166,39 @@
 
       a
         padding: 10px
+        flex-wrap: wrap
+
+      .item-main
+        width: 100%
+        flex-wrap: wrap
+
+      .item-thumb
+        width: 100%
+        height: auto
+        max-width: none
+        min-height: 32px
+        margin-right: 0
+
+      .item-text
+        position: relative
+        width: 100%
 
       .item-title
-        font-size: 14px
+        position: absolute
+        top: -32px
+        width: 96%
+        height: px
+        padding: 0 2%
+        font-size: 16px
+        line-height: 32px
+        background-color: rgba(0, 0, 0, .5)
+        text-overflow: ellipsis
+        overflow: hidden
 
-      .item-info
-        min-width: 130px
+      .item-digest
+        margin: 12px 0 0 0
         font-size: 12px
 
-      .item-time
-        margin-left: 10px
+      .item-author
+      .item-info
+        display: none
