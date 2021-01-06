@@ -10,7 +10,7 @@
         <div class="pull-left footer-copyright">
             <p><i class="fa fa-code" aria-hidden="true"></i> with <i class="fa fa-heart" aria-hidden="true"></i> by CFCA-Dev-Team.</p>
             <p>CFCA Copyright 2017-<? echo date("o") ?>. All rights reserved.</p>
-            <p>京ICP备17044153号</p>
+            <p><a target="_blank" rel="noopener" href="http://beian.miit.gov.cn/">京ICP备 17044153号</a></p>
         </div>
     </div>
 </footer>
