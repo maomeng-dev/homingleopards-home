@@ -21,7 +21,7 @@
     "babel-loader": "^7.1.5",
     "babel-preset-env": "^1.7.0",
     "chalk": "^2.0.1",
-    "gulp": "^3.9.1",
+    "gulp": "^4.0.2",
     "gulp-clean-css": "^3.9.4",
     "gulp-less": "^4.0.1",
     "gulp-stylus": "^2.7.0",
