@@ -39,6 +39,9 @@ function shareJssdk($api)
             'file' => '/tmp/easywechat.log',
         ],
     ];
+    /*
     $app = EasyWeChat\Factory::officialAccount($config);
     return $app->jssdk->buildConfig($api);
+    */
+    return '';
 }
